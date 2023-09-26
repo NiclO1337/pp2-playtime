@@ -1,4 +1,27 @@
+/* Global styles */
+
 body {
   background-color: rgb(6, 6, 119);
-  color: white;
+}
+
+header {
+  background-color: antiquewhite;
+}
+
+section {
+  background-color: aliceblue;
+}
+
+footer {
+  background-color: brown;
+}
+
+.game-background {
+  background-color: rgba(255, 255, 255, 0.781);
+
+}
+
+
+.hidden-element {
+  display: none;
 }
