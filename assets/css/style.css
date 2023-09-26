@@ -20,6 +20,12 @@ footer {
   width: 100%;
 }
 
+svg {
+  fill: rgb(6, 64, 119);
+  width: 25rem;
+}
+
+
 .game-background {
   background-color: rgba(255, 255, 255, 0.863);
   width: 80%;
