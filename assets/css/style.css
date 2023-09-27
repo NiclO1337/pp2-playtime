@@ -2,7 +2,6 @@
 
 body {
   background-color: rgb(6, 64, 119);
-  text-align: center;
 }
 
 header {
@@ -59,11 +58,11 @@ footer {
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
-  "arnold arnold"
-  "text text"
+  "arnold text"
   "theme theme"
   "instruction instruction"
   "name name";
+  text-align: center;
 }
 
 .grid :nth-child(1) {
