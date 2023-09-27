@@ -1,11 +1,11 @@
 /* Global styles */
 
 :root {
-  --color-bg: rgb(108, 159, 206);
+  --color-bg: rgba(228, 238, 135, 0.726);
 }
 
 body {
-  background-color: var(--color-bg);  
+  background-color: var(--color-bg);
   text-align: center;
 }
 
@@ -23,8 +23,8 @@ label {
 
 li {
   list-style: none;
+  filter: brightness(100%);
 }
-
 
 header {
   font-size: 80%;
@@ -93,12 +93,12 @@ footer {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
-  grid-template-areas: 
-  "arnold hello"
-  "text text"
-  "instruction instruction"
-  "theme theme"
-  "name name"  ;
+  grid-template-areas:
+    "arnold hello"
+    "text text"
+    "instruction instruction"
+    "theme theme"
+    "name name";
   text-align: center;
 }
 
@@ -124,4 +124,11 @@ footer {
 
 .grid :nth-child(6) {
   grid-area: instruction;
+}
+
+@media screen and (min-width: 400px) {
+  .short-text {
+    width: 25ch;
+  
+  }
 }
