@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: antiquewhite;
+  color: rgb(6, 64, 119);
 }
 
 section {
@@ -14,7 +14,6 @@ section {
 }
 
 footer {
-  background-color: brown;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -23,7 +22,7 @@ footer {
 
 .game-background {
   background-color: rgba(255, 255, 255, 0.863);
-  border-radius: 111rem;
+  border-radius: 2rem;
   width: 80%;
   max-width: 50rem;
   min-height: 70vh;
@@ -39,7 +38,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  height: 13rem;
+  height: 10rem;
 }
 
 #img-instruction {
