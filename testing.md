@@ -119,7 +119,7 @@ Several media queries were created to make each feature responsive on different 
 
 ### Solved bugs
 
-- 
+- Noticed after using the filer: brightness() that I got a compounding effect on footer text which made it even darker. Solved by adding filer: brightness(100%) specifically to the li selector.
 - 
 - 
 
