@@ -20,11 +20,17 @@ li {
 
 
 header {
+  font-size: 80%;
   color: rgb(6, 64, 119);
+  padding: 1em;
 }
 
 section {
   text-align: left;
+}
+
+section h2 {
+  font-size: 1rem;
 }
 
 footer {
@@ -37,13 +43,11 @@ footer {
 .game-background {
   background-color: rgba(255, 255, 255, 0.863);
   border-radius: 2rem;
-  width: 80%;
+  width: 90%;
   max-width: 50rem;
   min-height: 70vh;
-  margin-top: 6vh;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 5rem;
+  margin: 5% auto;
+  padding: 0 0.5em 5rem;
   position: relative;
 }
 
