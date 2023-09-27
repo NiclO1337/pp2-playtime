@@ -54,34 +54,34 @@ footer {
   display: none;
 }
 
-.grid:nth-child(1) {
-  grid-area: arnold;
-}
-
-.grid:nth-child(2) {
-  grid-area: text;
-}
-
-.grid:nth-child(3) {
-  grid-area: theme;
-}
-
-.grid:nth-child(4) {
-  grid-area: name;
-}
-
-.grid:nth-child(5) {
-  grid-area: instruction;
-  background-color: red;
-}
-
 .grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
-  "arnold text"
+  "arnold arnold"
+  "text text"
   "theme theme"
   "instruction instruction"
   "name name";
+}
+
+.grid :nth-child(1) {
+  grid-area: arnold;
+}
+
+.grid :nth-child(2) {
+  grid-area: text;
+}
+
+.grid :nth-child(3) {
+  grid-area: theme;
+}
+
+.grid :nth-child(4) {
+  grid-area: name;
+}
+
+.grid :nth-child(5) {
+  grid-area: instruction;
 }
