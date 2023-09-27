@@ -6,6 +6,7 @@ body {
 
 header {
   background-color: antiquewhite;
+  text-align: center;
 }
 
 section {
@@ -53,15 +54,20 @@ footer {
   display: none;
 }
 
+.align-left {
+  text-align: left;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
-  "arnold text"
+  "arnold hello"
+  "text text"
   "theme theme"
-  "instruction instruction"
-  "name name";
+  "name name"
+  "instruction instruction";
   text-align: center;
 }
 
@@ -70,17 +76,21 @@ footer {
 }
 
 .grid :nth-child(2) {
-  grid-area: text;
+  grid-area: hello;
 }
 
 .grid :nth-child(3) {
-  grid-area: theme;
+  grid-area: text;
 }
 
 .grid :nth-child(4) {
-  grid-area: name;
+  grid-area: theme;
 }
 
 .grid :nth-child(5) {
+  grid-area: name;
+}
+
+.grid :nth-child(6) {
   grid-area: instruction;
 }
