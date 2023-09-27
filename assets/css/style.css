@@ -10,7 +10,7 @@ header {
 }
 
 section {
-  
+  text-align: left;
 }
 
 footer {
@@ -22,7 +22,7 @@ footer {
 }
 
 .game-background {
-  background-color: rgba(255, 255, 255, 0.863);  
+  background-color: rgba(255, 255, 255, 0.863);
   border-radius: 111rem;
   width: 80%;
   max-width: 50rem;
@@ -35,24 +35,53 @@ footer {
 }
 
 #img-arnold {
-background-image: url("../images/arnold.png");
-background-repeat: no-repeat;
-background-size: contain;
-height: 13rem;
+  background-image: url("../images/arnold.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  height: 13rem;
 }
 
-#img-instruction{
+#img-instruction {
   background-image: url("../images/rock-paper-scissor-instruction3.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   height: 13rem;
-  }
+}
 
 .hidden-element {
   display: none;
 }
 
+.grid:nth-child(1) {
+  grid-area: arnold;
+}
+
+.grid:nth-child(2) {
+  grid-area: text;
+}
+
+.grid:nth-child(3) {
+  grid-area: theme;
+}
+
+.grid:nth-child(4) {
+  grid-area: name;
+}
+
+.grid:nth-child(5) {
+  grid-area: instruction;
+  background-color: red;
+}
+
 .grid {
   display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "arnold text"
+  "theme theme"
+  "instruction instruction"
+  "name name";
 }
