@@ -56,7 +56,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
-  height: 10rem;
+  height: 6rem;
 }
 
 #img-instruction {
@@ -64,7 +64,7 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 13rem;
+  height: 10rem;
 }
 
 .hidden-element {
@@ -78,7 +78,7 @@ footer {
 .grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 2fr;
   grid-template-areas: 
   "arnold hello"
   "text text"
