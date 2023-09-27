@@ -1,7 +1,7 @@
 /* Global styles */
 
 :root {
-  --color-bg: rgba(228, 238, 135, 0.726);
+  --color-bg: rgba(5, 73, 163, 0.726);
 }
 
 body {
@@ -27,7 +27,7 @@ li {
 }
 
 header {
-  font-size: 80%;
+  font-size: 70%;
   padding: 1em;
 }
 
@@ -87,6 +87,10 @@ footer {
 
 .short-text {
   width: 19ch;
+}
+
+.bigger-text {
+  font-size: 170%;
 }
 
 .grid {
