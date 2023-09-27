@@ -1,12 +1,12 @@
 /* Global styles */
 
 body {
-  background-color: rgb(6, 64, 119);
+  background-color: rgb(6, 64, 119);  
+  text-align: center;
 }
 
 header {
   background-color: antiquewhite;
-  text-align: center;
 }
 
 section {
