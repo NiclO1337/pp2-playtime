@@ -1,11 +1,14 @@
 /* Global styles */
 
 :root {
-  --color-primary: rgb(83, 147, 151);
+  /* --color-primary: rgb(6, 64, 119); */
+  --color-bg: rgb(168, 11, 11);
+  /* --color-custom: brightness(var(--color-bg) 70%); */
+
 }
 
 body {
-  background-color: var(--color-primary);  
+  background-color: var(--color-bg);  
   text-align: center;
 }
 
@@ -17,7 +20,8 @@ ul,
 label {
   padding: 0;
   margin: 0;
-  color: var(--color-primary);
+  color: var(--color-bg);
+  filter: brightness(40%);
 }
 
 li {
@@ -27,7 +31,6 @@ li {
 
 header {
   font-size: 80%;
-  color: var(--color-primary);
   padding: 1em;
 }
 
