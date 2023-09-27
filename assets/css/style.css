@@ -85,8 +85,14 @@ footer {
   width: 5rem;
 }
 
-.short-text {
+#intro-text {
   width: 19ch;
+}
+
+#descrition-text {
+  width: 90%;
+  max-width: 27ch;
+  margin: 0 auto;
 }
 
 .bigger-text {
@@ -130,9 +136,32 @@ footer {
   grid-area: instruction;
 }
 
+/* Media query for 400px */
+
 @media screen and (min-width: 400px) {
-  .short-text {
-    width: 25ch;
   
+  #descrition-text {
+    width: 38ch;
+    max-width: 80%;
+  }  
+}
+
+/* Media query for 768px */
+
+@media screen and (min-width: 768px) {
+
+  #descrition-text {
+    width: 73ch;
+  }
+
+  .grid {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+      ". . arnold hello hello . ."
+      ". text text text text text ."
+      ". . instruction instruction instruction . ."
+      ". . theme theme theme . ."
+      ". . name name name . ."
+      ;
   }
 }
