@@ -1,10 +1,7 @@
 /* Global styles */
 
 :root {
-  /* --color-primary: rgb(6, 64, 119); */
-  --color-bg: rgb(168, 11, 11);
-  /* --color-custom: brightness(var(--color-bg) 70%); */
-
+  --color-bg: rgb(6, 64, 119);
 }
 
 body {
@@ -20,7 +17,7 @@ ul,
 label {
   padding: 0;
   margin: 0;
-  color: var(--color-bg);
+  color: var(-color-bg);
   filter: brightness(40%);
 }
 
@@ -48,8 +45,6 @@ footer {
   width: 100%;
   height: 4rem;
 }
-
-
 
 .game-background {
   background-color: rgba(255, 255, 255, 0.863);
@@ -87,8 +82,13 @@ footer {
 }
 
 #nickname {
-  width: 6rem;
+  width: 5rem;
 }
+
+.short-text {
+  width: 19ch;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
