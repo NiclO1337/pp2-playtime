@@ -30,7 +30,7 @@ footer {
   margin-top: 6vh;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
   position: relative;
 }
 
@@ -65,9 +65,9 @@ footer {
   grid-template-areas: 
   "arnold hello"
   "text text"
+  "instruction instruction"
   "theme theme"
-  "name name"
-  "instruction instruction";
+  "name name"  ;
   text-align: center;
 }
 
