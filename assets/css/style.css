@@ -21,7 +21,8 @@ footer {
 }
 
 .game-background {
-  background-color: rgba(255, 255, 255, 0.863);
+  background-color: rgba(255, 255, 255, 0.863);  
+  border-radius: 111rem;
   width: 80%;
   max-width: 50rem;
   min-height: 70vh;
@@ -37,6 +38,13 @@ background-repeat: no-repeat;
 background-size: contain;
 height: 13rem;
 }
+
+#img-instruction{
+  background-image: url("../images/rock-paper-scissor-instruction3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13rem;
+  }
 
 .hidden-element {
   display: none;
