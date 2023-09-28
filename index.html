@@ -47,16 +47,30 @@
 
           <div class="margin-under">
             <p class="margin-under">Change colour theme if you like:</p>
-            <button class="theme-btn btn-blue"></button>
-            <button class="theme-btn btn-red"></button>
-            <button class="theme-btn btn-green"></button>
-            <button class="theme-btn btn-random"></button>
-            <input type="color" name="color" id="color-input" />
+            <div class="flex-theme-btn">
+              <button class="theme-btn btn-blue"></button>
+              <button class="theme-btn btn-red"></button>
+              <button class="theme-btn btn-green"></button>
+              <button class="theme-btn btn-random"></button>
+              <input
+                class="theme-btn"
+                type="color"
+                name="color"
+                id="color-input"
+                value="#ffa500"
+              />
+            </div>
           </div>
 
           <div>
             <label for="nickname">What should I call you:</label><br />
-            <input type="text" id="nickname" name="nickname" class="margin-under" required /><br>
+            <input
+              type="text"
+              id="nickname"
+              name="nickname"
+              class="margin-under"
+              required
+            /><br />
             <button class="btn">Play game</button>
           </div>
 
