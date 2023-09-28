@@ -111,6 +111,8 @@ footer {
   font-size: 170%;
 }
 
+
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -155,15 +157,6 @@ footer {
   #descrition-text {
     width: 38ch;
     max-width: 80%;
-  }  
-}
-
-/* Media query for 768px */
-
-@media screen and (min-width: 768px) {
-
-  #descrition-text {
-    width: 73ch;
   }
 
   .grid {
@@ -175,5 +168,14 @@ footer {
       ". . theme theme theme . ."
       ". . name name name . ."
       ;
+  }
+}
+
+/* Media query for 768px */
+
+@media screen and (min-width: 768px) {
+
+  #descrition-text {
+    width: 73ch;
   }
 }
