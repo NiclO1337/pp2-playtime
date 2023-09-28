@@ -129,6 +129,24 @@ section > h2 {
 ---------- Buttons ----------
 -------------------------- */
 
+.theme-btn {
+  height: 2rem;  
+  width: 2rem;
+  border-radius: 5px;
+
+}
+
+.btn-blue {
+  background-color: rgb(6, 64, 119);
+}
+
+.btn-red {
+  background-color: rgb(182, 1, 1);
+}
+
+.btn-green {
+  background-color: rgb(26, 121, 18);
+}
 
 
 /* --------------------------
