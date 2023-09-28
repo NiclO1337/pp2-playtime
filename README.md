@@ -132,6 +132,7 @@ TODO: Add text about feature
 - Favicon.io
 - VS Code
 - w3schools
+- Stack Overflow
 
 
 ## Testing
