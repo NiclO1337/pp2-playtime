@@ -15,10 +15,11 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (button.classList.contains('btn-random')) {
         let hexValues = '0123456789ABCDEF';
         let hashtag = '#';
-        for (value of hexValues) {
+        for (let values = 0; values < 6; values++) {
           hashtag += hexValues[Math.floor(Math.random() * 16)];
         }
-        document.documentElement.style.setProperty('--color-primary', 'hashtag');
+        console.log(hashtag);
+        document.documentElement.style.setProperty('--color-primary', hashtag);
         console.log("random");
       } else if (button.classList.contains('color-input')) {
         let input = document.getElementById('color-input');        
@@ -26,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log(input.value);
           let newValue = input.value;
           console.log(newValue);
-          document.documentElement.style.setProperty('--color-primary', 'newValue')
+          document.documentElement.style.setProperty('--color-primary', newValue)
           }) 
       }
     })
