@@ -8,16 +8,16 @@ function changeColorTheme() {
   for (let button of buttons) {
     button.addEventListener('click', function changeColor() {
       if (button.classList.contains('btn-blue')) {
-        console.log("blue");
-        document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)')
+        document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
       } else if (button.classList.contains('btn-red')) {
-        console.log("red");
+        document.documentElement.style.setProperty('--color-primary', 'rgb(180, 2, 2)');
       } else if (button.classList.contains('btn-green')) {
-        console.log("green");
+        document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)')
       } else if (button.classList.contains('btn-random')) {
         console.log("random");
       } else if (button.classList.contains("color-input")) {
-        console.log("input-color");
+        let input = document.getElementById('input-color').value;
+        document.documentElement.style.setProperty('--color-primary', 'input');
       }
     })
   }
