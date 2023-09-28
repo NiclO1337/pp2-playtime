@@ -3,11 +3,11 @@
 -------------------------- */
 
 :root {
-  --color-bg: rgb(6, 64, 119);
+  --color-primary: rgb(116, 152, 185);
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: var(--color-primary);
 }
 
 h1,
@@ -18,7 +18,7 @@ ul,
 label {
   padding: 0;
   margin: 0;
-  color: var(--color-bg);
+  color: var(--color-primary);
   filter: brightness(80%);
 }
 
@@ -103,9 +103,9 @@ section h2 {
 
 #nickname {
   width: 8rem;
-  border: var(--color-bg) 2px solid;
+  border: var(--color-primary) 2px solid;
   border-radius: 5px;
-  color: var(--color-bg);
+  color: var(--color-primary);
   text-align: center;
   padding: 0.3em;
   margin-top: 0.5rem;
@@ -172,7 +172,7 @@ section h2 {
 }
 
 .play-game-btn {
-  background-color: var(--color-bg);  
+  background-color: var(--color-primary);  
   filter: brightness(80%);
   color:rgb(255, 255, 255);
   border-radius: 5px;
