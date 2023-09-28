@@ -135,10 +135,15 @@ section > h2 {
   justify-content: center;
 }
 
+.btn {  
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: outset;
+}
+
 .theme-btn {
   height: 2rem;
   width: 2rem;
-  border-radius: 5px;
 }
 
 .btn-blue {
