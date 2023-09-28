@@ -188,7 +188,7 @@ Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
 
 - Inspiration from my own previous portfolio project: Strawberry lowers.
 
-- 
+- Some of the code from the Love Maths walkthrough project was used and adapted.
 
 - 
 
