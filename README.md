@@ -190,9 +190,11 @@ Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
 
 - Some of the code from the Love Maths walkthrough project was used and adapted.
 
-- 
+- Re-watched these videos to make grid positioning work:
+[Learn CSS Grid the easy way](https://www.youtube.com/watch?v=rg7Fvvl3taU&t=3s) and
+[Why CSS grid-area is the best property for laying out content](https://www.youtube.com/watch?v=duH4DLq5yoo)
 
-- 
+- After much research, this seemed to be the easiest [random number generator.](https://stackoverflow.com/questions/1484506/random-color-generator)
 
 - 
 
