@@ -15,13 +15,19 @@ function changeColorTheme() {
         document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)')
       } else if (button.classList.contains('btn-random')) {
         console.log("random");
-      } 
+      } else if (button.classList.contains('color-input')) {
+        let input = document.getElementById('color-input');        
+        input.addEventListener('input', function inputColor() {
+          console.log(input.value);
+          document.documentElement.style.setProperty('--color-primary', 'input.value')
+          }) 
+      }
     })
-    let input = document.getElementById('color-input');
-    input.addEventListener('input', function changeColor() {
-      document.documentElement.style.setProperty('--color-primary', 'input.value')
-    })
-    console.log(input.value);
+    // let input = document.getElementById('color-input');
+    // input.addEventListener('click', function changeColor() {
+    //   console.log(input.value);
+    //   document.documentElement.style.setProperty('--color-primary', 'input')
+    // })    
   }
 }
 
