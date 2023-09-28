@@ -141,11 +141,15 @@ section > h2 {
 }
 
 .btn-red {
-  background-color: rgb(182, 1, 1);
+  background-color: rgb(180, 2, 2);
 }
 
 .btn-green {
-  background-color: rgb(26, 121, 18);
+  background-color: rgb(64, 141, 29);
+}
+
+.btn-random {
+  background-color: rgb();
 }
 
 
