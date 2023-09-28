@@ -1,4 +1,6 @@
-/* Global styles */
+/* --------------------------
+------- Global styles -------
+-------------------------- */
 
 :root {
   --color-bg: rgb(6, 64, 119);
@@ -6,7 +8,6 @@
 
 body {
   background-color: var(--color-bg);
-  text-align: center;
 }
 
 h1,
@@ -27,16 +28,11 @@ li {
 }
 
 header {
-  font-size: 70%;
   padding: 1em;
 }
 
 section {
   text-align: left;
-}
-
-section h2 {
-  font-size: 1rem;
 }
 
 footer {
@@ -46,7 +42,25 @@ footer {
   height: 4rem;  
 }
 
+/* --------------------------
+--------- Typografy ---------
+-------------------------- */
 
+body {
+  text-align: center;
+}
+
+header {
+  font-size: 70%;
+}
+
+section > h2 {
+  font-size: 1rem;
+}
+
+/* --------------------------
+------ Specific styles ------
+-------------------------- */
 
 .game-background {
   background-color: rgba(255, 255, 255, 0.863);
@@ -111,7 +125,15 @@ footer {
   font-size: 170%;
 }
 
+/* --------------------------
+---------- Buttons ----------
+-------------------------- */
 
+
+
+/* --------------------------
+-------- Grid layout --------
+-------------------------- */
 
 .grid {
   display: grid;
