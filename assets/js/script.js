@@ -15,11 +15,13 @@ function changeColorTheme() {
         document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)')
       } else if (button.classList.contains('btn-random')) {
         console.log("random");
-      } else if (button.classList.contains("color-input")) {
-        let input = document.getElementById('input-color').value;
-        document.documentElement.style.setProperty('--color-primary', 'input');
-      }
+      } 
     })
+    let input = document.getElementById('color-input');
+    input.addEventListener('input', function changeColor() {
+      document.documentElement.style.setProperty('--color-primary', 'input.value')
+    })
+    console.log(input.value);
   }
 }
 
@@ -29,6 +31,10 @@ function changeColorTheme() {
 // })
 
 
+// else if (button.classList.contains("color-input")) {
+//   let input = document.getElementById('input-color').value;
+//   console.log(input);
+  // document.documentElement.style.setProperty('--color-primary', 'input');
 
 
 
