@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       if (button.classList.contains('play-game-btn')) {
         console.log('click');
+        let introScreen = document.getElementById('intro-screen');
+        console.log(introScreen);
+        introScreen.classList.add('hidden-element');
 
       }
     })
