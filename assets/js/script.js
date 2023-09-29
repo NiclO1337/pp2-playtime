@@ -1,7 +1,7 @@
 /**
  * Function to change color theme based on which button is pressed
  */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   let buttons = document.getElementsByClassName("btn");
 
   for (let button of buttons) {
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
       } else if (button.classList.contains('btn-red')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(180, 2, 2)');
-      }  else if (button.classList.contains('btn-green')) {
+      } else if (button.classList.contains('btn-green')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)');
       } else if (button.classList.contains('btn-random')) {
         let hexValues = '0123456789ABCDEF';
@@ -20,10 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         document.documentElement.style.setProperty('--color-primary', hashtag);
       } else if (button.classList.contains('color-input')) {
-        let input = document.getElementById('color-input');        
+        let input = document.getElementById('color-input');
         input.addEventListener('input', function inputColor() {
           document.documentElement.style.setProperty('--color-primary', input.value)
-          }) 
+        })
+      }
+      if (button.classList.contains('play-game-btn')) {
+        console.log('click');
       }
     })
   }
