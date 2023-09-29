@@ -22,11 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
       } else if (button.classList.contains('color-input')) {
         let input = document.getElementById('color-input');
         input.addEventListener('input', function inputColor() {
-          document.documentElement.style.setProperty('--color-primary', input.value)
+          document.documentElement.style.setProperty('--color-primary', input.value);
         })
       }
       if (button.classList.contains('play-game-btn')) {
         console.log('click');
+
       }
     })
   }
