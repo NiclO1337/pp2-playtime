@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
-        introScreen.style.opacity = '1';
         introScreen.style.transition = 'opacity 0.8s';
         introScreen.style.opacity = '0';
         window.setTimeout(hideContent, 900)        
