@@ -51,8 +51,8 @@ function showText() {
   console.log(gameBackground);
   let player = document.getElementById('nickname').value;
   let welcomeText = document.createElement('h1');
-  welcomeText.innerHTML = 'Hello';
-  // `Welcome ${player}!
-  // Let's play`;
+  welcomeText.innerHTML = 
+  `Welcome ${player}!
+  Let's play`;
   gameBackground.appendChild(welcomeText);
 }
