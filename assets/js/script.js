@@ -33,11 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(hideContent() , 1000);
         function hideContent() {
           introScreen.style.setProperty('display', 'none');
-        }
-        
-        // introScreen.style.setProperty('display', 'none');
-        // introScreen.classList.remove('grid');
-        // introScreen.classList.add('hidden-element');
+        }        
       }
     })
   }

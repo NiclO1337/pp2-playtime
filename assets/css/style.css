@@ -59,6 +59,10 @@ section h2 {
   font-size: 1rem;
 }
 
+.bigger-text {
+  font-size: 170%;
+}
+
 /* --------------------------
 ------ Specific styles ------
 -------------------------- */
@@ -122,15 +126,11 @@ section h2 {
   margin: 0 auto;
 }
 
-.bigger-text {
-  font-size: 170%;
-}
-
 /* --------------------------
 ---------- Buttons ----------
 -------------------------- */
 
-.flex-theme-btn {
+.flex-theme-btns {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
@@ -222,6 +222,11 @@ section h2 {
 .intro-screen-grid :nth-child(6) {
   grid-area: instruction;
 }
+
+
+/* --------------------------
+------ Media quesries -------
+-------------------------- */
 
 /* Media query for 400px */
 
