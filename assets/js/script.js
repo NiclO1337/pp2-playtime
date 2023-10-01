@@ -32,7 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
         window.setTimeout(hideContent, 900)        
         function hideContent() {
           introScreen.style.setProperty('display', 'none');
+          console.log("testing timer1");          
         }
+        window.setTimeout(showText, 1100)
+          function showText() {
+            console.log("testing timer2");
+          }        
       }
     })
   }
