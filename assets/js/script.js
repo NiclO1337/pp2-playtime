@@ -31,23 +31,28 @@ document.addEventListener('DOMContentLoaded', function () {
         introScreen.style.opacity = '0';
 
         window.setTimeout(hideContent, 900)        
-        function hideContent() {
-          introScreen.style.setProperty('display', 'none');
-          console.log("testing timer1");          
-        }
+        
         window.setTimeout(showText, 1100)
-        function showText() {
-          console.log("testing timer2");
-          let gameBackground = document.getElementsByClassName('game-background')[0];
-          console.log(gameBackground);
-          let player = document.getElementById('nickname').value;
-          let welcomeText = document.createElement('h1');
-          welcomeText.innerHTML = 'Hello';
-          // `Welcome ${player}!
-          // Let's play`;
-          gameBackground.appendChild(welcomeText);
-        }
+        
       }
     })
   }
 })
+
+function hideContent() {
+  let introScreen = document.getElementById('intro-screen');
+  introScreen.style.setProperty('display', 'none');
+  console.log("testing timer1");          
+}
+
+function showText() {
+  console.log("testing timer2");
+  let gameBackground = document.getElementsByClassName('game-background')[0];
+  console.log(gameBackground);
+  let player = document.getElementById('nickname').value;
+  let welcomeText = document.createElement('h1');
+  welcomeText.innerHTML = 'Hello';
+  // `Welcome ${player}!
+  // Let's play`;
+  gameBackground.appendChild(welcomeText);
+}
