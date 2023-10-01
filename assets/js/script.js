@@ -38,13 +38,13 @@ document.addEventListener('DOMContentLoaded', function () {
         window.setTimeout(showText, 1100)
         function showText() {
           console.log("testing timer2");
-          let gameBackground = document.getElementsByClassName('game-background');
+          let gameBackground = document.getElementsByClassName('game-background')[0];
           console.log(gameBackground);
           let player = document.getElementById('nickname').value;
           let welcomeText = document.createElement('h1');
-          welcomeText.innerHTML = 
-          `Welcome ${player}!
-          Let's play`;
+          welcomeText.innerHTML = 'Hello';
+          // `Welcome ${player}!
+          // Let's play`;
           gameBackground.appendChild(welcomeText);
         }
       }
