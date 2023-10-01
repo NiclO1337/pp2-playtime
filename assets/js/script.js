@@ -29,15 +29,24 @@ document.addEventListener('DOMContentLoaded', function () {
         let introScreen = document.getElementById('intro-screen');
         introScreen.style.transition = 'opacity 0.8s';
         introScreen.style.opacity = '0';
+
         window.setTimeout(hideContent, 900)        
         function hideContent() {
           introScreen.style.setProperty('display', 'none');
           console.log("testing timer1");          
         }
         window.setTimeout(showText, 1100)
-          function showText() {
-            console.log("testing timer2");
-          }        
+        function showText() {
+          console.log("testing timer2");
+          let gameBackground = document.getElementsByClassName('game-background');
+          console.log(gameBackground);
+          let player = document.getElementById('nickname').value;
+          let welcomeText = document.createElement('h1');
+          welcomeText.innerHTML = 
+          `Welcome ${player}!
+          Let's play`;
+          gameBackground.appendChild(welcomeText);
+        }
       }
     })
   }
