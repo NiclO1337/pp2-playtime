@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
         introScreen.style.opacity = '1';
-        introScreen.style.transition = 'opacity 0.6s';
-        introScreen.style.opacity = '0.3';
-        setTimeout(hideContent() , 1000);
+        introScreen.style.transition = 'opacity 0.8s';
+        introScreen.style.opacity = '0';
+        window.setTimeout(hideContent, 900)        
         function hideContent() {
           introScreen.style.setProperty('display', 'none');
-        }        
+        }
       }
     })
   }
