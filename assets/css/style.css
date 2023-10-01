@@ -196,6 +196,7 @@ section h2 {
     "theme theme"
     "name name";
   text-align: center;
+  transition: display 1s;
 }
 
 .intro-screen-grid :nth-child(1) {

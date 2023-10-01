@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
-        introScreen.classList.remove('grid');
-        introScreen.classList.add('hidden-element');        
+        introScreen.style.display = "none";
+        // introScreen.classList.remove('grid');
+        // introScreen.classList.add('hidden-element');
       }
     })
   }
