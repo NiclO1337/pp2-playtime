@@ -28,8 +28,13 @@ document.addEventListener('DOMContentLoaded', function () {
       if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
         introScreen.style.opacity = '1';
-        introScreen.style.transition = 'opacity 1s';
-        introScreen.style.opacity = '0';
+        introScreen.style.transition = 'opacity 0.6s';
+        introScreen.style.opacity = '0.3';
+        setTimeout(hideContent() , 1000);
+        function hideContent() {
+          introScreen.style.setProperty('display', 'none');
+        }
+        
         // introScreen.style.setProperty('display', 'none');
         // introScreen.classList.remove('grid');
         // introScreen.classList.add('hidden-element');
