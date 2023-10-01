@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
-        introScreen.style.display = "none";
+        introScreen.style.opacity = '1';
+        introScreen.style.transition = 'opacity 1s';
+        introScreen.style.opacity = '0';
+        // introScreen.style.setProperty('display', 'none');
         // introScreen.classList.remove('grid');
         // introScreen.classList.add('hidden-element');
       }
