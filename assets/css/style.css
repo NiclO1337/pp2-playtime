@@ -185,7 +185,7 @@ section h2 {
 -------- Grid layout --------
 -------------------------- */
 
-.grid {
+.intro-screen-grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
@@ -198,27 +198,27 @@ section h2 {
   text-align: center;
 }
 
-.grid :nth-child(1) {
+.intro-screen-grid :nth-child(1) {
   grid-area: arnold;
 }
 
-.grid :nth-child(2) {
+.intro-screen-grid :nth-child(2) {
   grid-area: hello;
 }
 
-.grid :nth-child(3) {
+.intro-screen-grid :nth-child(3) {
   grid-area: text;
 }
 
-.grid :nth-child(4) {
+.intro-screen-grid :nth-child(4) {
   grid-area: theme;
 }
 
-.grid :nth-child(5) {
+.intro-screen-grid :nth-child(5) {
   grid-area: name;
 }
 
-.grid :nth-child(6) {
+.intro-screen-grid :nth-child(6) {
   grid-area: instruction;
 }
 
@@ -230,7 +230,7 @@ section h2 {
     max-width: 80%;
   }
 
-  .grid {
+  .intro-screen-grid {
     grid-template-columns: repeat(7, 1fr);
     grid-template-areas:
       ". . arnold hello hello . ."
@@ -245,6 +245,6 @@ section h2 {
 
 @media screen and (min-width: 768px) {
   #descrition-text {
-    width: 73ch;
+    width: 73ch;    
   }
 }
