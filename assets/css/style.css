@@ -189,7 +189,7 @@ section h2 {
 .play-game-btn {
   background-color: var(--color-primary);  
   color:aliceblue;
-  text-shadow: 1px 1px rgb(5, 38, 68);
+  text-shadow: 1px 1px 2px rgb(5, 38, 68);
   border-radius: 5px;
   padding: 0.7em 1em;
 }
