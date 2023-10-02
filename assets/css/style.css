@@ -86,10 +86,8 @@ section h2 {
 #welcome-text {
   opacity: 0;
   transition: opacity 0.8s;
-  /* margin: 20% auto; */
   max-width: 15ch;
 }
-
 
 #img-arnold {
   background-image: url("../images/arnold.png");

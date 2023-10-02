@@ -43,24 +43,17 @@ document.addEventListener('DOMContentLoaded', function () {
 function hideContent() {
   let introScreen = document.getElementById('intro-screen');
   introScreen.style.setProperty('display', 'none');
-  console.log("testing timer1");          
 }
 
 function showText() {
-  console.log("testing timer2");
-  // let gameBackground = document.getElementsByClassName('game-background')[0];
   let player = document.getElementById('nickname').value;
-  // let welcomeText = document.createElement('h1');
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.margin = '20% auto';
-  // welcomeText.style.maxWidth = '15ch';
   welcomeText.style.opacity = '1';
-  
   welcomeText.innerText += 
   `Welcome
   ${player}
   Let's play!`;
-  // gameBackground.appendChild(welcomeText);
 }
 
 function hideText() {
