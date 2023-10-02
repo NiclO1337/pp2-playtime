@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
         introScreen.style.opacity = '0';        
 
         window.setTimeout(hideIntroScreen, 900)
-        window.setTimeout(showText, 1100)
-        window.setTimeout(hideText, 2700)
+        window.setTimeout(showWelcomeText, 1100)
+        window.setTimeout(hideWelcomeText, 2700)
         window.setTimeout(removeText, 3600)
         
         window.setTimeout(showGameScreen, 3700)
@@ -46,7 +46,7 @@ function hideIntroScreen() {
   introScreen.style.setProperty('display', 'none');
 }
 
-function showText() {
+function showWelcomeText() {
   let player = document.getElementById('nickname').value;
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.margin = '7rem auto';
@@ -57,7 +57,7 @@ function showText() {
   Let's play!`;
 }
 
-function hideText() {
+function hideWelcomeText() {
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.opacity = '0';
 }
