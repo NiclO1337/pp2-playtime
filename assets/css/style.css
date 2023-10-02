@@ -79,7 +79,7 @@ section h2 {
   width: 90%;
   max-width: 50rem;
   min-height: 70vh;
-  margin: 5% auto;
+  margin: 5% auto 1rem;
   padding: 0 0.5em 2rem;
   position: relative;
   transition: 0.8s;
