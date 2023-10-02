@@ -29,13 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
         let introScreen = document.getElementById('intro-screen');
         introScreen.style.transition = 'opacity 0.8s';
         introScreen.style.opacity = '0';
+        
 
         window.setTimeout(hideIntroScreen, 900)
         window.setTimeout(showText, 1100)
         window.setTimeout(hideText, 2700)
         window.setTimeout(removeText, 3600)
-        window.setTimeout(showGameScreen, 3800)
         
+        window.setTimeout(showGameScreen, 3700)
+        window.setTimeout(visibleGameScreen, 3800)
+
+
       }
     })
   }
@@ -51,8 +55,8 @@ function showText() {
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.margin = '20% auto';
   welcomeText.style.opacity = '1';
-  welcomeText.innerText += 
-  `Welcome
+  welcomeText.innerText +=
+    `Welcome
   ${player}
   Let's play!`;
 }
@@ -69,6 +73,10 @@ function removeText() {
 
 function showGameScreen() {
   let gameScreen = document.getElementById('game-screen');
-  gameScreen.style.display = 'block';
-  gameScreen.style.opacity = '1';  
+  gameScreen.style.setProperty('display', 'block');
+}
+
+function visibleGameScreen() {
+  let gameScreen = document.getElementById('game-screen');
+  gameScreen.style.setProperty('opacity', '1');
 }
