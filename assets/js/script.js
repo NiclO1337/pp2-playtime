@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.setTimeout(showText, 1100)
         window.setTimeout(hideText, 2700)
         window.setTimeout(removeText, 3600)
+        window.setTimeout(showGameScreen, 3800)
         
       }
     })
@@ -66,3 +67,8 @@ function removeText() {
   welcomeText.innerText = '';
 }
 
+function showGameScreen() {
+  let gameScreen = document.getElementById('game-screen');
+  gameScreen.style.display = 'block';
+  gameScreen.style.opacity = '1';  
+}
