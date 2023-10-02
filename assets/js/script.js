@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.setTimeout(hideIntroScreen, 900)
         window.setTimeout(showWelcomeText, 1100)
         window.setTimeout(hideWelcomeText, 2700)
-        window.setTimeout(removeText, 3600)
+        window.setTimeout(removeWelcomeText, 3600)
         
         window.setTimeout(showGameScreen, 3700)
         window.setTimeout(visibleGameScreen, 3800)
@@ -53,8 +53,8 @@ function showWelcomeText() {
   welcomeText.style.opacity = '1';
   welcomeText.innerText +=
     `Welcome
-  ${player}
-  Let's play!`;
+  ${player}!
+  Let's play`;
 }
 
 function hideWelcomeText() {
@@ -62,7 +62,7 @@ function hideWelcomeText() {
   welcomeText.style.opacity = '0';
 }
 
-function removeText() {
+function removeWelcomeText() {
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.margin = '0';
   welcomeText.innerText = '';
