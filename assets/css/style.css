@@ -13,6 +13,8 @@ body {
 
 h1,
 h2,
+h3,
+h4,
 p,
 li,
 ul,
@@ -254,6 +256,23 @@ section h2 {
   text-align: center;
 }
 
+.rps-icon {
+  width: 6rem;
+  padding: 0;  
+  padding-top: 6rem;
+  background-color: aqua;
+  /* display: inline-block; */
+  /* position: relative; */
+  margin: 1rem auto;
+  color: var(--color-primary);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
 
 /* --------------------------
 ------ Media quesries -------
