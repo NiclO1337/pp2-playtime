@@ -32,6 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         window.setTimeout(hideContent, 900)
         window.setTimeout(showText, 1100)
+        window.setTimeout(hideText, 2700)
+        window.setTimeout(removeText, 3600)
         
       }
     })
@@ -59,5 +61,14 @@ function showText() {
   ${player}
   Let's play!`;
   // gameBackground.appendChild(welcomeText);
+}
 
+function hideText() {
+  let welcomeText = document.getElementById('welcome-text');
+  welcomeText.style.opacity = '0';
+}
+
+function removeText() {
+  let welcomeText = document.getElementById('welcome-text');
+  welcomeText.innerText = '';
 }
