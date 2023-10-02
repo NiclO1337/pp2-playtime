@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         introScreen.style.transition = 'opacity 0.8s';
         introScreen.style.opacity = '0';
 
-        window.setTimeout(hideContent, 900)
+        window.setTimeout(hideIntroScreen, 900)
         window.setTimeout(showText, 1100)
         window.setTimeout(hideText, 2700)
         window.setTimeout(removeText, 3600)
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
-function hideContent() {
+function hideIntroScreen() {
   let introScreen = document.getElementById('intro-screen');
   introScreen.style.setProperty('display', 'none');
 }
@@ -65,3 +65,4 @@ function removeText() {
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.innerText = '';
 }
+
