@@ -199,6 +199,10 @@ section h2 {
 ---- Intro screen layout ----
 -------------------------- */
 
+#intro-screen {
+  transition: opacity 0.8s;
+}
+
 .intro-screen-grid {
   display: grid;
   gap: 1rem;

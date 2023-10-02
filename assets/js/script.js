@@ -27,9 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
-        introScreen.style.transition = 'opacity 0.8s';
-        introScreen.style.opacity = '0';
-        
+        introScreen.style.opacity = '0';        
 
         window.setTimeout(hideIntroScreen, 900)
         window.setTimeout(showText, 1100)
@@ -38,8 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         
         window.setTimeout(showGameScreen, 3700)
         window.setTimeout(visibleGameScreen, 3800)
-
-
       }
     })
   }
