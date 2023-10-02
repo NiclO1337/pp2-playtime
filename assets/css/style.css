@@ -85,6 +85,7 @@ section h2 {
   padding: 0 0.5em 2rem;
   position: relative;
   transition: 0.8s;
+  box-shadow: 0 0 0.8rem #00000079;
 }
 
 #welcome-text {
@@ -303,4 +304,8 @@ section h2 {
   #descrition-text {
     width: 73ch;    
   }
+  #game-background {
+    box-shadow: 0 0 2rem #00000079;
+  }
+  
 }
