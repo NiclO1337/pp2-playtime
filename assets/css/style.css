@@ -79,8 +79,17 @@ section h2 {
   min-height: 70vh;
   margin: 5% auto;
   padding: 0 0.5em 2rem;
-  position: relative;  
+  position: relative;
+  transition: 0.8s;
 }
+
+#welcome-text {
+  opacity: 0;
+  transition: opacity 0.8s;
+  /* margin: 20% auto; */
+  max-width: 15ch;
+}
+
 
 #img-arnold {
   background-image: url("../images/arnold.png");

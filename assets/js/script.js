@@ -46,17 +46,18 @@ function hideContent() {
 
 function showText() {
   console.log("testing timer2");
-  let gameBackground = document.getElementsByClassName('game-background')[0];
+  // let gameBackground = document.getElementsByClassName('game-background')[0];
   let player = document.getElementById('nickname').value;
-  let welcomeText = document.createElement('h1');
-  welcomeText.style.opacity = '0';
-  welcomeText.style.transition = 'opacity 0.8s';
-  welcomeText.style.opacity = '1';
+  // let welcomeText = document.createElement('h1');
+  let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.margin = '20% auto';
-  welcomeText.style.maxWidth = '15ch';
-  welcomeText.innerHTML = 
+  // welcomeText.style.maxWidth = '15ch';
+  welcomeText.style.opacity = '1';
+  
+  welcomeText.innerText += 
   `Welcome
   ${player}
-  <br>Let's play!`;
-  gameBackground.appendChild(welcomeText);
+  Let's play!`;
+  // gameBackground.appendChild(welcomeText);
+
 }
