@@ -80,7 +80,7 @@ section h2 {
   border-radius: 2rem;
   width: 90%;
   max-width: 50rem;
-  min-height: 70vh;
+  min-height: 50vh;
   margin: 5% auto 1rem;
   padding: 0 0.5em 2rem;
   position: relative;
@@ -206,8 +206,8 @@ section h2 {
 }
 
 .intro-screen-grid {
-  /* display: grid; */
-  display: none;
+  display: grid;
+  /* display: none; */
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
@@ -249,10 +249,10 @@ section h2 {
 -------------------------- */
 
 #game-screen {
-  /* display: none; */
-  /* opacity: 0;  */
+  display: none;
+  opacity: 0; 
   transition: opacity 0.8s;
-  display: block;
+  /* display: block; */
   text-align: center;
 }
 

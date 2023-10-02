@@ -49,7 +49,7 @@ function hideIntroScreen() {
 function showText() {
   let player = document.getElementById('nickname').value;
   let welcomeText = document.getElementById('welcome-text');
-  welcomeText.style.margin = '20% auto';
+  welcomeText.style.margin = '7rem auto';
   welcomeText.style.opacity = '1';
   welcomeText.innerText +=
     `Welcome
@@ -64,6 +64,7 @@ function hideText() {
 
 function removeText() {
   let welcomeText = document.getElementById('welcome-text');
+  welcomeText.style.margin = '0';
   welcomeText.innerText = '';
 }
 
