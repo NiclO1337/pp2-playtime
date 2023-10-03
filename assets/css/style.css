@@ -184,10 +184,19 @@ header {
 
 .play-game-btn {
   background-color: var(--color-primary);
-  color: aliceblue;
+  color: white;
   text-shadow: 1px 1px 2px rgb(5, 38, 68);
-  border-radius: 5px;
   padding: 0.7em 1em;
+}
+
+.game-btn {  
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--color-primary);
+  color: white;
+  text-shadow: 1px 1px 2px rgb(5, 38, 68);
+  font-size: 2rem;
+  margin: 0 0.3rem;
 }
 
 /* --------------------------
