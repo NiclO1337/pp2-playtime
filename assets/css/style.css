@@ -190,13 +190,13 @@ header {
 }
 
 .game-btn {  
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   background-color: var(--color-primary);
   color: white;
   text-shadow: 1px 1px 2px rgb(5, 38, 68);
-  font-size: 2rem;
-  margin: 0 0.3rem;
+  font-size: 1.6rem;
+  margin: 0 0.4rem;
 }
 
 /* --------------------------
@@ -307,6 +307,12 @@ header {
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .game-btn {  
+    height: 4rem;
+    width: 4rem;  
+    font-size: 2rem;
   }
 }
 
