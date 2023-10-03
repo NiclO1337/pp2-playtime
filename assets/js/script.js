@@ -17,13 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
       } else if (button.classList.contains('color-input')) {
         chosenColor();
       } else if (button.classList.contains('play-game-btn')) {
-        window.setTimeout(fadeIntroScreen, 0)
-        window.setTimeout(hideIntroScreen, 900)
-        window.setTimeout(showWelcomeText, 1100)
-        window.setTimeout(hideWelcomeText, 2700)
-        window.setTimeout(removeWelcomeText, 3600)
-        window.setTimeout(showGameScreen, 3700)
-        window.setTimeout(fadeGameScreen, 3800)
+        playGame();
       }
     })
   }
@@ -43,6 +37,16 @@ function chosenColor() {
   input.addEventListener('input', function inputColor() {
     document.documentElement.style.setProperty('--color-primary', input.value);
   })
+}
+
+function playGame() {
+  window.setTimeout(fadeIntroScreen, 0)
+  window.setTimeout(hideIntroScreen, 900)
+  window.setTimeout(showWelcomeText, 1100)
+  window.setTimeout(hideWelcomeText, 2700)
+  window.setTimeout(removeWelcomeText, 3600)
+  window.setTimeout(showGameScreen, 3700)
+  window.setTimeout(fadeGameScreen, 3800)
 }
 
 function fadeIntroScreen() {
