@@ -13,17 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
       } else if (button.classList.contains('btn-green')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)');
       } else if (button.classList.contains('btn-random')) {
-        let hexValues = '0123456789ABCDEF';
-        let hashtag = '#';
-        for (let values = 0; values < 6; values++) {
-          hashtag += hexValues[Math.floor(Math.random() * 16)];
-          document.documentElement.style.setProperty('--color-primary', hashtag);
-        }
+        randomColor();
+        // let hexValues = '0123456789ABCDEF';
+        // let hashtag = '#';
+        // for (let values = 0; values < 6; values++) {
+        //   hashtag += hexValues[Math.floor(Math.random() * 16)];
+        //   document.documentElement.style.setProperty('--color-primary', hashtag);
+        // }
       } else if (button.classList.contains('color-input')) {
-        let input = document.getElementById('color-input');
-        input.addEventListener('input', function inputColor() {
-          document.documentElement.style.setProperty('--color-primary', input.value);
-        })
+        chosenColor();
+        // let input = document.getElementById('color-input');
+        // input.addEventListener('input', function inputColor() {
+        //   document.documentElement.style.setProperty('--color-primary', input.value);
+        // })
       } else if (button.classList.contains('play-game-btn')) {
         let introScreen = document.getElementById('intro-screen');
         introScreen.style.opacity = '0';
@@ -39,6 +41,22 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 })
+
+function randomColor() {
+  let hexValues = '0123456789ABCDEF';
+  let hashtag = '#';
+  for (let values = 0; values < 6; values++) {
+    hashtag += hexValues[Math.floor(Math.random() * 16)];
+    document.documentElement.style.setProperty('--color-primary', hashtag);
+  }
+}
+
+function chosenColor() {
+  let input = document.getElementById('color-input');
+  input.addEventListener('input', function inputColor() {
+    document.documentElement.style.setProperty('--color-primary', input.value);
+  })
+}
 
 function hideIntroScreen() {
   let introScreen = document.getElementById('intro-screen');
