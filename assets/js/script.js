@@ -40,6 +40,10 @@ function chosenColor() {
 }
 
 function playGame() {
+  let nickname = document.getElementById('nickname').value;
+  if (nickname === '') {
+    let errorEmpty = ''
+  }
   window.setTimeout(fadeIntroScreen, 0)
   window.setTimeout(hideIntroScreen, 900)
   window.setTimeout(showWelcomeText, 1100)
