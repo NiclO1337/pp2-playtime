@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         window.setTimeout(hideWelcomeText, 2700)
         window.setTimeout(removeWelcomeText, 3600)
         window.setTimeout(showGameScreen, 3700)
-        window.setTimeout(visibleGameScreen, 3800)
+        window.setTimeout(fadeGameScreen, 3800)
       }
     })
   }
@@ -82,7 +82,7 @@ function showGameScreen() {
   gameScreen.style.setProperty('display', 'block');
 }
 
-function visibleGameScreen() {
+function fadeGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.setProperty('opacity', '1');
 }
