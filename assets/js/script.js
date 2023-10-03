@@ -41,16 +41,19 @@ function chosenColor() {
 
 function playGame() {
   let nickname = document.getElementById('nickname').value;
+  let errorDiv = document.getElementById('error-div');
+  console.log(errorDiv)
   if (nickname === '') {
-    let errorEmpty = ''
+    
+  } else {
+    window.setTimeout(fadeIntroScreen, 0)
+    window.setTimeout(hideIntroScreen, 900)
+    window.setTimeout(showWelcomeText, 1100)
+    window.setTimeout(hideWelcomeText, 2700)
+    window.setTimeout(removeWelcomeText, 3600)
+    window.setTimeout(showGameScreen, 3700)
+    window.setTimeout(fadeGameScreen, 3800)
   }
-  window.setTimeout(fadeIntroScreen, 0)
-  window.setTimeout(hideIntroScreen, 900)
-  window.setTimeout(showWelcomeText, 1100)
-  window.setTimeout(hideWelcomeText, 2700)
-  window.setTimeout(removeWelcomeText, 3600)
-  window.setTimeout(showGameScreen, 3700)
-  window.setTimeout(fadeGameScreen, 3800)
 }
 
 function fadeIntroScreen() {
