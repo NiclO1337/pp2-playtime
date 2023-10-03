@@ -45,7 +45,6 @@ footer {
   height: 4rem;
 }
 
-
 /* --------------------------
 --------- Typografy ---------
 -------------------------- */
@@ -58,10 +57,6 @@ header {
   font-size: 70%;
 }
 
-section h2 {
-  font-size: 1rem;
-}
-
 .bigger-text {
   font-size: 170%;
 }
@@ -69,7 +64,6 @@ section h2 {
 .smaller-text {
   font-size: 80%;
 }
-
 
 /* --------------------------
 ------ Specific styles ------
@@ -142,7 +136,6 @@ section h2 {
   margin: 0 auto;
 }
 
-
 /* --------------------------
 ---------- Buttons ----------
 -------------------------- */
@@ -153,7 +146,7 @@ section h2 {
   justify-content: center;
 }
 
-.btn {  
+.btn {
   border-radius: 5px;
   border-width: 1px;
   border-style: outset;
@@ -190,13 +183,12 @@ section h2 {
 }
 
 .play-game-btn {
-  background-color: var(--color-primary);  
-  color:aliceblue;
+  background-color: var(--color-primary);
+  color: aliceblue;
   text-shadow: 1px 1px 2px rgb(5, 38, 68);
   border-radius: 5px;
   padding: 0.7em 1em;
 }
-
 
 /* --------------------------
 ---- Intro screen layout ----
@@ -244,7 +236,6 @@ section h2 {
   grid-area: instruction;
 }
 
-
 /* --------------------------
 ---- Game screen layout -----
 -------------------------- */
@@ -255,16 +246,16 @@ section h2 {
   transition: opacity 0.8s;
   display: block;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .rps-icon {
   width: 6rem;
-  padding: 0;  
   padding-top: 6rem;
   background-color: white;
   box-shadow: 0 0 0.3rem var(--color-primary);
   border-radius: 1rem;
-  margin: 1rem auto;
+  margin: 1rem auto 0.5rem;
 }
 
 .flex-container {
@@ -295,16 +286,34 @@ section h2 {
       ". . theme theme theme . ."
       ". . name name name . .";
   }
+
+  .rps-icon {
+    width: 8rem;
+    padding-top: 8rem;
+    margin: 2rem auto 0.5rem;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Media query for 768px */
 
 @media screen and (min-width: 768px) {
   #descrition-text {
-    width: 73ch;    
+    width: 73ch;
   }
+
   #game-background {
     box-shadow: 0 0 2rem #00000079;
   }
-  
+
+  .rps-icon {
+    width: 12rem;
+    padding-top: 12rem;
+  }
 }
