@@ -42,9 +42,10 @@ function chosenColor() {
 function playGame() {
   let nickname = document.getElementById('nickname').value;
   let errorDiv = document.getElementById('error-div');
-  console.log(errorDiv)
   if (nickname === '') {
-    
+    errorDiv.innerText = `Please enter a nickname, 
+    I would like to know who I am
+    about to demolish.`;
   } else {
     window.setTimeout(fadeIntroScreen, 0)
     window.setTimeout(hideIntroScreen, 900)

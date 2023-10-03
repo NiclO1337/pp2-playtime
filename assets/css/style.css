@@ -136,6 +136,13 @@ header {
   margin: 0 auto;
 }
 
+#error-div {
+  color: rgb(158, 14, 14);
+  max-width: 35ch;
+  margin: 0 auto 1rem;
+  font-size: 85%;
+}
+
 /* --------------------------
 ---------- Buttons ----------
 -------------------------- */
