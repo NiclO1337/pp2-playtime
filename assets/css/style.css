@@ -268,11 +268,17 @@ header {
 }
 
 .rps-player {
-  
+  background-image: url(../images/question-mark.png);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rps-arnold {
-
+  background-image: url(../images/arnold-thinking.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 60% bottom;
 }
 
 .flex-container {
