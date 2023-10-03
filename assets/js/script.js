@@ -1,9 +1,9 @@
 /**
- * Function to change color theme based on which button is pressed
+ * Function to add event listener to all buttons on the page
+ * and execute functions based on which button is clicked.
  */
 document.addEventListener('DOMContentLoaded', function () {
   let buttons = document.getElementsByClassName("btn");
-
   for (let button of buttons) {
     button.addEventListener('click', function () {
       if (button.classList.contains('btn-blue')) {
