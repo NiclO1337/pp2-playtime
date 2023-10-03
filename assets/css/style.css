@@ -131,8 +131,7 @@ header {
 }
 
 #descrition-text {
-  width: 90%;
-  max-width: 27ch;
+  width: 26ch;
   margin: 0 auto;
 }
 
@@ -303,8 +302,7 @@ header {
 
 @media screen and (min-width: 400px) {
   #descrition-text {
-    width: 38ch;
-    max-width: 80%;
+    width: 35ch;
   }
 
   .intro-screen-grid {
@@ -341,7 +339,7 @@ header {
 
 @media screen and (min-width: 768px) {
   #descrition-text {
-    width: 73ch;
+    width: 62ch;
   }
 
   #game-background {
