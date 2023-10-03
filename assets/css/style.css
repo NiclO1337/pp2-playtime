@@ -76,7 +76,7 @@ header {
   max-width: 50rem;
   min-height: 30rem;
   margin: 5% auto 1rem;
-  padding: 0 0.5em 2rem;
+  padding: 0 0 2rem;
   position: relative;
   transition: 0.8s;
   box-shadow: 0 0 0.8rem #00000079;
