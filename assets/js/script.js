@@ -27,8 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
         //   document.documentElement.style.setProperty('--color-primary', input.value);
         // })
       } else if (button.classList.contains('play-game-btn')) {
-        let introScreen = document.getElementById('intro-screen');
-        introScreen.style.opacity = '0';
+
+        window.setTimeout(fadeIntroScreen, 0)
+        // let introScreen = document.getElementById('intro-screen');
+        // introScreen.style.opacity = '0';
 
         window.setTimeout(hideIntroScreen, 900)
         window.setTimeout(showWelcomeText, 1100)
@@ -56,6 +58,11 @@ function chosenColor() {
   input.addEventListener('input', function inputColor() {
     document.documentElement.style.setProperty('--color-primary', input.value);
   })
+}
+
+function fadeIntroScreen() {
+  let introScreen = document.getElementById('intro-screen');
+  introScreen.style.opacity = '0';
 }
 
 function hideIntroScreen() {
