@@ -34,6 +34,10 @@ header {
   padding: 1em;
 }
 
+i {
+  padding: 0 0.2em;
+}
+
 section {
   text-align: left;
 }
@@ -54,11 +58,7 @@ body {
 }
 
 header {
-  font-size: 70%;
-}
-
-.bigger-text {
-  font-size: 170%;
+  font-size: 100%;
 }
 
 .smaller-text {
