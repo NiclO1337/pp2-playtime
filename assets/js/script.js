@@ -14,29 +14,14 @@ document.addEventListener('DOMContentLoaded', function () {
         document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)');
       } else if (button.classList.contains('btn-random')) {
         randomColor();
-        // let hexValues = '0123456789ABCDEF';
-        // let hashtag = '#';
-        // for (let values = 0; values < 6; values++) {
-        //   hashtag += hexValues[Math.floor(Math.random() * 16)];
-        //   document.documentElement.style.setProperty('--color-primary', hashtag);
-        // }
       } else if (button.classList.contains('color-input')) {
         chosenColor();
-        // let input = document.getElementById('color-input');
-        // input.addEventListener('input', function inputColor() {
-        //   document.documentElement.style.setProperty('--color-primary', input.value);
-        // })
       } else if (button.classList.contains('play-game-btn')) {
-
         window.setTimeout(fadeIntroScreen, 0)
-        // let introScreen = document.getElementById('intro-screen');
-        // introScreen.style.opacity = '0';
-
         window.setTimeout(hideIntroScreen, 900)
         window.setTimeout(showWelcomeText, 1100)
         window.setTimeout(hideWelcomeText, 2700)
         window.setTimeout(removeWelcomeText, 3600)
-
         window.setTimeout(showGameScreen, 3700)
         window.setTimeout(visibleGameScreen, 3800)
       }
