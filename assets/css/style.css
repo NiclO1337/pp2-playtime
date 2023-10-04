@@ -285,15 +285,15 @@ header {
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;  
-  transition: opacity 0.3s;
+  transition: 0.5s;
 }
 
 .rps-arnold {
   background-image: url(../images/arnold-thinking.png);
   background-size: 70%;
   background-repeat: no-repeat;
-  background-position: 60% bottom;
-  transition: opacity 0.3s;
+  background-position: 60% center;
+  transition: 0.5s;
 }
 
 .rock {
