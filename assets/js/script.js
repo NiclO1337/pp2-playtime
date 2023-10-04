@@ -138,5 +138,13 @@ function arnoldChoice() {
   let choices = ['rock', 'paper', 'scissor']
   let randomNumber = Math.floor(Math.random() * 3);
   console.log(choices[randomNumber]);
+
+  if (choices[randomNumber] = 0) {
+    console.log('rock chosen');
+  } else if (choices[randomNumber] = 1) {
+    console.log('paper chosen');
+  } else {
+    console.log('scissor chosen');
+  }
   
 }
