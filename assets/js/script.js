@@ -129,4 +129,14 @@ function fadeGameScreen() {
 function runGame() {
   document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
   document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
+
+  window.setTimeout(arnoldChoice, 800)
+  console.log(arnoldChoice);
+}
+
+function arnoldChoice() {
+  let choices = ['rock', 'paper', 'scissor']
+  let randomNumber = Math.floor(Math.random() * 3);
+  console.log(choices[randomNumber]);
+  
 }
