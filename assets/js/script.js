@@ -130,18 +130,37 @@ function runGame() {
   document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
   document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
 
-  window.setTimeout(arnoldChoice, 800)
+  function buildSuspense() {
+    let randomTime = Math.floor(Math.random() * 2000);
+    console.log(randomTime);
+  }
+  buildSuspense();
+
+  window.setTimeout(arnoldChoice, buildSuspense + 500)
 }
+
+
+
+
 
 function arnoldChoice() {
-  // let choices = ['rock', 'paper', 'scissor']
-  let randomNumber = Math.floor(Math.random() * 3);
+  document.getElementsByClassName('rps-arnold')[0].style.transition = '0';
+  document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '100%';  
+  
 
+  let randomNumber = Math.floor(Math.random() * 3);
+  let rpsArnold = document.getElementsByClassName('rps-bg')[1];
+  rpsArnold.classList.remove('rps-arnold');
   if (randomNumber === 0) {
     console.log('rock chosen');
+    rpsArnold.classList.add('rock');
   } else if (randomNumber === 1) {
-    console.log('paper chosen');
+    console.log('paper chosen');    
+    rpsArnold.classList.add('paper');
   } else {
-    console.log('scissor chosen');
+    console.log('scissor chosen');    
+    rpsArnold.classList.add('scissor');
   }  
 }
+
+
