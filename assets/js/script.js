@@ -19,7 +19,16 @@ document.addEventListener('DOMContentLoaded', function () {
       } else if (button.classList.contains('play-game-btn')) {
         playGame();
       }
-    })    
+    })
+
+
+
+    button.addEventListener('mouseover', function () {
+      button.style.boxShadow = '0 0 0.5rem var(--color-primary)';
+    })
+    button.addEventListener('mouseout', function () {
+      button.style.boxShadow = 'none';
+    })
   }
 })
 
