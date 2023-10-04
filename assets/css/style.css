@@ -297,15 +297,24 @@ header {
 }
 
 .rock {
-
+  background-image: url(../images/rock.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
 }
 
 .paper {
-
+  background-image: url(../images/paper.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
 }
 
 .scissor {
-
+  background-image: url(../images/scissor.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
 }
 
 /* --------------------------
