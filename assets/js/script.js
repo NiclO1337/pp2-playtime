@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
   let buttons = document.getElementsByClassName("btn");
   for (let button of buttons) {
     button.addEventListener('click', function () {
+
+      button.style.borderStyle = 'inset';
+
       if (button.classList.contains('btn-blue')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
       } else if (button.classList.contains('btn-red')) {
