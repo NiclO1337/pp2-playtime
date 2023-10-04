@@ -264,7 +264,14 @@ header {
   margin-top: 1.5rem;
 }
 
-.rps-icon {
+.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rps-bg {
   width: 6rem;
   padding-top: 6rem;
   background-color: white;
@@ -287,12 +294,6 @@ header {
   background-position: 60% bottom;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
 
 
 /* --------------------------
@@ -326,7 +327,7 @@ header {
       ". . name name name . .";
   }
 
-  .rps-icon {
+  .rps-bg {
     width: 8rem;
     padding-top: 8rem;
     margin: 1.5rem auto 0.5rem;
@@ -357,7 +358,7 @@ header {
     box-shadow: 0 0 2rem #00000079;
   }
 
-  .rps-icon {
+  .rps-bg {
     width: 12rem;
     padding-top: 12rem;
   }
