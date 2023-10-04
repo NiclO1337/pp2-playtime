@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
     button.addEventListener('click', function () {
 
       button.style.borderStyle = 'inset';
+      window.setTimeout(afterClick, 100)
+      function afterClick() {
+        button.style.borderStyle = 'outset';
+      }
 
       if (button.classList.contains('btn-blue')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
