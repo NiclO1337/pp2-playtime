@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 })
 
+/**
+ * Generates random colors when clicking rainbow colored button
+ */
 function randomColor() {
   let hexValues = '0123456789ABCDEF';
   let hashtag = '#';
@@ -32,6 +35,9 @@ function randomColor() {
   }
 }
 
+/**
+ * Sets color based on user input into color picker button
+ */
 function chosenColor() {
   let input = document.getElementById('color-input');
   input.addEventListener('input', function inputColor() {
@@ -39,6 +45,11 @@ function chosenColor() {
   })
 }
 
+
+/**
+ * Clicking Play game button starts a chains of timed events to
+ * hide intro screen, welcome the player and then show game screen
+ */
 function playGame() {
   let nickname = document.getElementById('nickname').value;
   let errorDiv = document.getElementById('error-div');
@@ -98,36 +109,3 @@ function fadeGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.setProperty('opacity', '1');
 }
-
-
-
-// function changeColor() {
-
-//   let buttons = document.getElementsByClassName('btn');
-//   for (let button of buttons) {
-
-//     if (button.classList.contains('btn-blue')) {
-//       document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
-//       console.log(button);
-//     } else if (button.classList.contains('btn-red')) {
-//       document.documentElement.style.setProperty('--color-primary', 'rgb(180, 2, 2)');
-//       console.log("red");
-//     } else if (button.classList.contains('btn-green')) {
-//       document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)');
-//       console.log("green");
-//     } else if (button.classList.contains('btn-random')) {
-//       let hexValues = '0123456789ABCDEF';
-//       let hashtag = '#';
-//       for (let values = 0; values < 6; values++) {
-//         hashtag += hexValues[Math.floor(Math.random() * 16)];
-//         document.documentElement.style.setProperty('--color-primary', hashtag);
-//         console.log("random");
-//       }
-//     } else if (button.classList.contains('color-input')) {
-//       let input = document.getElementById('color-input');
-//       input.addEventListener('input', function inputColor() {
-//         document.documentElement.style.setProperty('--color-primary', input.value);
-//       })
-//     }
-//   }
-// }
