@@ -130,11 +130,7 @@ function runGame() {
   document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
   document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
 
-  // function buildSuspense() {
-  //   let randomTime = Math.floor(Math.random() * 2000);
-  //   console.log(randomTime);
-  // }
-  // buildSuspense();
+
 
   window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
 }
@@ -144,7 +140,7 @@ function runGame() {
 
 
 function arnoldChoice() {
-  document.getElementsByClassName('rps-arnold')[0].style.transition = '0';
+  // document.getElementsByClassName('rps-arnold')[0].style.transition = '0';
   document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '100%';  
   
 

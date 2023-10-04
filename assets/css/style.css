@@ -282,7 +282,7 @@ header {
 
 .rps-player {
   background-image: url(../images/question-mark2.png);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;  
   transition: 0.5s;
@@ -290,7 +290,7 @@ header {
 
 .rps-arnold {
   background-image: url(../images/arnold-thinking2.png);
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.5s;
@@ -300,21 +300,18 @@ header {
   background-image: url(../images/rock.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  transition: opacity 0.3s;
 }
 
 .paper {
   background-image: url(../images/paper.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  transition: opacity 0.3s;
 }
 
 .scissor {
   background-image: url(../images/scissor.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  transition: opacity 0.3s;
 }
 
 /* --------------------------
