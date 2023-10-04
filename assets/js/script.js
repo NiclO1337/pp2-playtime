@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
         chosenColor();
       } else if (button.classList.contains('play-game-btn')) {
         playGame();
+      } else if (button.classList.contains('game-btn')) {
+        runGame();
       }
     })
 
@@ -122,4 +124,9 @@ function showGameScreen() {
 function fadeGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.setProperty('opacity', '1');
+}
+
+function runGame() {
+  document.getElementsByClassName('rps-player')[0].style.opacity = '0';
+  document.getElementsByClassName('rps-arnold')[0].style.opacity = '0';
 }
