@@ -284,7 +284,8 @@ header {
   background-image: url(../images/question-mark.png);
   background-size: 55%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;  
+  transition: opacity 0.3s;
 }
 
 .rps-arnold {
@@ -292,9 +293,20 @@ header {
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: 60% bottom;
+  transition: opacity 0.3s;
 }
 
+.rock {
 
+}
+
+.paper {
+
+}
+
+.scissor {
+
+}
 
 /* --------------------------
 --- Result screen layout ----
