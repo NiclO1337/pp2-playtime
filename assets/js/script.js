@@ -130,32 +130,25 @@ function runGame() {
   document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
   document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
 
-
   window.setTimeout(removeClass, 500)
   window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
 }
-
 
 function removeClass() {
   document.getElementsByClassName('rps-player')[0].classList.remove('rps-player');
   document.getElementsByClassName('rps-arnold')[0].classList.remove('rps-arnold');
 }
 
-
 function arnoldChoice() {
   document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '100%';
 
   let randomNumber = Math.floor(Math.random() * 3);
   let rpsArnold = document.getElementsByClassName('rps-bg')[1];
-  rpsArnold.classList.remove('rps-arnold');
   if (randomNumber === 0) {
-    console.log('rock chosen');
     rpsArnold.classList.add('rock');
   } else if (randomNumber === 1) {
-    console.log('paper chosen');
     rpsArnold.classList.add('paper');
   } else {
-    console.log('scissor chosen');
     rpsArnold.classList.add('scissor');
   }
 }
