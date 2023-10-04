@@ -195,7 +195,7 @@ header {
   padding: 0.7em 1em;
 }
 
-.game-btn {  
+.game-btn {
   height: 3rem;
   width: 3rem;
   background-color: var(--color-primary);
@@ -257,7 +257,7 @@ header {
 
 #game-screen {
   display: none;
-  opacity: 0; 
+  opacity: 0;
   /* display: block; */
   transition: opacity 0.8s;
   text-align: center;
@@ -328,9 +328,9 @@ header {
     margin-bottom: 2rem;
   }
 
-  .game-btn {  
+  .game-btn {
     height: 4rem;
-    width: 4rem;  
+    width: 4rem;
     font-size: 2rem;
   }
 }
