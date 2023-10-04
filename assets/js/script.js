@@ -28,10 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
 
-
-
     button.addEventListener('mouseover', function () {
-      button.style.boxShadow = '0 0 0.5rem var(--color-primary)';
+      button.style.boxShadow = '0 0 0.3rem var(--color-primary)';
     })
     button.addEventListener('mouseout', function () {
       button.style.boxShadow = 'none';
