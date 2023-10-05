@@ -184,24 +184,15 @@ function gameButtons() {
       document.getElementsByClassName('rps-bg')[0].classList.remove('paper');
       document.getElementsByClassName('rps-bg')[0].classList.remove('scissor');
 
-
       function playerChoice() {
         if (button === document.getElementsByClassName('game-btn')[0]) {
-          console.log(button);
           document.getElementsByClassName('rps-bg')[0].classList.add('rock');
-          // playerRock();
         } else if (button === document.getElementsByClassName('game-btn')[1]) {
-          console.log(button);
           document.getElementsByClassName('rps-bg')[0].classList.add('paper');
-          // playerPaper();
         } else {
-          console.log(button);
           document.getElementsByClassName('rps-bg')[0].classList.add('scissor');
-          // playerScissor();
         }
-      }
-
-      
+      }      
 
       window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, 500)
@@ -244,18 +235,6 @@ function arnoldChoice() {
     rpsArnold.classList.add('scissor');
     console.log('scissor');
   }
-}
-
-function playerRock() {
-  document.getElementsByClassName('rps-bg')[0].classList.add('rock');
-}
-
-function playerPaper() {
-  document.getElementsByClassName('rps-bg')[0].classList.add('paper');
-}
-
-function playerScissor() {
-  document.getElementsByClassName('rps-bg')[0].classList.add('scissor');
 }
 
 function revealChoises() {
