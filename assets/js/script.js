@@ -68,6 +68,9 @@ function themeButtons() {
       } else if (button.classList.contains('color-input')) {
         chosenColor();
       }
+
+      clickEffect();
+
     })
   }
 }
@@ -109,7 +112,7 @@ function playGameButton() {
 
   let button = document.getElementsByClassName('play-game-btn')[0];
   button.addEventListener('click', function () {
-    
+
     if (nickname === '') {
       errorDiv.innerText = `Please enter a nickname, 
     I would like to know who I am
@@ -176,7 +179,7 @@ function fadeGameScreen() {
 function gameButtons() {
   let buttons = document.getElementsByClassName('game-btn');
   for (let button of buttons) {
-    button.addEventListener('click', function()  {
+    button.addEventListener('click', function () {
 
       document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
       document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
@@ -217,3 +220,13 @@ function arnoldChoice() {
 }
 
 
+function clickEffect() {
+  let buttons = document.getElementsByClassName('btn');
+  for (let button of buttons) {
+    button.style.borderStyle = 'inset';
+    window.setTimeout(afterClick, 100)
+    function afterClick() {
+      button.style.borderStyle = 'outset';
+    }
+  }
+}
