@@ -45,7 +45,6 @@ function themeButtons() {
         chosenColor();
       }
 
-
       button.style.borderStyle = 'inset';
       window.setTimeout(afterClick, 100)
       function afterClick() {
@@ -115,8 +114,6 @@ function playGameButton() {
       window.setTimeout(fadeGameScreen, 3800)
     }
 
-
-
     button.style.borderStyle = 'inset';
     window.setTimeout(afterClick, 100)
     function afterClick() {
@@ -182,6 +179,15 @@ function gameButtons() {
 
       document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '0';
       document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
+
+      if (button === document.getElementsByClassName('game-btn')[0]) {
+        console.log(button);
+      } else if (button === document.getElementsByClassName('game-btn')[1]) {
+        console.log(button);
+      } else {
+        console.log(button)
+      }
+
 
       window.setTimeout(removeClass, 500)
       window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
