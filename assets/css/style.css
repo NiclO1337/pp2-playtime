@@ -65,6 +65,10 @@ header {
   font-size: 80%;
 }
 
+#win-loose-msg {
+  font-size: 180%;
+}
+
 /* --------------------------
 ------ Specific styles ------
 -------------------------- */
