@@ -193,11 +193,11 @@ function gameButtons() {
   for (let button of buttons) {
     button.addEventListener('click', function () {
 
-      document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
-      document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
+      document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '0';
+      document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
 
       window.setTimeout(removeClass, 500)
-      window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
+      window.setTimeout(arnoldChoice, Math.random() * 5000 + 500)
 
 
       button.style.borderStyle = 'inset';
@@ -219,8 +219,8 @@ function gameButtons() {
 // }
 
 function removeClass() {
-  document.getElementsByClassName('rps-player')[0].classList.remove('rps-player');
-  document.getElementsByClassName('rps-arnold')[0].classList.remove('rps-arnold');
+  document.getElementsByClassName('rps-bg')[0].classList.remove('rps-player');
+  document.getElementsByClassName('rps-bg')[1].classList.remove('rps-arnold');
 }
 
 function arnoldChoice() {
@@ -230,10 +230,13 @@ function arnoldChoice() {
   let rpsArnold = document.getElementsByClassName('rps-bg')[1];
   if (randomNumber === 0) {
     rpsArnold.classList.add('rock');
+    console.log('rock');
   } else if (randomNumber === 1) {
     rpsArnold.classList.add('paper');
+    console.log('paper');
   } else {
     rpsArnold.classList.add('scissor');
+    console.log('scissor');
   }
 }
 
