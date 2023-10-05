@@ -168,13 +168,34 @@ function fadeGameScreen() {
   gameScreen.style.setProperty('opacity', '1');
 }
 
-function runGame() {
-  document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
-  document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
 
-  window.setTimeout(removeClass, 500)
-  window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
+/* --------------------------
+------- Game buttons --------
+-------------------------- */
+
+function gameButtons() {
+  let buttons = document.getElementsByClassName('game-btn');
+  for (let button of buttons) {
+    button.addEventListener('click', function()  {
+
+      document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
+      document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
+
+      window.setTimeout(removeClass, 500)
+      window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
+
+    })
+  }
 }
+
+
+// function runGame() {
+//   document.getElementsByClassName('rps-player')[0].style.backgroundSize = '0';
+//   document.getElementsByClassName('rps-arnold')[0].style.backgroundSize = '0';
+
+//   window.setTimeout(removeClass, 500)
+//   window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
+// }
 
 function removeClass() {
   document.getElementsByClassName('rps-player')[0].classList.remove('rps-player');
