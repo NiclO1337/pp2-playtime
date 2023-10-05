@@ -75,7 +75,7 @@ header {
   width: 90%;
   max-width: 50rem;
   min-height: 36rem;
-  margin: 5% auto 1rem;
+  margin: 1rem auto;
   padding: 0 0 2rem;
   position: relative;
   transition: 0.8s;
@@ -331,6 +331,11 @@ header {
 /* Media query for 400px */
 
 @media screen and (min-width: 400px) {
+
+  #game-background {
+    margin: 2rem auto 1rem;
+  }
+
   #descrition-text {
     width: 35ch;
   }
@@ -368,6 +373,11 @@ header {
 /* Media query for 768px */
 
 @media screen and (min-width: 768px) {
+
+  #game-background {
+    margin: 3rem auto 1rem;
+  }
+
   #descrition-text {
     width: 62ch;
   }
