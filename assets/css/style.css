@@ -269,6 +269,7 @@ header {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  font-size: 80%;
 }
 
 .rps-bg {
@@ -284,7 +285,7 @@ header {
   background-image: url(../images/question-mark2.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;
   transition: background-size 0.5s;
 }
 
@@ -322,8 +323,6 @@ header {
   display: none;
 }
 
-
-
 /* --------------------------
 ------ Media quesries -------
 -------------------------- */
@@ -331,7 +330,6 @@ header {
 /* Media query for 400px */
 
 @media screen and (min-width: 400px) {
-
   #game-background {
     margin: 2rem auto 1rem;
   }
@@ -357,10 +355,8 @@ header {
   }
 
   .flex-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
     margin-bottom: 2rem;
+    font-size: 100%;
   }
 
   .game-btn {
@@ -373,7 +369,6 @@ header {
 /* Media query for 768px */
 
 @media screen and (min-width: 768px) {
-
   #game-background {
     margin: 3rem auto 1rem;
   }
