@@ -1,18 +1,62 @@
 /**
- * Function to add event listener to all buttons on the page
- * and execute functions based on which button is clicked.
+ * Function to add event listener to all buttons and
+ * add hover effect, also runs function to add event 
+ * listeners to all other buttons.
  */
 document.addEventListener('DOMContentLoaded', function () {
+
   let buttons = document.getElementsByClassName("btn");
   for (let button of buttons) {
+
+    button.addEventListener('mouseover', function () {
+      button.style.boxShadow = '0 0 0.3rem var(--color-primary)';
+    })
+    button.addEventListener('mouseout', function () {
+      button.style.boxShadow = 'none';
+    })
+    // button.addEventListener('click', function () {
+
+    //   button.style.borderStyle = 'inset';
+    //   window.setTimeout(afterClick, 100)
+    //   function afterClick() {
+    //     button.style.borderStyle = 'outset';
+    //   }
+
+    //   if (button.classList.contains('btn-blue')) {
+    //     document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
+    //   } else if (button.classList.contains('btn-red')) {
+    //     document.documentElement.style.setProperty('--color-primary', 'rgb(180, 2, 2)');
+    //   } else if (button.classList.contains('btn-green')) {
+    //     document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)');
+    //   } else if (button.classList.contains('btn-random')) {
+    //     randomColor();
+    //   } else if (button.classList.contains('color-input')) {
+    //     chosenColor();
+    //   } else if (button.classList.contains('play-game-btn')) {
+    //     playGame();
+    //   } else if (button.classList.contains('game-btn')) {
+    //     runGame();
+    //   }
+    // })
+
+    themeButtons();
+    playGameButtons();
+    gameButtons();
+  }
+})
+
+/* --------------------------
+------- Theme buttons -------
+-------------------------- */
+
+/**
+ * Add event listener to theme buttons that let
+ * user set the desired colour theme
+ */
+function themeButtons() {
+  let buttons = document.getElementsByClassName('theme-btn');
+  for (let button of buttons) {
     button.addEventListener('click', function () {
-
-      button.style.borderStyle = 'inset';
-      window.setTimeout(afterClick, 100)
-      function afterClick() {
-        button.style.borderStyle = 'outset';
-      }
-
       if (button.classList.contains('btn-blue')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
       } else if (button.classList.contains('btn-red')) {
@@ -23,21 +67,10 @@ document.addEventListener('DOMContentLoaded', function () {
         randomColor();
       } else if (button.classList.contains('color-input')) {
         chosenColor();
-      } else if (button.classList.contains('play-game-btn')) {
-        playGame();
-      } else if (button.classList.contains('game-btn')) {
-        runGame();
       }
     })
-
-    button.addEventListener('mouseover', function () {
-      button.style.boxShadow = '0 0 0.3rem var(--color-primary)';
-    })
-    button.addEventListener('mouseout', function () {
-      button.style.boxShadow = 'none';
-    })
   }
-})
+}
 
 /**
  * Generates random colors when clicking rainbow colored button
