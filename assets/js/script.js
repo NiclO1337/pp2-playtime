@@ -198,7 +198,7 @@ function gameButtons() {
       document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
 
       window.setTimeout(removeClass, 500)
-      window.setTimeout(arnoldChoice, Math.random() * 5000 + 500)
+      window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
 
 
       button.style.borderStyle = 'inset';
@@ -229,6 +229,11 @@ function arnoldChoice() {
 
   let randomNumber = Math.floor(Math.random() * 3);
   let rpsArnold = document.getElementsByClassName('rps-bg')[1];
+
+  rpsArnold.classList.remove('rock');
+  rpsArnold.classList.remove('paper');
+  rpsArnold.classList.remove('scissor');
+
   if (randomNumber === 0) {
     rpsArnold.classList.add('rock');
     console.log('rock');
