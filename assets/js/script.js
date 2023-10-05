@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // })
 
     themeButtons();
-    playGameButtons();
+    playGameButton();
     gameButtons();
   }
 })
@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 -------------------------- */
 
 /**
- * Add event listener to theme buttons that let
- * user set the desired colour theme
+ * Add event listener to theme buttons that
+ * let user set the desired colour theme
  */
 function themeButtons() {
   let buttons = document.getElementsByClassName('theme-btn');
@@ -95,26 +95,35 @@ function chosenColor() {
 }
 
 
+/* --------------------------
+----- Play game button ------
+-------------------------- */
+
 /**
  * Clicking Play game button starts a chains of timed events to
  * hide intro screen, welcome the player and then show game screen
  */
-function playGame() {
+function playGameButton() {
   let nickname = document.getElementById('nickname').value;
   let errorDiv = document.getElementById('error-div');
-  if (nickname === '') {
-    errorDiv.innerText = `Please enter a nickname, 
+
+  let button = document.getElementsByClassName('play-game-btn')[0];
+  button.addEventListener('click', function () {
+    
+    if (nickname === '') {
+      errorDiv.innerText = `Please enter a nickname, 
     I would like to know who I am
     about to demolish.`;
-  } else {
-    window.setTimeout(fadeIntroScreen, 0)
-    window.setTimeout(hideIntroScreen, 900)
-    window.setTimeout(showWelcomeText, 1100)
-    window.setTimeout(hideWelcomeText, 2700)
-    window.setTimeout(removeWelcomeText, 3600)
-    window.setTimeout(showGameScreen, 3700)
-    window.setTimeout(fadeGameScreen, 3800)
-  }
+    } else {
+      window.setTimeout(fadeIntroScreen, 0)
+      window.setTimeout(hideIntroScreen, 900)
+      window.setTimeout(showWelcomeText, 1100)
+      window.setTimeout(hideWelcomeText, 2700)
+      window.setTimeout(removeWelcomeText, 3600)
+      window.setTimeout(showGameScreen, 3700)
+      window.setTimeout(fadeGameScreen, 3800)
+    }
+  })
 }
 
 function fadeIntroScreen() {
