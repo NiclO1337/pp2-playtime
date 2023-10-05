@@ -196,7 +196,7 @@ function gameButtons() {
       }
 
 
-      window.setTimeout(removeClass, 500)
+      window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
 
 
@@ -209,7 +209,7 @@ function gameButtons() {
   }
 }
 
-function removeClass() {
+function removeStartingClass() {
   document.getElementsByClassName('rps-bg')[0].classList.remove('rps-player');
   document.getElementsByClassName('rps-bg')[1].classList.remove('rps-arnold');
 }
