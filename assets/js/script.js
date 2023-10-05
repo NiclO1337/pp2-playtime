@@ -39,10 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
     //   }
     // })
 
-    themeButtons();
-    playGameButton();
-    gameButtons();
+
   }
+  themeButtons();
+  playGameButton();
+  gameButtons();
 })
 
 /* --------------------------
@@ -132,7 +133,7 @@ function playGameButton() {
     }
 
 
-    
+
     button.style.borderStyle = 'inset';
     window.setTimeout(afterClick, 100)
     function afterClick() {
