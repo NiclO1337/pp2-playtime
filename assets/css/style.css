@@ -285,7 +285,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;  
-  transition: 0.5s;
+  transition: background-size 0.5s;
 }
 
 .rps-arnold {
@@ -293,7 +293,7 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  transition: 0.5s;
+  transition: background-size 0.5s;
 }
 
 .rock {
