@@ -180,12 +180,19 @@ function gameButtons() {
       document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '0';
       document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
 
+      document.getElementsByClassName('rps-bg')[0].classList.remove('rock');
+      document.getElementsByClassName('rps-bg')[0].classList.remove('paper');
+      document.getElementsByClassName('rps-bg')[0].classList.remove('scissor');
+
       if (button === document.getElementsByClassName('game-btn')[0]) {
         console.log(button);
+        playerRock();
       } else if (button === document.getElementsByClassName('game-btn')[1]) {
         console.log(button);
+        playerPaper();
       } else {
-        console.log(button)
+        console.log(button);
+        playerScissor();
       }
 
 
@@ -227,4 +234,16 @@ function arnoldChoice() {
     rpsArnold.classList.add('scissor');
     console.log('scissor');
   }
+}
+
+function playerRock() {
+  document.getElementsByClassName('rps-bg')[0].classList.add('rock');
+}
+
+function playerPaper() {
+  document.getElementsByClassName('rps-bg')[0].classList.add('paper');
+}
+
+function playerScissor() {
+  document.getElementsByClassName('rps-bg')[0].classList.add('scissor');
 }
