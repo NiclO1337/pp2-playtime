@@ -69,7 +69,11 @@ function themeButtons() {
         chosenColor();
       }
 
-      clickEffect();
+      button.style.borderStyle = 'inset';
+      window.setTimeout(afterClick, 100)
+      function afterClick() {
+        button.style.borderStyle = 'outset';
+      }
 
     })
   }
@@ -125,6 +129,14 @@ function playGameButton() {
       window.setTimeout(removeWelcomeText, 3600)
       window.setTimeout(showGameScreen, 3700)
       window.setTimeout(fadeGameScreen, 3800)
+    }
+
+
+    
+    button.style.borderStyle = 'inset';
+    window.setTimeout(afterClick, 100)
+    function afterClick() {
+      button.style.borderStyle = 'outset';
     }
   })
 }
@@ -187,6 +199,12 @@ function gameButtons() {
       window.setTimeout(removeClass, 500)
       window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
 
+
+      button.style.borderStyle = 'inset';
+      window.setTimeout(afterClick, 100)
+      function afterClick() {
+        button.style.borderStyle = 'outset';
+      }
     })
   }
 }
@@ -220,13 +238,13 @@ function arnoldChoice() {
 }
 
 
-function clickEffect() {
-  let buttons = document.getElementsByClassName('btn');
-  for (let button of buttons) {
-    button.style.borderStyle = 'inset';
-    window.setTimeout(afterClick, 100)
-    function afterClick() {
-      button.style.borderStyle = 'outset';
-    }
-  }
-}
+// function clickEffect() {
+//   let buttons = document.getElementsByClassName('btn');
+//   for (let button of buttons) {
+//     button.style.borderStyle = 'inset';
+//     window.setTimeout(afterClick, 100)
+//     function afterClick() {
+//       button.style.borderStyle = 'outset';
+//     }
+//   }
+// }
