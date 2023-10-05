@@ -229,13 +229,10 @@ function arnoldChoice() {
 
   if (randomNumber === 0) {
     rpsArnold.classList.add('rock');
-    console.log('rock');
   } else if (randomNumber === 1) {
     rpsArnold.classList.add('paper');
-    console.log('paper');
   } else {
     rpsArnold.classList.add('scissor');
-    console.log('scissor');
   }
 }
 
