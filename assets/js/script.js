@@ -184,20 +184,31 @@ function gameButtons() {
       document.getElementsByClassName('rps-bg')[0].classList.remove('paper');
       document.getElementsByClassName('rps-bg')[0].classList.remove('scissor');
 
-      if (button === document.getElementsByClassName('game-btn')[0]) {
-        console.log(button);
-        playerRock();
-      } else if (button === document.getElementsByClassName('game-btn')[1]) {
-        console.log(button);
-        playerPaper();
-      } else {
-        console.log(button);
-        playerScissor();
+
+      function playerChoice() {
+        if (button === document.getElementsByClassName('game-btn')[0]) {
+          console.log(button);
+          document.getElementsByClassName('rps-bg')[0].classList.add('rock');
+          // playerRock();
+        } else if (button === document.getElementsByClassName('game-btn')[1]) {
+          console.log(button);
+          document.getElementsByClassName('rps-bg')[0].classList.add('paper');
+          // playerPaper();
+        } else {
+          console.log(button);
+          document.getElementsByClassName('rps-bg')[0].classList.add('scissor');
+          // playerScissor();
+        }
       }
 
+      
 
       window.setTimeout(removeStartingClass, 500)
-      window.setTimeout(arnoldChoice, Math.random() * 1000 + 500)
+      window.setTimeout(arnoldChoice, 500)
+      window.setTimeout(playerChoice, 500)
+      window.setTimeout(revealChoises, Math.random() * 1000 + 500)
+      window.setTimeout(hideChoises,)
+      window.setTimeout(addStartingClass,)
 
 
       button.style.borderStyle = 'inset';
@@ -246,4 +257,8 @@ function playerPaper() {
 
 function playerScissor() {
   document.getElementsByClassName('rps-bg')[0].classList.add('scissor');
+}
+
+function revealChoises() {
+  
 }
