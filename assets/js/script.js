@@ -196,6 +196,8 @@ function gameButtons() {
         }
       }
 
+
+      window.setTimeout(disableButtons, 100)
       window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, 500)
       window.setTimeout(playerChoice, 500)
@@ -212,6 +214,13 @@ function gameButtons() {
         button.style.borderStyle = 'outset';
       }
     })
+  }
+}
+
+function disableButtons() {
+  let buttons = document.getElementsByClassName('game-btn');
+  for (let button of buttons) {
+    button.disabled = true;
   }
 }
 
