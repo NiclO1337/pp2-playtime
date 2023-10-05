@@ -112,11 +112,12 @@ function chosenColor() {
  * hide intro screen, welcome the player and then show game screen
  */
 function playGameButton() {
-  let nickname = document.getElementById('nickname').value;
-  let errorDiv = document.getElementById('error-div');
 
   let button = document.getElementsByClassName('play-game-btn')[0];
   button.addEventListener('click', function () {
+
+    let nickname = document.getElementById('nickname').value;
+    let errorDiv = document.getElementById('error-div');
 
     if (nickname === '') {
       errorDiv.innerText = `Please enter a nickname, 
