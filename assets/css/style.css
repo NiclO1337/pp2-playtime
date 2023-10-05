@@ -286,7 +286,7 @@ header {
 }
 
 .rps-player {
-  background-image: url(../images/question-mark2.png);
+  background-image: url(../images/question-mark.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -294,7 +294,7 @@ header {
 }
 
 .rps-arnold {
-  background-image: url(../images/arnold-thinking2.png);
+  background-image: url(../images/arnold-thinking.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
