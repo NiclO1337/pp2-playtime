@@ -114,6 +114,8 @@ function playGameButton() {
       window.setTimeout(fadeGameScreen, 3800)
     }
 
+    document.getElementById('player-name').innerText = nickname;
+
     button.style.borderStyle = 'inset';
     window.setTimeout(afterClick, 100)
     function afterClick() {
