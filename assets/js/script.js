@@ -196,7 +196,6 @@ function gameButtons() {
         }
       }
 
-
       window.setTimeout(disableButtons, 100)
       window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, 500)
@@ -206,6 +205,7 @@ function gameButtons() {
       window.setTimeout(resetChoises, 3100)
       window.setTimeout(addStartingClass, 3200)
       window.setTimeout(revealChoises, 3300)
+      window.setTimeout(enableButtons, 3900)
 
 
       button.style.borderStyle = 'inset';
@@ -221,7 +221,7 @@ function disableButtons() {
   let buttons = document.getElementsByClassName('game-btn');
   for (let button of buttons) {
     button.disabled = true;
-    button.style.backgroundColor = "rgb(106, 137, 168)";
+    button.style.backgroundColor = 'rgb(106, 137, 168)';
   }
 }
 
@@ -271,4 +271,12 @@ function resetChoises() {
 function addStartingClass() {
   document.getElementsByClassName('rps-bg')[0].classList.add('rps-player');
   document.getElementsByClassName('rps-bg')[1].classList.add('rps-arnold');
+}
+
+function enableButtons() {
+  let buttons = document.getElementsByClassName('game-btn');
+  for (let button of buttons) {
+    button.disabled = false;
+    button.style.backgroundColor = 'var(--color-primary)';
+  }
 }
