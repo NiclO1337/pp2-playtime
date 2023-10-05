@@ -225,8 +225,7 @@ function removeStartingClass() {
   document.getElementsByClassName('rps-bg')[1].classList.remove('rps-arnold');
 }
 
-function arnoldChoice() {
-  document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '100%';
+function arnoldChoice() {  
 
   let randomNumber = Math.floor(Math.random() * 3);
   let rpsArnold = document.getElementsByClassName('rps-bg')[1];
@@ -260,5 +259,6 @@ function playerScissor() {
 }
 
 function revealChoises() {
-  
+  document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '100%';
+  document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '100%';
 }
