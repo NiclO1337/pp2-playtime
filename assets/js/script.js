@@ -192,14 +192,16 @@ function gameButtons() {
         } else {
           document.getElementsByClassName('rps-bg')[0].classList.add('scissor');
         }
-      }      
+      }
 
       window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, 500)
       window.setTimeout(playerChoice, 500)
       window.setTimeout(revealChoises, Math.random() * 1000 + 500)
-      window.setTimeout(hideChoises, 2500)
-      window.setTimeout(addStartingClass,)
+      window.setTimeout(hideChoises, 3000)
+      window.setTimeout(resetChoises, 3100)
+      window.setTimeout(addStartingClass, 3200)
+      window.setTimeout(revealChoises, 3300)
 
 
       button.style.borderStyle = 'inset';
@@ -216,7 +218,7 @@ function removeStartingClass() {
   document.getElementsByClassName('rps-bg')[1].classList.remove('rps-arnold');
 }
 
-function arnoldChoice() {  
+function arnoldChoice() {
 
   let randomNumber = Math.floor(Math.random() * 3);
   let rpsArnold = document.getElementsByClassName('rps-bg')[1];
@@ -247,3 +249,17 @@ function hideChoises() {
   document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
 }
 
+function resetChoises() {
+  document.getElementsByClassName('rps-bg')[0].classList.remove('rock');
+  document.getElementsByClassName('rps-bg')[0].classList.remove('paper');
+  document.getElementsByClassName('rps-bg')[0].classList.remove('scissor');
+
+  document.getElementsByClassName('rps-bg')[1].classList.remove('rock');
+  document.getElementsByClassName('rps-bg')[1].classList.remove('paper');
+  document.getElementsByClassName('rps-bg')[1].classList.remove('scissor');
+}
+
+function addStartingClass() {
+  document.getElementsByClassName('rps-bg')[0].classList.add('rps-player');
+  document.getElementsByClassName('rps-bg')[1].classList.add('rps-arnold');
+}
