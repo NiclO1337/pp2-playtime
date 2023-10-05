@@ -221,6 +221,7 @@ function disableButtons() {
   let buttons = document.getElementsByClassName('game-btn');
   for (let button of buttons) {
     button.disabled = true;
+    button.style.backgroundColor = "rgb(106, 137, 168)";
   }
 }
 
