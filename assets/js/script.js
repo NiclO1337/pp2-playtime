@@ -250,8 +250,31 @@ function arnoldChoice() {
 }
 
 function checkWinner() {
+  let player = document.getElementsByClassName('rps-bg')[0];
+  let arnold = document.getElementsByClassName('rps-bg')[1];
 
-  
+  if (player.classList.contains('rock')) {
+    playerPick = 'rock';
+    console.log(playerPick);
+  } else if (player.classList.contains('paper')) {
+    playerPick = 'paper';
+    console.log(playerPick);
+  } else {
+    playerPick = 'scissor';
+    console.log(playerPick);
+  }
+
+  if (arnold.classList.contains('rock')) {
+    arnoldPick = 'rock';
+    console.log(arnoldPick);
+  } else if (arnold.classList.contains('paper')) {
+    arnoldPick = 'paper';
+    console.log(arnoldPick);
+  } else {
+    arnoldPick = 'scissor';
+    console.log(arnoldPick);
+  }
+
 
 }
 
