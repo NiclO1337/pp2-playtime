@@ -294,7 +294,11 @@ function playerWin() {
   function incrementPlayer() {
     let playerCurrent = document.getElementById('player-score').innerText;
     playerNew = parseInt(playerCurrent) + 1;
-    document.getElementById('player-score').innerText = playerNew;
+    if (playerNew === 3) {
+      window.setTimeout(gameOverPlayer, 1000)
+    } else {
+      document.getElementById('player-score').innerText = playerNew;
+    }
   }
 }
 
@@ -351,4 +355,8 @@ function enableButtons() {
     button.disabled = false;
     button.style.backgroundColor = 'var(--color-primary)';
   }
+}
+
+function gameOverPlayer() {
+  
 }
