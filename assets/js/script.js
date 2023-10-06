@@ -295,7 +295,8 @@ function playerWin() {
     let playerCurrent = document.getElementById('player-score').innerText;
     playerNew = parseInt(playerCurrent) + 1;
     if (playerNew === 3) {
-      window.setTimeout(gameOverPlayer, 1000)
+      window.setTimeout(gameOverPlayer, 1000)      
+      document.getElementById('player-score').innerText = playerNew;
     } else {
       document.getElementById('player-score').innerText = playerNew;
     }
@@ -313,7 +314,8 @@ function arnoldWin() {
     let arnoldCurrent = document.getElementById('arnold-score').innerText;
     arnoldNew = parseInt(arnoldCurrent) + 1;
     if (arnoldNew === 3) {      
-      window.setTimeout(gameOverArnold, 1000)
+      window.setTimeout(gameOverArnold, 1000)      
+      document.getElementById('arnold-score').innerText = arnoldNew;
     } else {
       document.getElementById('arnold-score').innerText = arnoldNew;
     }
@@ -364,13 +366,16 @@ function enableButtons() {
 function gameOverPlayer() {
   fadeGameScreen()
   window.setTimeout(hideGameScreen, 900)
+  window.setTimeout(colourWinner, 1000)
   window.setTimeout(showResultScreen, 1100)
   window.setTimeout(fadeResultScreen, 1200)
+  
 }
 
 function gameOverArnold() {
   fadeGameScreen()
-  window.setTimeout(hideGameScreen, 900)  
+  window.setTimeout(hideGameScreen, 900)
+  window.setTimeout(colourWinner, 1000)
   window.setTimeout(showResultScreen, 1100)
   window.setTimeout(fadeResultScreen, 1200)
 }
@@ -385,6 +390,18 @@ function hideGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.setProperty('display', 'none');
 }
+
+function colourWinner() {
+  let playerScore = document.getElementById('player-score');
+  let arnoldScore = document.getElementById('arnold-score');
+
+  if (playerScore > arnoldScore) {
+    playerScore.style.color = "lightgreen";
+  } else {
+    arnoldScore.style.color = "green";
+  }
+}
+
 
 function showResultScreen() {
   let resultScreen = document.getElementById('result-screen');
