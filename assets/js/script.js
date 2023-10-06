@@ -200,6 +200,7 @@ function gameButtons() {
       window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, 500)
       window.setTimeout(playerChoice, 500)
+      window.setTimeout(checkWinner, 700)
       window.setTimeout(revealImages, Math.random() * 1000 + 500)
       window.setTimeout(hideChoises, 3000)
       window.setTimeout(resetChoises, 3100)
@@ -248,7 +249,13 @@ function arnoldChoice() {
   }
 }
 
-function revealChoises() {
+function checkWinner() {
+
+  
+
+}
+
+function revealImages() {
   document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '100%';
   document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '100%';
 }
