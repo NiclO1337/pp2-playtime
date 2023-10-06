@@ -283,6 +283,8 @@ function checkWinner() {
 }
 
 function tie() {
+  let message = document.getElementById('win-loose-msg');
+  message.innerText = 'Tie';
   console.log('tie');
 }
 function playerWin() {
