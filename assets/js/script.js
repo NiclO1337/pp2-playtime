@@ -202,7 +202,9 @@ function gameButtons() {
       window.setTimeout(playerChoice, 500)
       window.setTimeout(checkWinner, 700)
       window.setTimeout(revealImages, Math.random() * 1000 + 500)
+      window.setTimeout(showResultMessage, 1800)
       window.setTimeout(hideChoises, 3000)
+      window.setTimeout(hideResultMessage, 3100)
       window.setTimeout(resetChoises, 3100)
       window.setTimeout(addStartingClass, 3200)
       window.setTimeout(revealImages, 3300)
@@ -311,9 +313,17 @@ function revealImages() {
   document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '100%';
 }
 
+function showResultMessage() {
+  document.getElementById('win-loose-msg').style.opacity = '1';
+}
+
 function hideChoises() {
   document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '0';
   document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
+}
+
+function hideResultMessage() {
+  document.getElementById('win-loose-msg').style.opacity = '0';
 }
 
 function resetChoises() {

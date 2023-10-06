@@ -67,6 +67,8 @@ header {
 
 #win-loose-msg {
   font-size: 180%;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 /* --------------------------
