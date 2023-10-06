@@ -297,6 +297,13 @@ function playerWin() {
   message.style.fontSize = '120%';
   message.style.color = 'red';
   message.innerText = `One point to ${player}.`;
+
+  window.setTimeout(incrementPlayer, 1500)
+  function incrementPlayer() {
+    let playerCurrent = document.getElementById('player-score').innerText;
+    playerNew = parseInt(playerCurrent) + 1;
+    document.getElementById('player-score').innerText = playerNew;
+  }
 }
 
 function arnoldWin() {
