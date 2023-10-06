@@ -297,7 +297,6 @@ function playerWin() {
   message.style.fontSize = '120%';
   message.style.color = 'red';
   message.innerText = `One point to ${player}.`;
-  console.log('player win');
 }
 
 function arnoldWin() {
@@ -306,9 +305,12 @@ function arnoldWin() {
   message.style.color = 'green';
   message.innerText = 'Arnold wins!';
 
-  let arnoldCurrent = document.getElementById('arnold-score').innerText;
-  arnoldNew = parseInt(arnoldCurrent) + 1;
-  document.getElementById('arnold-score').innerText = arnoldNew;
+  window.setTimeout(incrementArnold, 1500)
+  function incrementArnold() {
+    let arnoldCurrent = document.getElementById('arnold-score').innerText;
+    arnoldNew = parseInt(arnoldCurrent) + 1;
+    document.getElementById('arnold-score').innerText = arnoldNew;
+  }
 }
 
 function revealImages() {
