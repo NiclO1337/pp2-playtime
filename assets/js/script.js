@@ -312,7 +312,11 @@ function arnoldWin() {
   function incrementArnold() {
     let arnoldCurrent = document.getElementById('arnold-score').innerText;
     arnoldNew = parseInt(arnoldCurrent) + 1;
-    document.getElementById('arnold-score').innerText = arnoldNew;
+    if (arnoldNew === 3) {      
+      window.setTimeout(gameOverArnold, 1000)
+    } else {
+      document.getElementById('arnold-score').innerText = arnoldNew;
+    }
   }
 }
 
@@ -358,5 +362,9 @@ function enableButtons() {
 }
 
 function gameOverPlayer() {
-  
+
+}
+
+function gameOverArnold() {
+
 }
