@@ -307,7 +307,7 @@ function arnoldWin() {
   message.innerText = 'Arnold wins!';
 
   let arnoldCurrent = document.getElementById('arnold-score').innerText;
-  arnoldNew = arnoldCurrent + 1;
+  arnoldNew = parseInt(arnoldCurrent) + 1;
   document.getElementById('arnold-score').innerText = arnoldNew;
 }
 
