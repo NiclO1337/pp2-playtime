@@ -393,25 +393,23 @@ function hideGameScreen() {
 
 function colourWinner() {
   let playerScore = document.getElementById('player-score').innerText;
-  console.log(playerScore);
   let playerResult = document.getElementById('player-result');
   playerResult.innerText = playerScore;
-  console.log(playerResult.innerText);
+
   let arnoldScore = document.getElementById('arnold-score').innerText;
-  console.log(arnoldScore);
   let arnoldResult = document.getElementById('arnold-result');
   arnoldResult.innerText = arnoldScore;
-  console.log(arnoldResult.innerText);
 
+  let playerWin = document.getElementById('player-win');
+  let arnoldWin = document.getElementById('arnold-win');
 
   if (playerScore > arnoldScore) {
-    playerResult.style.color = "lightgreen";
+    playerWin.style.color = "green";
 
   } else {
-    arnoldResult.style.color = "green";
+    arnoldWin.style.color = "green";
   }
 }
-
 
 function showResultScreen() {
   let resultScreen = document.getElementById('result-screen');
