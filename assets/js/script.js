@@ -200,11 +200,11 @@ function gameButtons() {
       window.setTimeout(removeStartingClass, 500)
       window.setTimeout(arnoldChoice, 500)
       window.setTimeout(playerChoice, 500)
-      window.setTimeout(revealChoises, Math.random() * 1000 + 500)
+      window.setTimeout(revealImages, Math.random() * 1000 + 500)
       window.setTimeout(hideChoises, 3000)
       window.setTimeout(resetChoises, 3100)
       window.setTimeout(addStartingClass, 3200)
-      window.setTimeout(revealChoises, 3300)
+      window.setTimeout(revealImages, 3300)
       window.setTimeout(enableButtons, 3900)
 
 
