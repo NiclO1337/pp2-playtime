@@ -284,13 +284,25 @@ function checkWinner() {
 
 function tie() {
   let message = document.getElementById('win-loose-msg');
-  message.innerText = 'Tie';
-  console.log('tie');
+  message.style.fontSize = '180%';
+  message.style.color = 'orange';
+  message.innerText = 'It\'s a tie';
 }
+
 function playerWin() {
+  let message = document.getElementById('win-loose-msg');
+  let player = document.getElementById('nickname').value;
+  message.style.fontSize = '120%';
+  message.style.color = 'red';
+  message.innerText = `One point to ${player}.`;
   console.log('player win');
 }
+
 function arnoldWin() {
+  let message = document.getElementById('win-loose-msg');
+  message.style.fontSize = '180%';
+  message.style.color = 'green';
+  message.innerText = 'Arnold wins!';
   console.log('arnold win');
 }
 
