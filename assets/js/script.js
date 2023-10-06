@@ -393,12 +393,18 @@ function hideGameScreen() {
 
 function colourWinner() {
   let playerScore = document.getElementById('player-score');
+  let playerResult = ddocument.getElementById('player-result');
+  playerResult.innerText = playerScore;
   let arnoldScore = document.getElementById('arnold-score');
+  let arnoldResult = document.getElementById('arnold-result');
+  arnoldResult.innerText = arnoldScore;
+
 
   if (playerScore > arnoldScore) {
-    playerScore.style.color = "lightgreen";
+    playerResult.style.color = "lightgreen";
+
   } else {
-    arnoldScore.style.color = "green";
+    arnoldResult.style.color = "green";
   }
 }
 
