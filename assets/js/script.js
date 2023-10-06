@@ -364,12 +364,15 @@ function enableButtons() {
 function gameOverPlayer() {
   fadeGameScreen()
   window.setTimeout(hideGameScreen, 900)
-
+  window.setTimeout(showResultScreen, 1100)
+  window.setTimeout(fadeResultScreen, 1200)
 }
 
 function gameOverArnold() {
   fadeGameScreen()
-  window.setTimeout(hideGameScreen, 900)
+  window.setTimeout(hideGameScreen, 900)  
+  window.setTimeout(showResultScreen, 1100)
+  window.setTimeout(fadeResultScreen, 1200)
 }
 
 
@@ -381,4 +384,14 @@ function fadeGameScreen() {
 function hideGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.setProperty('display', 'none');
+}
+
+function showResultScreen() {
+  let resultScreen = document.getElementById('result-screen');
+  resultScreen.style.setProperty('display', 'block');
+}
+
+function fadeResultScreen() {
+  let resultScreen = document.getElementById('result-screen');
+  resultScreen.style.setProperty('opacity', '1');
 }
