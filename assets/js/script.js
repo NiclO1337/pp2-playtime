@@ -362,9 +362,23 @@ function enableButtons() {
 }
 
 function gameOverPlayer() {
+  fadeGameScreen()
+  window.setTimeout(hideGameScreen, 900)
 
 }
 
 function gameOverArnold() {
+  fadeGameScreen()
+  window.setTimeout(hideGameScreen, 900)
+}
 
+
+function fadeGameScreen() {
+  let gameScreen = document.getElementById('game-screen');
+  gameScreen.style.opacity = '0';
+}
+
+function hideGameScreen() {
+  let gameScreen = document.getElementById('game-screen');
+  gameScreen.style.setProperty('display', 'none');
 }
