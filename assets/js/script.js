@@ -182,10 +182,6 @@ function gameButtons() {
       document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '0';
       document.getElementsByClassName('rps-bg')[1].style.backgroundSize = '0';
 
-      document.getElementsByClassName('rps-bg')[0].classList.remove('rock');
-      document.getElementsByClassName('rps-bg')[0].classList.remove('paper');
-      document.getElementsByClassName('rps-bg')[0].classList.remove('scissor');
-
       function playerChoice() {
         if (button === document.getElementsByClassName('game-btn')[0]) {
           document.getElementsByClassName('rps-bg')[0].classList.add('rock');
@@ -237,10 +233,6 @@ function arnoldChoice() {
 
   let randomNumber = Math.floor(Math.random() * 3);
   let rpsArnold = document.getElementsByClassName('rps-bg')[1];
-
-  rpsArnold.classList.remove('rock');
-  rpsArnold.classList.remove('paper');
-  rpsArnold.classList.remove('scissor');
 
   if (randomNumber === 0) {
     rpsArnold.classList.add('rock');
