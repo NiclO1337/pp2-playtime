@@ -305,7 +305,7 @@ function arnoldWin() {
   message.style.fontSize = '180%';
   message.style.color = 'green';
   message.innerText = 'Arnold wins!';
-  console.log('arnold win');
+  document.getElementById('arnold-score') += 1;
 }
 
 function revealImages() {
