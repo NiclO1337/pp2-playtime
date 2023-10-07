@@ -379,7 +379,7 @@ function gameOverPlayer() {
   window.setTimeout(showResultScreen, 1100)
   window.setTimeout(fadeInResultScreen, 1200)
   window.setTimeout(showWinner, 1700)
-  window.setTimeout(showFinalMessage, 2200)
+  window.setTimeout(showFinalMessage, 2600)
 }
 
 function gameOverArnold() {
@@ -390,7 +390,7 @@ function gameOverArnold() {
   window.setTimeout(showResultScreen, 1100)
   window.setTimeout(fadeInResultScreen, 1200)
   window.setTimeout(showWinner, 1700)
-  window.setTimeout(showFinalMessage, 2200)
+  window.setTimeout(showFinalMessage, 2600)
 }
 
 
