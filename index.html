@@ -112,32 +112,38 @@
           <div class="flex-container">
             <div>
               <div class="rps-bg rps-player"></div>
-              <h2><span id="player-name">Player</span>: <span id="player-score">2</span></h2>
+              <h2>
+                <span id="player-name">Player</span>:
+                <span id="player-score">2</span>
+              </h2>
             </div>
             <div>
               <div class="rps-bg rps-arnold"></div>
               <h2>Arnold: <span id="arnold-score">2</span></h2>
-            </div>            
+            </div>
           </div>
           <div id="win-loose-msg">Arnold wins!</div>
         </section>
 
+        <!-- Result screen -->
         <section id="result-screen">
           <div class="flex-container">
             <div>
-              <div class="rps-bg rps-player"></div>
-              <h2 id="player-win"><span id="player-name">Player</span>: <span id="player-result"></span></h2>
+              <div class="result-bg player-bg"></div>
+              <h2 id="player-win">
+                <span id="player-name">Player</span>:
+                <span id="player-result"></span>
+              </h2>
             </div>
             <div>
-              <div class="rps-bg rps-arnold"></div>
+              <div class="result-bg arnold-bg"></div>
               <h2 id="arnold-win">Arnold: <span id="arnold-result"></span></h2>
-            </div>            
+            </div>
           </div>
           <h2 id="winner"></h2>
           <p class="margin-under">Win/loose text</p>
 
           <button class="btn play-game-btn">Play again</button>
-
         </section>
       </main>
       <footer class="hidden-element">

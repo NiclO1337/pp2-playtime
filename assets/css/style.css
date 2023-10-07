@@ -334,6 +334,28 @@ header {
   margin-top: 1.5rem;
 }
 
+.result-bg {
+  width: 6rem;
+  height: 10rem;
+  background-color: white;
+  box-shadow: 0 0 0.3rem var(--color-primary);
+  border-radius: 1rem;
+  margin: 0 auto 0.5rem;
+}
+
+.player-bg {
+  background-image: url("../images/player-image.png");
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center ;
+}
+
+.arnold-bg {
+  background-image: url("../images/arnold.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: 42% bottom;
+}
 /* --------------------------
 ------ Media quesries -------
 -------------------------- */
@@ -375,6 +397,12 @@ header {
     width: 4rem;
     font-size: 2rem;
   }
+
+  .result-bg {
+    width: 8rem;
+    height: 13rem;
+  }
+
 }
 
 /* Media query for 768px */
@@ -395,5 +423,10 @@ header {
   .rps-bg {
     width: 12rem;
     padding-top: 12rem;
+  }
+
+  .result-bg {
+    width: 10rem;
+    height: 17rem;
   }
 }
