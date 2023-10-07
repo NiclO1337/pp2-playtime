@@ -299,6 +299,8 @@ function playerWin() {
     if (playerNew === 3) {
       window.setTimeout(gameOverPlayer, 500)      
       document.getElementById('player-score').innerText = playerNew;
+      document.getElementById('winner').innerText = `Good job friend,
+      you won this time.`
     } else {
       document.getElementById('player-score').innerText = playerNew;
     }
@@ -318,7 +320,7 @@ function arnoldWin() {
     arnoldNew = parseInt(arnoldCurrent) + 1;
     if (arnoldNew === 3) {      
       window.setTimeout(gameOverArnold, 500)      
-      document.getElementById('arnold-score').innerText = arnoldNew;
+      document.getElementById('arnold-score').innerText = arnoldNew;      
     } else {
       document.getElementById('arnold-score').innerText = arnoldNew;
     }
@@ -385,7 +387,8 @@ function gameOverArnold() {
   window.setTimeout(hideGameScreen, 900)
   window.setTimeout(colourWinner, 1000)
   window.setTimeout(showResultScreen, 1100)
-  window.setTimeout(fadeInResultScreen, 1200)
+  window.setTimeout(fadeInResultScreen, 1200)  
+  window.setTimeout(showWinner, 1700)
 }
 
 
@@ -427,4 +430,8 @@ function showResultScreen() {
 function fadeInResultScreen() {
   let resultScreen = document.getElementById('result-screen');
   resultScreen.style.setProperty('opacity', '1');
+}
+
+function showWinner() {
+  document.getElementById('winner').style.opacity = '1';
 }

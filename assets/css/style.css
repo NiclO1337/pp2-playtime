@@ -354,15 +354,19 @@ header {
   background-image: url("../images/arnold.png");
   background-size: 70%;
   background-repeat: no-repeat;
-  background-position: 42%  85%;
+  background-position: 42% 85%;
 }
 
 #winner {
-font-size: 1.5rem;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 #winner ~ p {
   margin: 1rem 0 1.5rem;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 /* --------------------------
@@ -414,8 +418,7 @@ font-size: 1.5rem;
 
   #winner {
     font-size: 1.7rem;
-    }
-
+  }
 }
 
 /* Media query for 768px */
