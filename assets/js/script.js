@@ -471,18 +471,9 @@ function playAgainButton() {
     console.log('play again');
 
     document.getElementById('result-screen').style.opacity = '0';
+
     window.setTimeout(hideResultScreen, 900)
-
-    document.getElementById('winner').style.opacity = '0';
-    document.getElementById('winner').nextElementSibling.style.opacity = '0';
-
-    document.getElementById('arnold-score').innerText = '2';
-    document.getElementById('player-score').innerText = '2';
-
-
-
-
-
+    window.setTimeout(resetGame, 1000)
     window.setTimeout(showGameScreen, 1100)
     window.setTimeout(fadeInGameScreen, 1200)
 
@@ -498,4 +489,11 @@ function playAgainButton() {
 
 function hideResultScreen() {
   document.getElementById('result-screen').style.display = 'none';
+}
+
+function resetGame() {
+  document.getElementById('winner').style.opacity = '0';
+  document.getElementById('winner').nextElementSibling.style.opacity = '0';
+  document.getElementById('arnold-score').innerText = '2';
+  document.getElementById('player-score').innerText = '2';
 }
