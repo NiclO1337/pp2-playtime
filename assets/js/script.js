@@ -441,7 +441,7 @@ function selectBraggyMessage() {
 `9`,
 `10`
   ]
-  let i = Math.floor(Math.random()*11);
+  let i = Math.floor(Math.random()*10);
   braggyMessage.innerHTML = braggyMessages[i];
 }
 
@@ -462,7 +462,7 @@ function selectSassyMessage() {
 `9`,
 `10`
   ]
-  let i = Math.floor(Math.random()*11);
+  let i = Math.floor(Math.random()*10);
   sassyMessage.innerHTML = sassyMessages[i];
 }
 
