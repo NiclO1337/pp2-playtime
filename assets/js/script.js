@@ -468,7 +468,12 @@ function playAgainButton() {
   let button = document.getElementsByClassName('play-again-btn')[0];
   button.addEventListener('click', function () {
 
-    
+    console.log('play again');
+
+    document.getElementById('result-screen').style.opacity = '0';
+    window.setTimeout(hideResultScreen, 900)
+    window.setTimeout(showGameScreen, 1100)
+    window.setTimeout(fadeInGameScreen, 1200)
 
 
 
@@ -478,4 +483,8 @@ function playAgainButton() {
       button.style.borderStyle = 'outset';
     }
   })
+}
+
+function hideResultScreen() {
+  document.getElementById('result-screen').style.display = 'none';
 }
