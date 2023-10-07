@@ -374,10 +374,11 @@ function gameOverPlayer() {
   fadeOutGameScreen()
   window.setTimeout(hideGameScreen, 900)
   window.setTimeout(colourWinner, 1000)
+  window.setTimeout(selectSassyMessage, 1050)
   window.setTimeout(showResultScreen, 1100)
   window.setTimeout(fadeInResultScreen, 1200)
   window.setTimeout(showWinner, 1700)
-  window.setTimeout(showSassyMessage, 2200)
+  window.setTimeout(showFinalMessage, 2200)
   
   
 }
@@ -386,10 +387,11 @@ function gameOverArnold() {
   fadeOutGameScreen()
   window.setTimeout(hideGameScreen, 900)
   window.setTimeout(colourWinner, 1000)
+  window.setTimeout(selectBraggyMessage, 1050)
   window.setTimeout(showResultScreen, 1100)
   window.setTimeout(fadeInResultScreen, 1200)  
   window.setTimeout(showWinner, 1700)
-  window.setTimeout(showBraggyMessage, 2200)
+  window.setTimeout(showFinalMessage, 2200)
 }
 
 
@@ -424,6 +426,18 @@ function colourWinner() {
   }
 }
 
+function selectBraggyMessage() {
+  let braggyMessage = document.getElementById('winner').nextElementSibling;
+  console.log('braggy');
+  braggyMessage.textContent = 'Best machine won.';
+}
+
+function selectSassyMessage() {
+  let sassyMessage = document.getElementById('winner').nextElementSibling;
+  console.log('sassy');
+  sassyMessage.textContent = 'New beginners luck.';
+}
+
 function showResultScreen() {
   let resultScreen = document.getElementById('result-screen');
   resultScreen.style.setProperty('display', 'block');
@@ -438,14 +452,6 @@ function showWinner() {
   document.getElementById('winner').style.opacity = '1';
 }
 
-function showBraggyMessage() {
-  let braggyMessage = document.getElementById('winner').nextElementSibling;
-  console.log('braggy');
-  braggyMessage.textContent = 'Best machine won.';
-}
-
-function showSassyMessage() {
-  let sassyMessage = document.getElementById('winner').nextElementSibling;
-  console.log('sassy');
-  sassyMessage.textContent = 'New beginners luck.';
+function showFinalMessage() {
+  document.getElementById('winner').nextElementSibling.style.opacity = '1';  
 }
