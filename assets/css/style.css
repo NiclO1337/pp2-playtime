@@ -220,8 +220,8 @@ header {
 }
 
 .intro-screen-grid {
-  /* display: grid; */
-  display: none;
+  display: grid;
+  /* display: none; */
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
@@ -262,9 +262,9 @@ header {
 -------------------------- */
 
 #game-screen {
-  display: none;
-  opacity: 0;
-  /* display: block; */
+  /* display: none; */
+  /* opacity: 0; */
+  display: block;
   transition: opacity 0.8s;
   text-align: center;
   margin-top: 1.5rem;
@@ -347,14 +347,14 @@ header {
   background-image: url("../images/player-image.png");
   background-size: 85%;
   background-repeat: no-repeat;
-  background-position: center ;
+  background-position: center;
 }
 
 .arnold-bg {
   background-image: url("../images/arnold.png");
   background-size: 70%;
   background-repeat: no-repeat;
-  background-position: 42% bottom;
+  background-position: 42%  85%;
 }
 /* --------------------------
 ------ Media quesries -------
