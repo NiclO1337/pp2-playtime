@@ -427,17 +427,10 @@ function colourWinner() {
 
 function selectBraggyMessage() {
   let braggyMessage = document.getElementById('winner').nextElementSibling;
-  console.log('braggy');
-  braggyMessage.textContent = 'Best machine won.';
-}
-
-function selectSassyMessage() {
-  let sassyMessage = document.getElementById('winner').nextElementSibling;
-  let player = document.getElementById('nickname').value;
-  let sassyMessages = [
-    `Websters dictionary defines beginner's luck as <br>
-    "success when one is a beginner at something" for example <br>
-    "The success of ${player} in this game was just beginner's luck."`,
+  let braggyMessages = [
+    `Naturally, the best machine won. <br>
+    <br>
+    `,
 `2`,
 `3`,
 `4`,
@@ -448,10 +441,29 @@ function selectSassyMessage() {
 `9`,
 `10`
   ]
-
   let i = Math.floor(Math.random()*11);
+  braggyMessage.innerHTML = braggyMessages[i];
+}
 
-  sassyMessage.innerText = sassyMessages[i];
+function selectSassyMessage() {
+  let sassyMessage = document.getElementById('winner').nextElementSibling;
+  let player = document.getElementById('nickname').value;
+  let sassyMessages = [
+    `Websters dictionary defines beginner's luck as <br>
+    "success when one is a beginner at something" for example <br>
+    "<em>The success of ${player} in this game was just beginner's luck.</em>"`,
+`2`,
+`3`,
+`4`,
+`5`,
+`6`,
+`7`,
+`8`,
+`9`,
+`10`
+  ]
+  let i = Math.floor(Math.random()*11);
+  sassyMessage.innerHTML = sassyMessages[i];
 }
 
 function showResultScreen() {
