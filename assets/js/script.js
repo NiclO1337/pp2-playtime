@@ -437,3 +437,15 @@ function fadeInResultScreen() {
 function showWinner() {
   document.getElementById('winner').style.opacity = '1';
 }
+
+function showBraggyMessage() {
+  let braggyMessage = document.getElementById('winner').nextElementSibling;
+  console.log('braggy');
+  braggyMessage.textContent = 'Best machine won.';
+}
+
+function showSassyMessage() {
+  let sassyMessage = document.getElementById('winner').nextElementSibling;
+  console.log('sassy');
+  sassyMessage.textContent = 'New beginners luck.';
+}
