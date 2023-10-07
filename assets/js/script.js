@@ -297,7 +297,7 @@ function playerWin() {
     let playerCurrent = document.getElementById('player-score').innerText;
     playerNew = parseInt(playerCurrent) + 1;
     if (playerNew === 3) {
-      window.setTimeout(gameOverPlayer, 1000)      
+      window.setTimeout(gameOverPlayer, 500)      
       document.getElementById('player-score').innerText = playerNew;
     } else {
       document.getElementById('player-score').innerText = playerNew;
@@ -317,7 +317,7 @@ function arnoldWin() {
     let arnoldCurrent = document.getElementById('arnold-score').innerText;
     arnoldNew = parseInt(arnoldCurrent) + 1;
     if (arnoldNew === 3) {      
-      window.setTimeout(gameOverArnold, 1000)      
+      window.setTimeout(gameOverArnold, 500)      
       document.getElementById('arnold-score').innerText = arnoldNew;
     } else {
       document.getElementById('arnold-score').innerText = arnoldNew;
