@@ -321,6 +321,8 @@ function arnoldWin() {
     if (arnoldNew === 3) {      
       window.setTimeout(gameOverArnold, 500)      
       document.getElementById('arnold-score').innerText = arnoldNew;      
+      document.getElementById('winner').innerText = `The winner is
+      Aaaaarnooooold!`
     } else {
       document.getElementById('arnold-score').innerText = arnoldNew;
     }
