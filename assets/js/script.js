@@ -279,6 +279,7 @@ function checkWinner() {
 function tie() {
   let message = document.getElementById('win-loose-msg');
   message.style.fontSize = '180%';
+  message.style.textShadow = '0 0 1px #00000079';
   message.style.color = 'orange';
   message.innerText = 'It\'s a tie';
 }
@@ -287,6 +288,7 @@ function playerWin() {
   let message = document.getElementById('win-loose-msg');
   let player = document.getElementById('nickname').value;
   message.style.fontSize = '120%';
+  message.style.textShadow = '0 0 1px #00000079';
   message.style.color = 'red';
   message.innerText = `One point to ${player}.`;
 
@@ -306,6 +308,7 @@ function playerWin() {
 function arnoldWin() {
   let message = document.getElementById('win-loose-msg');
   message.style.fontSize = '180%';
+  message.style.textShadow = '0 0 1px #00000079';
   message.style.color = 'green';
   message.innerText = 'Arnold wins!';
 
