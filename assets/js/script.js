@@ -429,19 +429,21 @@ function selectBraggyMessage() {
   let braggyMessage = document.getElementById('winner').nextElementSibling;
   let braggyMessages = [
     `Naturally, the best machine won. <br>
-    <br>
-    `,
-`2`,
-`3`,
-`4`,
-`5`,
-`6`,
-`7`,
-`8`,
-`9`,
-`10`
+    Dare to try again?`,
+    `This was my <br>
+    <strong>1763467th</strong> win. <br>
+    It's been slow day.`,
+    `3`,
+    `4`,
+    `5`,
+    `6`,
+    `7`,
+    `8`,
+    `9`,
+    `10`
   ]
-  let i = Math.floor(Math.random()*10);
+  let i = Math.floor(Math.random() * 2);
+  console.log(i);
   braggyMessage.innerHTML = braggyMessages[i];
 }
 
@@ -449,20 +451,27 @@ function selectSassyMessage() {
   let sassyMessage = document.getElementById('winner').nextElementSibling;
   let player = document.getElementById('nickname').value;
   let sassyMessages = [
-    `Websters dictionary defines beginner's luck as <br>
-    "success when one is a beginner at something" for example <br>
-    "<em>The success of ${player} in this game was just beginner's luck.</em>"`,
-`2`,
-`3`,
-`4`,
-`5`,
-`6`,
-`7`,
-`8`,
-`9`,
-`10`
+    `Websters dictionary defines beginner's luck as
+    "success when one is a beginner at something" for example
+    "<em>The success of ${player} in this game was just beginner's luck."
+    `,
+    `You peaked at my choice before we showed, didn't you?
+    No judgement, any tactic is a good tactic, I suppose..
+    `,
+    `However it is not fair if you keep
+    clicking before I am ready. Did not have
+    enough time to run all my calculations..
+    `,
+    `4`,
+    `5`,
+    `6`,
+    `7`,
+    `8`,
+    `9`,
+    `10`
   ]
-  let i = Math.floor(Math.random()*10);
+  let i = Math.floor(Math.random() * 3);
+  console.log(i);
   sassyMessage.innerHTML = sassyMessages[i];
 }
 

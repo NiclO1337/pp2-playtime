@@ -66,7 +66,6 @@ header {
 }
 
 #win-loose-msg {
-  font-size: 180%;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -364,9 +363,10 @@ header {
 }
 
 #winner ~ p {
-  margin: 1rem 0 1.5rem;
+  margin: 1rem auto 1.5rem;
   opacity: 0;
   transition: opacity 0.6s;
+  max-width: 26ch;
 }
 
 /* --------------------------
@@ -419,6 +419,10 @@ header {
   #winner {
     font-size: default;
   }
+
+  #winner ~ p {
+    max-width: 35ch;
+  }
 }
 
 /* Media query for 768px */
@@ -444,5 +448,9 @@ header {
   .result-bg {
     width: 10rem;
     height: 17rem;
+  }
+
+  #winner ~ p {
+    max-width: 55ch;
   }
 }
