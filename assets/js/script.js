@@ -298,7 +298,7 @@ function playerWin() {
     let playerCurrent = document.getElementById('player-score').innerText;
     playerNew = parseInt(playerCurrent) + 1;
     if (playerNew === 3) {
-      window.setTimeout(gameOverPlayer, 500)      
+      window.setTimeout(gameOverPlayer, 500)
       document.getElementById('player-score').innerText = playerNew;
       document.getElementById('winner').innerText = `Good job friend,
       you won this time.`
@@ -319,8 +319,8 @@ function arnoldWin() {
   function incrementArnold() {
     let arnoldCurrent = document.getElementById('arnold-score').innerText;
     arnoldNew = parseInt(arnoldCurrent) + 1;
-    if (arnoldNew === 3) {      
-      window.setTimeout(gameOverArnold, 500)      
+    if (arnoldNew === 3) {
+      window.setTimeout(gameOverArnold, 500)
       document.getElementById('arnold-score').innerText = arnoldNew;
       document.getElementById('winner').innerText = `The winner is
       Aaaaarnooooold!`
@@ -472,6 +472,17 @@ function playAgainButton() {
 
     document.getElementById('result-screen').style.opacity = '0';
     window.setTimeout(hideResultScreen, 900)
+
+    document.getElementById('winner').style.opacity = '0';
+    document.getElementById('winner').nextElementSibling.style.opacity = '0';
+
+    document.getElementById('arnold-score').innerText = '2';
+    document.getElementById('player-score').innerText = '2';
+
+
+
+
+
     window.setTimeout(showGameScreen, 1100)
     window.setTimeout(fadeInGameScreen, 1200)
 
