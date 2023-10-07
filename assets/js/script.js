@@ -111,7 +111,7 @@ function playGameButton() {
       window.setTimeout(hideWelcomeText, 2700)
       window.setTimeout(removeWelcomeText, 3600)
       window.setTimeout(showGameScreen, 3700)
-      window.setTimeout(fadeGameScreen, 3800)
+      window.setTimeout(fadeInGameScreen, 3800)
     }
 
     document.getElementById('player-name').innerText = nickname;
@@ -161,7 +161,7 @@ function showGameScreen() {
   gameScreen.style.setProperty('display', 'block');
 }
 
-function fadeGameScreen() {
+function fadeInGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.setProperty('opacity', '1');
 }
@@ -364,24 +364,24 @@ function enableButtons() {
 }
 
 function gameOverPlayer() {
-  fadeGameScreen()
+  fadeOutGameScreen()
   window.setTimeout(hideGameScreen, 900)
   window.setTimeout(colourWinner, 1000)
   window.setTimeout(showResultScreen, 1100)
-  window.setTimeout(fadeResultScreen, 1200)
+  window.setTimeout(fadeInResultScreen, 1200)
   
 }
 
 function gameOverArnold() {
-  fadeGameScreen()
+  fadeOutGameScreen()
   window.setTimeout(hideGameScreen, 900)
   window.setTimeout(colourWinner, 1000)
   window.setTimeout(showResultScreen, 1100)
-  window.setTimeout(fadeResultScreen, 1200)
+  window.setTimeout(fadeInResultScreen, 1200)
 }
 
 
-function fadeGameScreen() {
+function fadeOutGameScreen() {
   let gameScreen = document.getElementById('game-screen');
   gameScreen.style.opacity = '0';
 }
@@ -416,7 +416,7 @@ function showResultScreen() {
   resultScreen.style.setProperty('display', 'block');
 }
 
-function fadeResultScreen() {
+function fadeInResultScreen() {
   let resultScreen = document.getElementById('result-screen');
   resultScreen.style.setProperty('opacity', '1');
 }
