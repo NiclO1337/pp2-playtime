@@ -356,6 +356,15 @@ header {
   background-repeat: no-repeat;
   background-position: 42%  85%;
 }
+
+#winner {
+font-size: 1.5rem;
+}
+
+#winner ~ p {
+  margin: 1rem 0 1.5rem;
+}
+
 /* --------------------------
 ------ Media quesries -------
 -------------------------- */
@@ -402,6 +411,10 @@ header {
     width: 8rem;
     height: 13rem;
   }
+
+  #winner {
+    font-size: 1.7rem;
+    }
 
 }
 
