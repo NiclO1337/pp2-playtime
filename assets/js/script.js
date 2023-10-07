@@ -433,8 +433,25 @@ function selectBraggyMessage() {
 
 function selectSassyMessage() {
   let sassyMessage = document.getElementById('winner').nextElementSibling;
-  console.log('sassy');
-  sassyMessage.textContent = 'New beginners luck.';
+  let player = document.getElementById('nickname').value;
+  let sassyMessages = [
+    `Websters dictionary defines beginner's luck as <br>
+    "success when one is a beginner at something" for example <br>
+    "The success of ${player} in this game was just beginner's luck."`,
+`2`,
+`3`,
+`4`,
+`5`,
+`6`,
+`7`,
+`8`,
+`9`,
+`10`
+  ]
+
+  let i = Math.floor(Math.random()*11);
+
+  sassyMessage.innerText = sassyMessages[i];
 }
 
 function showResultScreen() {
