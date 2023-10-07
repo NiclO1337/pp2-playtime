@@ -417,9 +417,10 @@ function colourWinner() {
 
   if (playerScore > arnoldScore) {
     playerWin.style.color = "green";
-
+    arnoldWin.style.color = "red";
   } else {
     arnoldWin.style.color = "green";
+    playerWin.style.color = "red";
   }
 }
 
