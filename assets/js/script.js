@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   themeButtons();
   playGameButton();
   gameButtons();
+  playAgainButton();
 })
 
 
@@ -320,7 +321,7 @@ function arnoldWin() {
     arnoldNew = parseInt(arnoldCurrent) + 1;
     if (arnoldNew === 3) {      
       window.setTimeout(gameOverArnold, 500)      
-      document.getElementById('arnold-score').innerText = arnoldNew;      
+      document.getElementById('arnold-score').innerText = arnoldNew;
       document.getElementById('winner').innerText = `The winner is
       Aaaaarnooooold!`
     } else {
@@ -379,8 +380,6 @@ function gameOverPlayer() {
   window.setTimeout(fadeInResultScreen, 1200)
   window.setTimeout(showWinner, 1700)
   window.setTimeout(showFinalMessage, 2200)
-  
-  
 }
 
 function gameOverArnold() {
@@ -389,7 +388,7 @@ function gameOverArnold() {
   window.setTimeout(colourWinner, 1000)
   window.setTimeout(selectBraggyMessage, 1050)
   window.setTimeout(showResultScreen, 1100)
-  window.setTimeout(fadeInResultScreen, 1200)  
+  window.setTimeout(fadeInResultScreen, 1200)
   window.setTimeout(showWinner, 1700)
   window.setTimeout(showFinalMessage, 2200)
 }
@@ -453,5 +452,30 @@ function showWinner() {
 }
 
 function showFinalMessage() {
-  document.getElementById('winner').nextElementSibling.style.opacity = '1';  
+  document.getElementById('winner').nextElementSibling.style.opacity = '1';
+}
+
+/* --------------------------
+----- Play again button -----
+-------------------------- */
+
+/**
+ * Clicking Play again button starts a chains of timed events
+ * to hide result screen and go back to game screen
+ */
+function playAgainButton() {
+
+  let button = document.getElementsByClassName('play-again-btn')[0];
+  button.addEventListener('click', function () {
+
+    
+
+
+
+    button.style.borderStyle = 'inset';
+    window.setTimeout(afterClick, 100)
+    function afterClick() {
+      button.style.borderStyle = 'outset';
+    }
+  })
 }
