@@ -451,6 +451,6 @@ header {
   }
 
   #winner ~ p {
-    max-width: 55ch;
+    max-width: 45ch;
   }
 }

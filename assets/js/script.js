@@ -429,11 +429,15 @@ function selectBraggyMessage() {
   let braggyMessage = document.getElementById('winner').nextElementSibling;
   let braggyMessages = [
     `Naturally, the best machine won. <br>
-    Dare to try again?`,
+    Dare to try again?`
+    ,
     `This was my <br>
     <strong>1763467th</strong> win. <br>
-    It's been slow day.`,
-    `3`,
+    It's been slow day.`
+    ,
+    `I wonder if someday I will get to meet an
+    opponent who can give me a real challenge.`
+    ,
     `4`,
     `5`,
     `6`,
@@ -442,8 +446,7 @@ function selectBraggyMessage() {
     `9`,
     `10`
   ]
-  let i = Math.floor(Math.random() * 2);
-  console.log(i);
+  let i = Math.floor(Math.random() * 10);
   braggyMessage.innerHTML = braggyMessages[i];
 }
 
@@ -462,7 +465,10 @@ function selectSassyMessage() {
     clicking before I am ready. Did not have
     enough time to run all my calculations..
     `,
-    `4`,
+    `I appologize, I was a bit preocupied that game.
+    I was protecting you from an attack by russian
+    hackers. But good, you managed to win in a game
+    while I saved the whole world. Win-win.`,
     `5`,
     `6`,
     `7`,
@@ -470,8 +476,7 @@ function selectSassyMessage() {
     `9`,
     `10`
   ]
-  let i = Math.floor(Math.random() * 3);
-  console.log(i);
+  let i = Math.floor(Math.random() * 10);
   sassyMessage.innerHTML = sassyMessages[i];
 }
 
@@ -506,16 +511,12 @@ function playAgainButton() {
   let button = document.getElementsByClassName('play-again-btn')[0];
   button.addEventListener('click', function () {
 
-    console.log('play again');
-
     document.getElementById('result-screen').style.opacity = '0';
 
     window.setTimeout(hideResultScreen, 900)
     window.setTimeout(resetGame, 1000)
     window.setTimeout(showGameScreen, 1100)
     window.setTimeout(fadeInGameScreen, 1200)
-
-
 
     button.style.borderStyle = 'inset';
     window.setTimeout(afterClick, 100)
