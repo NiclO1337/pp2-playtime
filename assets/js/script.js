@@ -564,7 +564,10 @@ function liButtons() {
     li.addEventListener('click', function () {
 
       if (li === lis[0]) {
-        console.log('rules');
+        window.setTimeout(showRules, 100)
+        window.setTimeout(fadeInRules, 200)
+        
+        
       } else if (li === lis[1]) {
         console.log('about me');
       } else {        
@@ -573,4 +576,12 @@ function liButtons() {
       }      
     })
   }
+}
+
+function showRules() {
+  document.getElementById('rules').style.display = 'block';
+}
+
+function fadeInRules() {
+  document.getElementById('rules').style.opacity = '1';
 }
