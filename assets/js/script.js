@@ -15,6 +15,18 @@ document.addEventListener('DOMContentLoaded', function () {
       button.style.boxShadow = 'none';
     })
   }
+
+  let lis = document.getElementsByClassName('footer-flex-container')[0].children;
+  console.log(lis);
+  for (let li of lis) {
+    li.addEventListener('mouseover', function () {
+      li.style.textShadow = '0 0 1px var(--color-primary)';
+    })
+    li.addEventListener('mouseout', function () {
+      li.style.textShadow = 'none';
+    })
+  }
+
   themeButtons();
   playGameButton();
   gameButtons();
