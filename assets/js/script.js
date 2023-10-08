@@ -567,7 +567,7 @@ function liButtons() {
 
         window.setTimeout(showRules, 100)
         window.setTimeout(fadeInRules, 200)
-        window.setTimeout(hideRpsRules, 300)
+        window.setTimeout(hideRpsRulesLi, 300)
         addEventListener('click', function () {
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
@@ -593,6 +593,6 @@ function fadeInRules() {
   document.getElementById('rules').style.opacity = '1';
 }
 
-function hideRpsRules() {
+function hideRpsRulesLi() {
   document.getElementsByClassName('footer-flex-container')[0].children[0].style.display = 'none';
 }
