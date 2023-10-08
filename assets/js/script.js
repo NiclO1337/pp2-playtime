@@ -553,10 +553,14 @@ function resetGame() {
   document.getElementById('player-score').innerText = '2';
 }
 
+/* --------------------------
+----- Footer li buttons -----
+-------------------------- */
 
-
-
-
+/**
+ * Clicking footer li buttons toggles displayed information on 
+ * and off, also can choose to restart game back to home screen
+ */
 function liButtons() {
   let lis = document.getElementsByClassName('footer-flex-container')[0].children;
 
@@ -575,7 +579,7 @@ function liButtons() {
         })
 
       } else if (li === lis[1]) {
-        
+
         window.setTimeout(showAboutMe, 100)
         window.setTimeout(fadeInAboutMe, 200)
         window.setTimeout(hideAboutMeLi, 300)
@@ -602,7 +606,8 @@ function fadeInRules() {
 }
 
 function hideRpsRulesLi() {
-  document.getElementsByClassName('footer-flex-container')[0].children[0].style.display = 'none';
+  document.getElementsByClassName('footer-flex-container')
+  [0].children[0].style.display = 'none';
 }
 function showAboutMe() {
   document.getElementById('about-me').style.display = 'block';
@@ -613,5 +618,6 @@ function fadeInAboutMe() {
 }
 
 function hideAboutMeLi() {
-  document.getElementsByClassName('footer-flex-container')[0].children[1].style.display = 'none';
+  document.getElementsByClassName('footer-flex-container')
+  [0].children[1].style.display = 'none';
 }
