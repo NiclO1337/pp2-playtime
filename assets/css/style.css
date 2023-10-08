@@ -163,6 +163,15 @@ header {
 
 #rules {
   max-width: 36ch;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#about-me {
+  display: none;  
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 /* --------------------------
