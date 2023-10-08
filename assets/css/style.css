@@ -156,13 +156,14 @@ header {
 .footer-popup {
   position: absolute;
   bottom: 5rem;
-  left: 10%;
-  width: 80%;
+  left: 5%;
+  width: 90%;
   min-height: 10rem;
   background-color: white;  
   box-shadow: 0 0 0.5rem var(--color-primary);
   border-radius: 1rem;
-  padding: 1em
+  padding: 1em;
+  box-sizing: border-box;
 }
 
 /* --------------------------
