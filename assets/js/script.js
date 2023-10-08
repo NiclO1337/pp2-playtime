@@ -571,10 +571,11 @@ function liButtons() {
         addEventListener('click', function () {
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
-          document.getElementsByClassName('footer-flex-container')[0].children[0].style.display = 'flex';
+          li.style.display = 'block';
         })
 
       } else if (li === lis[1]) {
+        
         console.log('about me');
       } else {
         console.log('restart');
