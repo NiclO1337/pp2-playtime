@@ -493,10 +493,6 @@ li {
     height: 13rem;
   }
 
-  #winner {
-    font-size: default;
-  }
-
   #winner ~ p {
     max-width: 35ch;
   }
