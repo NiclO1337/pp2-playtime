@@ -564,13 +564,13 @@ function liButtons() {
     li.addEventListener('click', function () {
 
       if (li === lis[0]) {
+        lis[0].disabled = true;
         window.setTimeout(showRules, 100)
         window.setTimeout(fadeInRules, 200)
         addEventListener('click', function() {          
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
         })
-        
         
       } else if (li === lis[1]) {
         console.log('about me');
