@@ -28,8 +28,8 @@ label {
 li {
   list-style: none;
   filter: brightness(100%);
-  padding: 1.2rem 0;
-  width: 5rem;
+  padding: 1.5rem 0;
+  width: 4rem;
 }
 
 header {
@@ -59,6 +59,10 @@ body {
 
 header {
   font-size: 100%;
+}
+
+footer {
+  font-size: 80%;
 }
 
 .smaller-text {
@@ -255,7 +259,6 @@ header {
 
 .intro-screen-grid {
   display: grid;
-  /* display: none; */
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
@@ -296,9 +299,8 @@ header {
 -------------------------- */
 
 #game-screen {
-  /* display: none; */
-  /* opacity: 0; */
-  display: block;
+  display: none;
+  opacity: 0;
   transition: opacity 0.8s;
   text-align: center;
   margin-top: 1.5rem;
@@ -365,9 +367,8 @@ header {
 -------------------------- */
 
 #result-screen {
-  /* display: none; */
-  /* opacity: 0; */
-  display: block;
+  display: none;
+  opacity: 0;
   transition: opacity 0.8s;
   text-align: center;
   margin-top: 1.5rem;
@@ -424,6 +425,16 @@ header {
     gap: 5%;
   }
 
+  footer {
+    font-size: 100%;
+  }
+  
+  li {
+    padding: 1.2rem 0;
+    width: 5rem;
+  }
+
+
   #descrition-text {
     width: 35ch;
   }
@@ -473,7 +484,6 @@ header {
 
 @media screen and (min-width: 768px) {
   #game-background {
-    margin: 3rem auto 1rem;
     box-shadow: 0 0 2rem #00000079;
   }
 
