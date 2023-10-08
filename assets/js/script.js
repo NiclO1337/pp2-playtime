@@ -566,6 +566,10 @@ function liButtons() {
       if (li === lis[0]) {
         window.setTimeout(showRules, 100)
         window.setTimeout(fadeInRules, 200)
+        addEventListener('click', function() {          
+          document.getElementById('rules').style.opacity = '0';
+          document.getElementById('rules').style.display = 'none';
+        })
         
         
       } else if (li === lis[1]) {
