@@ -166,6 +166,10 @@ header {
   box-sizing: border-box;
 }
 
+.rules {
+max-width: 36ch;
+}
+
 /* --------------------------
 ---------- Buttons ----------
 -------------------------- */
@@ -453,15 +457,16 @@ header {
 @media screen and (min-width: 768px) {
   #game-background {
     margin: 3rem auto 1rem;
+    box-shadow: 0 0 2rem #00000079;
   }
 
   #descrition-text {
     width: 62ch;
   }
 
-  #game-background {
-    box-shadow: 0 0 2rem #00000079;
-  }
+  .rules {
+    left: 11%;
+    }
 
   .rps-bg {
     width: 12rem;
@@ -476,4 +481,13 @@ header {
   #winner ~ p {
     max-width: 45ch;
   }
+}
+
+/* Media query for 1200px */
+
+@media screen and (min-width: 1200px) {
+  
+  .rules {
+    left: 15%;
+    }  
 }
