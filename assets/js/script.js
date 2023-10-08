@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   let lis = document.getElementsByClassName('footer-flex-container')[0].children;
-  console.log(lis);
   for (let li of lis) {
     li.addEventListener('mouseover', function () {
       li.style.textShadow = '0 0 1px var(--color-primary)';
@@ -31,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
   playGameButton();
   gameButtons();
   playAgainButton();
+  liButtons();
 })
 
 
@@ -551,4 +551,25 @@ function resetGame() {
   document.getElementById('winner').nextElementSibling.style.opacity = '0';
   document.getElementById('arnold-score').innerText = '2';
   document.getElementById('player-score').innerText = '2';
+}
+
+
+
+
+
+function liButtons() {
+  let lis = document.getElementsByClassName('footer-flex-container')[0].children;
+  
+  for (let li of lis) {
+    li.addEventListener('click', function () {
+
+      if (li === lis[0]) {
+        console.log('rules');
+      } else if (li === lis[1]) {
+        console.log('about me');
+      } else {        
+        console.log('restart');
+      }      
+    })
+  }
 }
