@@ -159,13 +159,12 @@ li {
 }
 
 #descrition-text {
-  width: 26ch;
+  width: 22ch;
   margin: 0 auto;
 }
 
 #error-div {
   color: rgb(158, 14, 14);
-  max-width: 35ch;
   margin: 0 auto 1rem;
   font-size: 85%;
 }
@@ -459,7 +458,7 @@ li {
   }
 
   #descrition-text {
-    width: 35ch;
+    width: 31ch;
   }
 
   .intro-screen-grid {
@@ -511,7 +510,7 @@ li {
   }
 
   #descrition-text {
-    width: 62ch;
+    width: 52ch;
   }
 
   #rules {
@@ -541,6 +540,10 @@ li {
 /* Media query for 1200px */
 
 @media screen and (min-width: 1200px) {
+  #descrition-text {
+    width: 65ch;
+  }
+
   #rules {
     left: 15%;
   }
