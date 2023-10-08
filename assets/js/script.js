@@ -576,7 +576,15 @@ function liButtons() {
 
       } else if (li === lis[1]) {
         
-        console.log('about me');
+        window.setTimeout(showAboutMe, 100)
+        window.setTimeout(fadeInAboutMe, 200)
+        window.setTimeout(hideAboutMeLi, 300)
+        addEventListener('click', function () {
+          document.getElementById('about-me').style.opacity = '0';
+          document.getElementById('about-me').style.display = 'none';
+          li.style.display = 'block';
+        })
+
       } else {
         console.log('restart');
         location.reload();
@@ -595,4 +603,15 @@ function fadeInRules() {
 
 function hideRpsRulesLi() {
   document.getElementsByClassName('footer-flex-container')[0].children[0].style.display = 'none';
+}
+function showAboutMe() {
+  document.getElementById('about-me').style.display = 'block';
+}
+
+function fadeInAboutMe() {
+  document.getElementById('about-me').style.opacity = '1';
+}
+
+function hideAboutMeLi() {
+  document.getElementsByClassName('footer-flex-container')[0].children[1].style.display = 'none';
 }
