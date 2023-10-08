@@ -154,7 +154,7 @@ header {
   left: 5%;
   width: 90%;
   min-height: 10rem;
-  background-color: white;  
+  background-color: white;
   box-shadow: 0 0 0.5rem var(--color-primary);
   border-radius: 1rem;
   padding: 1em;
@@ -162,10 +162,8 @@ header {
 }
 
 #rules {
-max-width: 36ch;
+  max-width: 36ch;
 }
-
-
 
 /* --------------------------
 ---------- Buttons ----------
@@ -468,7 +466,12 @@ max-width: 36ch;
 
   #rules {
     left: 11%;
-    }
+  }
+
+  #about-me {
+    left: 12%;
+    max-width: 76%;
+  }
 
   .rps-bg {
     width: 12rem;
@@ -488,8 +491,12 @@ max-width: 36ch;
 /* Media query for 1200px */
 
 @media screen and (min-width: 1200px) {
-  
   #rules {
     left: 15%;
-    }  
+  }
+
+  #about-me {
+    left: 18%;
+    max-width: 64%;
+  }
 }
