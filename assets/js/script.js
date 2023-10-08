@@ -112,8 +112,8 @@ function playGameButton() {
       errorDiv.innerText = `Please enter a nickname, 
     I would like to know who I am
     about to demolish.`;
-    } else if (nickname.length > 15) {
-      errorDiv.innerText = `Please do not use more than 15 
+    } else if (nickname.length > 12) {
+      errorDiv.innerText = `Please do not use more than 12 
       characters. Just need a nickname, 
       not your whole life story. 
       Please and thank you.`
@@ -153,7 +153,7 @@ function showWelcomeText() {
   welcomeText.style.margin = '7rem auto';
   welcomeText.style.opacity = '1';
   welcomeText.innerText +=
-    `Welcome
+  `Welcome
   ${player}!
   Let's play`;
 }
