@@ -39,7 +39,7 @@ i {
 }
 
 section {
-  text-align: left;
+  /* text-align: left; */
 }
 
 footer {
@@ -47,7 +47,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 4rem;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0 0 2rem 2rem;
 }
 
 /* --------------------------
@@ -227,8 +228,8 @@ header {
 }
 
 .intro-screen-grid {
-  /* display: grid; */
-  display: none;
+  display: grid;
+  /* display: none; */
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
@@ -269,9 +270,9 @@ header {
 -------------------------- */
 
 #game-screen {
-  display: none;
-  opacity: 0;
-  /* display: block; */
+  /* display: none; */
+  /* opacity: 0; */
+  display: block;
   transition: opacity 0.8s;
   text-align: center;
   margin-top: 1.5rem;
