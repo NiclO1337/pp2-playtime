@@ -159,7 +159,7 @@ li {
 }
 
 #descrition-text {
-  width: 22ch;
+  width: 24ch;
   margin: 0 auto;
 }
 
@@ -458,7 +458,7 @@ li {
   }
 
   #descrition-text {
-    width: 31ch;
+    width: 33ch;
   }
 
   .intro-screen-grid {
@@ -510,7 +510,7 @@ li {
   }
 
   #descrition-text {
-    width: 52ch;
+    width: 54ch;
   }
 
   #rules {
@@ -541,7 +541,7 @@ li {
 
 @media screen and (min-width: 1200px) {
   #descrition-text {
-    width: 65ch;
+    width: 64ch;
   }
 
   #rules {
