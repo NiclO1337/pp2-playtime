@@ -390,6 +390,10 @@ header {
     margin: 2rem auto 1rem;
   }
 
+  .footer-flex-container {
+    gap: 5%;
+  }
+
   #descrition-text {
     width: 35ch;
   }
