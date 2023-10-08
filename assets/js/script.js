@@ -570,12 +570,14 @@ function liButtons() {
       if (li === lis[0]) {
 
         window.setTimeout(showRules, 100)
+        window.setTimeout(disableButtons, 150)
         window.setTimeout(fadeInRules, 200)
         window.setTimeout(hideRpsRulesLi, 300)
         addEventListener('click', function () {
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
           li.style.display = 'block';
+          enableButtons();
         })
 
       } else if (li === lis[1]) {
