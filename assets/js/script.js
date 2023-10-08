@@ -447,19 +447,23 @@ function selectBraggyMessage() {
     <strong>1763467th</strong> win. <br>
     It's been slow day.`
     ,
-    `I wonder if someday I will get to meet an
-    opponent who can give me a real challenge.`
+    `I wonder if someday I will get to<br>
+    meet an opponent who can give<br>
+    me a real challenge.`
     ,
-    `This is actually quite a complex game,
-    I just make is look easy.`,
-    `5`,
+    `This game is actually<br>
+    quite complex, I just <br>
+    make it look easy.`
+    ,
+    `While winning this game, I learned everything about
+    quantum mechanics and mastered the Ukulele.`,
     `6`,
     `7`,
     `8`,
     `9`,
     `10`
   ]
-  let i = Math.floor(Math.random() * 10);
+  let i = Math.floor(Math.random() * 5);
   braggyMessage.innerHTML = braggyMessages[i];
 }
 
@@ -479,20 +483,19 @@ function selectSassyMessage() {
     enough time to run all my calculations..
     `,
     `I appologize, I was a bit preocupied that game.
-    I was protecting you from an attack by russian hackers.
+    I was protecting you from an attack by hackers.
     But good, you managed to win one game while I saved the
     world. So we are both winners, I guess..
     `,
-    `There was a glare from the sun
-    right into my optical censor.
-    I was blinded that whole game.`,
+    `There was a glare from the sun right into my
+    optical censor. I was blinded that whole game.`,
     `6`,
     `7`,
     `8`,
     `9`,
     `10`
   ]
-  let i = Math.floor(Math.random() * 10);
+  let i = Math.floor(Math.random() * 5);
   sassyMessage.innerHTML = sassyMessages[i];
 }
 
