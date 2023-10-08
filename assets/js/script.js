@@ -559,25 +559,27 @@ function resetGame() {
 
 function liButtons() {
   let lis = document.getElementsByClassName('footer-flex-container')[0].children;
-  
+
   for (let li of lis) {
     li.addEventListener('click', function () {
 
       if (li === lis[0]) {
-        lis[0].disabled = true;
+
         window.setTimeout(showRules, 100)
         window.setTimeout(fadeInRules, 200)
-        addEventListener('click', function() {          
+        window.setTimeout(hideRpsRules, 300)
+        addEventListener('click', function () {
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
+          document.getElementsByClassName('footer-flex-container')[0].children[0].style.display = 'flex';
         })
-        
+
       } else if (li === lis[1]) {
         console.log('about me');
-      } else {        
+      } else {
         console.log('restart');
         location.reload();
-      }      
+      }
     })
   }
 }
@@ -588,4 +590,8 @@ function showRules() {
 
 function fadeInRules() {
   document.getElementById('rules').style.opacity = '1';
+}
+
+function hideRpsRules() {
+  document.getElementsByClassName('footer-flex-container')[0].children[0].style.display = 'none';
 }
