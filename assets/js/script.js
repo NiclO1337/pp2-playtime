@@ -470,7 +470,9 @@ function selectSassyMessage() {
     I was protecting you from an attack by russian
     hackers. But good, you managed to win in a game
     while I saved the whole world. Win-win.`,
-    `5`,
+    `There was a glare from the sun
+    right into my optical censor.
+    I was blinded that whole game.`,
     `6`,
     `7`,
     `8`,
