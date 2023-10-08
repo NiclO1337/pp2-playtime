@@ -569,6 +569,7 @@ function liButtons() {
         console.log('about me');
       } else {        
         console.log('restart');
+        location.reload();
       }      
     })
   }
