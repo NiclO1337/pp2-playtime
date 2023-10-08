@@ -109,7 +109,7 @@ function playGameButton() {
     let errorDiv = document.getElementById('error-div');
 
     if (nickname === '') {
-      errorDiv.innerText = `Please enter a nickname, 
+      errorDiv.innerText = `Please enter a nickname. 
     I would like to know who I am
     about to demolish.`;
     } else if (nickname.length > 12) {
@@ -455,8 +455,8 @@ function selectBraggyMessage() {
     quite complex, I just <br>
     make it look easy.`
     ,
-    `While winning this game, I learned everything about
-    quantum mechanics and mastered the Ukulele.`,
+    `Fun fact, while winning this game, I also learned everything
+    there is to know about quantum mechanics. And mastered the Ukulele.`,
     `6`,
     `7`,
     `8`,
@@ -472,20 +472,20 @@ function selectSassyMessage() {
   let player = document.getElementById('nickname').value;
   let sassyMessages = [
     `Websters dictionary defines beginner's luck as
-    "success when one is a beginner at something" for example
+    "success when one is a beginner at something". For example,
     "<em>The success of ${player} in this game was just beginner's luck."
     `,
     `You peaked at my choice before we showed, didn't you?
-    No judgement, any tactic is a good tactic, I suppose..
+    No judgement. Any tactic is a good tactic, I suppose..
     `,
     `However it is not fair if you keep
-    clicking before I am ready. Did not have
+    clicking before I am ready. I did not even have
     enough time to run all my calculations..
     `,
-    `I appologize, I was a bit preocupied that game.
+    `I appologize. I was a bit preocupied that game.
     I was protecting you from an attack by hackers.
-    But good, you managed to win one game while I saved the
-    world. So we are both winners, I guess..
+    But good. You managed to win one game while I saved
+    the world. So we are both winners, I guess..
     `,
     `There was a glare from the sun right into my
     optical censor. I was blinded that whole game.`,
