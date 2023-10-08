@@ -438,7 +438,8 @@ function selectBraggyMessage() {
     `I wonder if someday I will get to meet an
     opponent who can give me a real challenge.`
     ,
-    `4`,
+    `This is actually quite a complex game,
+    I just make is look easy.`,
     `5`,
     `6`,
     `7`,
