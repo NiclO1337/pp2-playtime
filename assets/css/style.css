@@ -28,6 +28,8 @@ label {
 li {
   list-style: none;
   filter: brightness(100%);
+  padding: 1.2rem 0;
+  width: 5rem;
 }
 
 header {
@@ -149,6 +151,12 @@ header {
   font-size: 85%;
 }
 
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* --------------------------
 ---------- Buttons ----------
 -------------------------- */
@@ -210,13 +218,6 @@ header {
   text-shadow: 1px 1px 2px rgb(5, 38, 68);
   font-size: 1.6rem;
   margin: 0 0.4rem;
-}
-
-.footer-flex-container {
-  display: flex;
-  justify-content: center;
-  gap: 5rem;
-  align-items: center;
 }
 
 /* --------------------------
