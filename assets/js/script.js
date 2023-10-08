@@ -467,9 +467,10 @@ function selectSassyMessage() {
     enough time to run all my calculations..
     `,
     `I appologize, I was a bit preocupied that game.
-    I was protecting you from an attack by russian
-    hackers. But good, you managed to win in a game
-    while I saved the whole world. Win-win.`,
+    I was protecting you from an attack by russian hackers.
+    But good, you managed to win one game while I saved the
+    world. So we are both winners, I guess..
+    `,
     `There was a glare from the sun
     right into my optical censor.
     I was blinded that whole game.`,
