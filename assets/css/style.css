@@ -166,9 +166,11 @@ header {
   box-sizing: border-box;
 }
 
-.rules {
+#rules {
 max-width: 36ch;
 }
+
+
 
 /* --------------------------
 ---------- Buttons ----------
@@ -464,7 +466,7 @@ max-width: 36ch;
     width: 62ch;
   }
 
-  .rules {
+  #rules {
     left: 11%;
     }
 
@@ -487,7 +489,7 @@ max-width: 36ch;
 
 @media screen and (min-width: 1200px) {
   
-  .rules {
+  #rules {
     left: 15%;
     }  
 }
