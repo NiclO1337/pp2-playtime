@@ -444,8 +444,8 @@ footer {
     grid-template-areas:
       ". arnold arnold hello hello . ."
       ". text text text text text ."
-      ". . instruction instruction instruction . ."
-      ". . theme theme theme . ."
+      ". instruction instruction instruction instruction instruction ."
+      ". theme theme theme theme theme ."
       ". . name name name . .";
   }
 
