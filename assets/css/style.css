@@ -161,6 +161,14 @@ header {
   box-sizing: border-box;
 }
 
+.exit {
+  position: absolute;
+  box-sizing: border-box;
+  right: 0.8rem;
+  top: 0.8rem;
+  font-size: 90%;
+}
+
 #rules {
   max-width: 36ch;
   display: none;
