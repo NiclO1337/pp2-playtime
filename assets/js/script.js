@@ -10,20 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     button.addEventListener('mouseover', function () {
       button.style.boxShadow = '0 0 0.3rem var(--color-primary)';
-    })
+    });
     button.addEventListener('mouseout', function () {
       button.style.boxShadow = 'none';
-    })
+    });
   }
 
   let lis = document.getElementsByClassName('footer-flex-container')[0].children;
   for (let li of lis) {
     li.addEventListener('mouseover', function () {
       li.style.textShadow = '0 0 1px var(--color-primary)';
-    })
+    });
     li.addEventListener('mouseout', function () {
       li.style.textShadow = 'none';
-    })
+    });
   }
 
   themeButtons();
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   gameButtons();
   playAgainButton();
   liButtons();
-})
+});
 
 
 /* --------------------------
@@ -59,11 +59,11 @@ function themeButtons() {
       }
 
       button.style.borderStyle = 'inset';
-      window.setTimeout(afterClick, 100)
+      window.setTimeout(afterClick, 100);
       function afterClick() {
         button.style.borderStyle = 'outset';
       }
-    })
+    });
   }
 }
 
@@ -88,7 +88,7 @@ function chosenColor() {
   let input = document.getElementById('color-input');
   input.addEventListener('input', function inputColor() {
     document.documentElement.style.setProperty('--color-primary', input.value);
-  })
+  });
 }
 
 
@@ -116,27 +116,27 @@ function playGameButton() {
       errorDiv.innerText = `Please do not use more than 12 
       characters. Just need a nickname, 
       not your whole life story. 
-      Please and thank you.`
+      Please and thank you.`;
     } else {
-      window.setTimeout(fadeIntroScreen, 0)
-      window.setTimeout(hideIntroScreen, 900)
-      window.setTimeout(showWelcomeText, 1100)
-      window.setTimeout(fadeInWelcomeText, 1100)
-      window.setTimeout(fadeOutWelcomeText, 2700)
-      window.setTimeout(removeWelcomeText, 3600)
-      window.setTimeout(showGameScreen, 3700)
-      window.setTimeout(fadeInGameScreen, 3800)
+      window.setTimeout(fadeIntroScreen, 0);
+      window.setTimeout(hideIntroScreen, 900);
+      window.setTimeout(showWelcomeText, 1100);
+      window.setTimeout(fadeInWelcomeText, 1100);
+      window.setTimeout(fadeOutWelcomeText, 2700);
+      window.setTimeout(removeWelcomeText, 3600);
+      window.setTimeout(showGameScreen, 3700);
+      window.setTimeout(fadeInGameScreen, 3800);
     }
     
     document.getElementById('player-name').innerText = nickname;
     document.getElementById('player-name-result').innerText = nickname;
 
     button.style.borderStyle = 'inset';
-    window.setTimeout(afterClick, 100)
+    window.setTimeout(afterClick, 100);
     function afterClick() {
       button.style.borderStyle = 'outset';
     }
-  })
+  });
 }
 
 function fadeIntroScreen() {
@@ -211,27 +211,27 @@ function gameButtons() {
         }
       }
 
-      window.setTimeout(disableButtons, 100)
-      window.setTimeout(removeStartingClass, 500)
-      window.setTimeout(arnoldChoice, 500)
-      window.setTimeout(playerChoice, 500)
-      window.setTimeout(checkWinner, 700)
-      window.setTimeout(revealImages, Math.random() * 1000 + 500)
-      window.setTimeout(showResultMessage, 1800)
-      window.setTimeout(hideChoises, 3000)
-      window.setTimeout(hideResultMessage, 3100)
-      window.setTimeout(resetChoises, 3100)
-      window.setTimeout(addStartingClass, 3200)
-      window.setTimeout(revealImages, 3300)
-      window.setTimeout(enableButtons, 3900)
+      window.setTimeout(disableButtons, 100);
+      window.setTimeout(removeStartingClass, 500);
+      window.setTimeout(arnoldChoice, 500);
+      window.setTimeout(playerChoice, 500);
+      window.setTimeout(checkWinner, 700);
+      window.setTimeout(revealImages, Math.random() * 1000 + 500);
+      window.setTimeout(showResultMessage, 1800);
+      window.setTimeout(hideChoises, 3000);
+      window.setTimeout(hideResultMessage, 3100);
+      window.setTimeout(resetChoises, 3100);
+      window.setTimeout(addStartingClass, 3200);
+      window.setTimeout(revealImages, 3300);
+      window.setTimeout(enableButtons, 3900);
 
 
       button.style.borderStyle = 'inset';
-      window.setTimeout(afterClick, 100)
+      window.setTimeout(afterClick, 100);
       function afterClick() {
         button.style.borderStyle = 'outset';
       }
-    })
+    });
   }
 }
 
@@ -311,15 +311,15 @@ function playerWin() {
   message.style.color = 'red';
   message.innerText = `One point to ${player}.`;
 
-  window.setTimeout(incrementPlayer, 1500)
+  window.setTimeout(incrementPlayer, 1500);
   function incrementPlayer() {
     let playerCurrent = document.getElementById('player-score').innerText;
     playerNew = parseInt(playerCurrent) + 1;
     if (playerNew === 3) {
-      window.setTimeout(gameOverPlayer, 500)
+      window.setTimeout(gameOverPlayer, 500);
       document.getElementById('player-score').innerText = playerNew;
       document.getElementById('winner').innerText = `Good job friend,
-      you won this time.`
+      you won this time.`;
     } else {
       document.getElementById('player-score').innerText = playerNew;
     }
@@ -333,15 +333,15 @@ function arnoldWin() {
   message.style.color = 'green';
   message.innerText = 'Arnold wins!';
 
-  window.setTimeout(incrementArnold, 1500)
+  window.setTimeout(incrementArnold, 1500);
   function incrementArnold() {
     let arnoldCurrent = document.getElementById('arnold-score').innerText;
     arnoldNew = parseInt(arnoldCurrent) + 1;
     if (arnoldNew === 3) {
-      window.setTimeout(gameOverArnold, 500)
+      window.setTimeout(gameOverArnold, 500);
       document.getElementById('arnold-score').innerText = arnoldNew;
       document.getElementById('winner').innerText = `The winner is
-      Aaaaarnooooold!`
+      Aaaaarnooooold!`;
     } else {
       document.getElementById('arnold-score').innerText = arnoldNew;
     }
@@ -390,25 +390,25 @@ function enableButtons() {
 }
 
 function gameOverPlayer() {
-  fadeOutGameScreen()
-  window.setTimeout(hideGameScreen, 900)
-  window.setTimeout(colourWinner, 1000)
-  window.setTimeout(selectSassyMessage, 1050)
-  window.setTimeout(showResultScreen, 1100)
-  window.setTimeout(fadeInResultScreen, 1200)
-  window.setTimeout(showWinner, 1700)
-  window.setTimeout(showFinalMessage, 2600)
+  fadeOutGameScreen();
+  window.setTimeout(hideGameScreen, 900);
+  window.setTimeout(colourWinner, 1000);
+  window.setTimeout(selectSassyMessage, 1050);
+  window.setTimeout(showResultScreen, 1100);
+  window.setTimeout(fadeInResultScreen, 1200);
+  window.setTimeout(showWinner, 1700);
+  window.setTimeout(showFinalMessage, 2600);
 }
 
 function gameOverArnold() {
-  fadeOutGameScreen()
-  window.setTimeout(hideGameScreen, 900)
-  window.setTimeout(colourWinner, 1000)
-  window.setTimeout(selectBraggyMessage, 1050)
-  window.setTimeout(showResultScreen, 1100)
-  window.setTimeout(fadeInResultScreen, 1200)
-  window.setTimeout(showWinner, 1700)
-  window.setTimeout(showFinalMessage, 2600)
+  fadeOutGameScreen();
+  window.setTimeout(hideGameScreen, 900);
+  window.setTimeout(colourWinner, 1000);
+  window.setTimeout(selectBraggyMessage, 1050);
+  window.setTimeout(showResultScreen, 1100);
+  window.setTimeout(fadeInResultScreen, 1200);
+  window.setTimeout(showWinner, 1700);
+  window.setTimeout(showFinalMessage, 2600);
 }
 
 
@@ -468,7 +468,7 @@ function selectBraggyMessage() {
     `8`,
     `9`,
     `10`
-  ]
+  ];
   let i = Math.floor(Math.random() * 5);
   braggyMessage.innerHTML = braggyMessages[i];
 }
@@ -500,7 +500,7 @@ function selectSassyMessage() {
     `8`,
     `9`,
     `10`
-  ]
+  ];
   let i = Math.floor(Math.random() * 5);
   sassyMessage.innerHTML = sassyMessages[i];
 }
@@ -538,17 +538,17 @@ function playAgainButton() {
 
     document.getElementById('result-screen').style.opacity = '0';
 
-    window.setTimeout(hideResultScreen, 900)
-    window.setTimeout(resetGame, 1000)
-    window.setTimeout(showGameScreen, 1100)
-    window.setTimeout(fadeInGameScreen, 1200)
+    window.setTimeout(hideResultScreen, 900);
+    window.setTimeout(resetGame, 1000);
+    window.setTimeout(showGameScreen, 1100);
+    window.setTimeout(fadeInGameScreen, 1200);
 
     button.style.borderStyle = 'inset';
-    window.setTimeout(afterClick, 100)
+    window.setTimeout(afterClick, 100);
     function afterClick() {
       button.style.borderStyle = 'outset';
     }
-  })
+  });
 }
 
 function hideResultScreen() {
@@ -578,22 +578,22 @@ function liButtons() {
 
       if (li === lis[0]) {
 
-        window.setTimeout(showRules, 100)
-        window.setTimeout(disableButtons, 150)
-        window.setTimeout(fadeInRules, 200)
-        window.setTimeout(hideRpsRulesLi, 300)
+        window.setTimeout(showRules, 100);
+        window.setTimeout(disableButtons, 150);
+        window.setTimeout(fadeInRules, 200);
+        window.setTimeout(hideRpsRulesLi, 300);
         addEventListener('click', function () {
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
           li.style.display = 'block';
           enableButtons();
-        })
+        });
 
       } else if (li === lis[1]) {
 
-        window.setTimeout(showAboutMe, 100)
-        window.setTimeout(fadeInAboutMe, 200)
-        window.setTimeout(hideAboutMeLi, 300)
+        window.setTimeout(showAboutMe, 100);
+        window.setTimeout(fadeInAboutMe, 200);
+        window.setTimeout(hideAboutMeLi, 300);
         addEventListener('click', function () {
           document.getElementById('about-me').style.opacity = '0';
           document.getElementById('about-me').style.display = 'none';
@@ -604,7 +604,7 @@ function liButtons() {
         console.log('restart');
         location.reload();
       }
-    })
+    });
   }
 }
 
