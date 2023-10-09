@@ -447,22 +447,23 @@ function selectBraggyMessage() {
   let braggyMessage = document.getElementById('winner').nextElementSibling;
   let braggyMessages = [
     `Naturally, the best machine won. <br>
-    Dare to try again?`
-    ,
+    Dare to try again?
+    `,
     `This was my <br>
     <strong>1763467th</strong> win. <br>
-    It's been slow day.`
-    ,
+    It's been slow day.
+    `,
     `I wonder if someday I will get to<br>
     meet an opponent who can give<br>
-    me a real challenge.`
-    ,
+    me a real challenge.
+    `,
     `This game is actually<br>
     quite complex, I just <br>
-    make it look easy.`
-    ,
+    make it look easy.
+    `,
     `Fun fact, while winning this game, I also learned everything
-    there is to know about quantum mechanics. And mastered the Ukulele.`,
+    there is to know about quantum mechanics. And mastered the Ukulele.
+    `,
     `6`,
     `7`,
     `8`,
@@ -494,7 +495,8 @@ function selectSassyMessage() {
     the world. So we are both winners, I guess..
     `,
     `There was a glare from the sun right into my
-    optical censor. I was blinded that whole game.`,
+    optical censor. I was blinded that whole game.
+    `,
     `6`,
     `7`,
     `8`,
@@ -598,7 +600,7 @@ function liButtons() {
           document.getElementById('about-me').style.opacity = '0';
           document.getElementById('about-me').style.display = 'none';
           li.style.display = 'block';
-        })
+        });
 
       } else {
         console.log('restart');
