@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
  */
 function themeButtons() {
   let buttons = document.getElementsByClassName('theme-btn');
-  for (let button of buttons) {
+  for (const button of buttons) {
     button.addEventListener('click', function () {
       if (this.classList.contains('btn-blue')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
@@ -83,10 +83,10 @@ function themeButtons() {
       }
 
 
-      this.style.borderStyle = 'inset';
+      button.style.borderStyle = 'inset';
       window.setTimeout(afterClick, 100);
       function afterClick() {
-        this.style.borderStyle = 'outset';
+        button.style.borderStyle = 'outset';
       }
     });
   }
@@ -195,7 +195,7 @@ function fadeInGameScreen() {
  */
 function gameButtons() {
   let buttons = document.getElementsByClassName('game-btn');
-  for (let button of buttons) {
+  for (const button of buttons) {
     button.addEventListener('click', function () {
 
       document.getElementsByClassName('rps-bg')[0].style.backgroundSize = '0';
@@ -231,6 +231,8 @@ function gameButtons() {
       function afterClick() {
         button.style.borderStyle = 'outset';
       }
+
+      
     });
   }
 }
@@ -609,7 +611,7 @@ function liButtons() {
           document.getElementById('rules').style.display = 'none';
           li.style.display = 'block';
           enableButtons();
-        });
+        });        
       }
     });
   }
