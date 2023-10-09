@@ -110,7 +110,7 @@ li {
   border-radius: 2rem;
   width: 90%;
   max-width: 50rem;
-  min-height: 36rem;
+  min-height: 30rem;
   margin: 1rem auto;
   padding: 0 0 5.5rem;
   position: relative;
@@ -288,7 +288,7 @@ li {
 }
 
 .intro-screen-grid {
-  display: grid;
+  display: none;
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
@@ -449,6 +449,7 @@ li {
 @media screen and (min-width: 400px) {
   #game-background {
     margin: 2rem auto 1rem;
+    min-height: 36rem;
   }
 
   .footer-flex-container {
@@ -517,6 +518,7 @@ li {
 @media screen and (min-width: 768px) {
   #game-background {
     box-shadow: 0 0 2rem #00000079;
+    min-height: 39rem;
   }
 
   #descrition-text {
