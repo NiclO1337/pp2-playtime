@@ -46,51 +46,51 @@ function themeButtons() {
   let buttons = document.getElementsByClassName('theme-btn');
   for (let button of buttons) {
     button.addEventListener('click', function () {
-      if (button.classList.contains('btn-blue')) {
+      if (this.classList.contains('btn-blue')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(6, 64, 119)');
-      } else if (button.classList.contains('btn-red')) {
+      } else if (this.classList.contains('btn-red')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(180, 2, 2)');
-      } else if (button.classList.contains('btn-green')) {
+      } else if (this.classList.contains('btn-green')) {
         document.documentElement.style.setProperty('--color-primary', 'rgb(64, 141, 29)');
-      } else if (button.classList.contains('btn-random')) {
+      } else if (this.classList.contains('btn-random')) {
         randomColor();
-      } else if (button.classList.contains('color-input')) {
+      } else if (this.classList.contains('color-input')) {
         chosenColor();
       }
 
-      button.style.borderStyle = 'inset';
+      /**
+       * Generates random colors for theme when
+       * clicking rainbow colored button
+       */
+      function randomColor() {
+        let hexValues = '0123456789ABCDEF';
+        let hashtag = '#';
+        for (let values = 0; values < 6; values++) {
+          hashtag += hexValues[Math.floor(Math.random() * 16)];
+          document.documentElement.style.setProperty('--color-primary', hashtag);
+        }
+      }
+
+      /**
+       * Sets theme color based on user
+       * input into color picker
+       */
+      function chosenColor() {
+        let input = document.getElementById('color-input');
+        input.addEventListener('input', function inputColor() {
+          document.documentElement.style.setProperty('--color-primary', input.value);
+        });
+      }
+
+
+      this.style.borderStyle = 'inset';
       window.setTimeout(afterClick, 100);
       function afterClick() {
-        button.style.borderStyle = 'outset';
+        this.style.borderStyle = 'outset';
       }
     });
   }
 }
-
-/**
- * Generates random colors for theme when
- * clicking rainbow colored button
- */
-function randomColor() {
-  let hexValues = '0123456789ABCDEF';
-  let hashtag = '#';
-  for (let values = 0; values < 6; values++) {
-    hashtag += hexValues[Math.floor(Math.random() * 16)];
-    document.documentElement.style.setProperty('--color-primary', hashtag);
-  }
-}
-
-/**
- * Sets theme color based on user
- * input into color picker button
- */
-function chosenColor() {
-  let input = document.getElementById('color-input');
-  input.addEventListener('input', function inputColor() {
-    document.documentElement.style.setProperty('--color-primary', input.value);
-  });
-}
-
 
 /* --------------------------
 ----- Play game button ------
@@ -127,7 +127,7 @@ function playGameButton() {
       window.setTimeout(showGameScreen, 3700);
       window.setTimeout(fadeInGameScreen, 3800);
     }
-    
+
     document.getElementById('player-name').innerText = nickname;
     document.getElementById('player-name-result').innerText = nickname;
 
@@ -155,7 +155,7 @@ function showWelcomeText() {
   welcomeText.style.margin = '7rem auto';
   welcomeText.style.display = 'block';
   welcomeText.innerText =
-  `Welcome
+    `Welcome
   ${player}!
   Let's play`;
 }
