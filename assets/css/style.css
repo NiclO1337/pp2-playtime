@@ -334,7 +334,7 @@ li {
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
-  font-size: 80%;
+  font-size: 65%;
 }
 
 .rps-bg {
@@ -479,7 +479,7 @@ li {
 
   .flex-container {
     margin-bottom: 2rem;
-    font-size: 100%;
+    font-size: 80%;
   }
 
   .game-btn {
@@ -516,6 +516,10 @@ li {
   #about-me {
     left: 12%;
     max-width: 76%;
+  }
+
+  .flex-container {
+    font-size: 100%;
   }
 
   .rps-bg {
