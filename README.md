@@ -1,9 +1,9 @@
-# Playtime
+# RPS Battle Arena
 
-![Amiresponsive image]( TODO: Add link )
+![Amiresponsive image](https://res.cloudinary.com/dmntcacug/image/upload/v1696879393/pp2-amiresponsive-transparent_il7xxs.png)
 
 
-Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
+Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtime/)
 
 <hr>
 
@@ -42,13 +42,15 @@ Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
 
 ## User Experience (UX)
 
-TODO: Add info about site purpose and target user
+RPS Battle Arena is a gaming website to help people relax and enjoy themselves.
+
+It is important take breaks and have fun, this is a perfect entertaining pastime.
 
 
 ### User stories
 
 #### Website goals
-- 
+- Help people have fun and enjoy 
 - 
 - 
 - 
@@ -65,22 +67,25 @@ TODO: Add info about site purpose and target user
 ## Design
 
 ### Colours
-
+In this website, the user can select their own colour theme. Everyone likes different colours and colours are persieved different on different screens. Having the choice to change the colour ensures that user can get maximum enjoyment out of this gaming experience.
 
 
 
 ### Typography
 
+Chosen fonts for this website are Pixelify Sans for the main heading and Roboto for all other text. <br>
+It is important that users initial reaction to the header is "this is silly" before they are introduced to the computer based opponent, Arnold. Combining the serious title of "Battle Arena" with the playful font achives this well. Other text are written as if spoken by Arnold. The font Roboto perfectly encapsulates Arnolds essence and sets the right tone.
 
 
 ### Images
 
+Images used in this website are simple and playful to not disturb the colour theme.
 
 
 ### Wireframes
 
 Initial wireframes sketch designs. The final design has many improvements from the initial ideas.
-<details><summary>Screenshot of wireframes</summary> <p align="left"><img src="TODO: add link to image" alt="initial wireframe design sketches" width="700"/></p> </details>
+<details><summary>Screenshot of wireframes</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696881213/pp2-wireframes_k0l8mp.jpg" alt="initial wireframe design sketches" width="700"/></p> </details>
 
 
 
