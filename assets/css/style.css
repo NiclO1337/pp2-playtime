@@ -391,6 +391,7 @@ li {
 #win-loose-msg {
   opacity: 0;
   transition: opacity 0.3s;
+  font-weight: 400;
 }
 
 /* --------------------------
