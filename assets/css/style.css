@@ -172,7 +172,7 @@ li {
 
 #error-div {
   color: rgb(158, 14, 14);
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.5rem;
   font-size: 85%;
 }
 
@@ -288,7 +288,7 @@ li {
 }
 
 .intro-screen-grid {
-  display: none;
+  display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
@@ -454,6 +454,14 @@ li {
 
   .footer-flex-container {
     gap: 5%;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .header-fa {
+    font-size: 2rem;
   }
 
   footer {
