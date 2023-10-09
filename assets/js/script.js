@@ -121,7 +121,8 @@ function playGameButton() {
       window.setTimeout(fadeIntroScreen, 0)
       window.setTimeout(hideIntroScreen, 900)
       window.setTimeout(showWelcomeText, 1100)
-      window.setTimeout(hideWelcomeText, 2700)
+      window.setTimeout(fadeInWelcomeText, 1100)
+      window.setTimeout(fadeOutWelcomeText, 2700)
       window.setTimeout(removeWelcomeText, 3600)
       window.setTimeout(showGameScreen, 3700)
       window.setTimeout(fadeInGameScreen, 3800)
@@ -152,14 +153,18 @@ function showWelcomeText() {
   let player = document.getElementById('nickname').value;
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.margin = '7rem auto';
-  welcomeText.style.opacity = '1';
-  welcomeText.innerText +=
+  welcomeText.style.display = 'block';
+  welcomeText.innerText =
   `Welcome
   ${player}!
   Let's play`;
 }
 
-function hideWelcomeText() {
+function fadeInWelcomeText() {
+  document.getElementById('welcome-text').style.opacity = '1';
+}
+
+function fadeOutWelcomeText() {
   let welcomeText = document.getElementById('welcome-text');
   welcomeText.style.opacity = '0';
 }

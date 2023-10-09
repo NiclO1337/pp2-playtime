@@ -121,6 +121,7 @@ li {
 #welcome-text {
   opacity: 0;
   transition: opacity 0.8s;
+  display: none;
 }
 
 #img-arnold {
@@ -131,7 +132,7 @@ li {
   height: 6rem;
 }
 
-#img-instruction {
+.img-instruction {
   background-image: url("../images/rock-paper-scissor-instruction3.png");
   background-repeat: no-repeat;
   background-size: contain;
