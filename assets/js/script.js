@@ -584,7 +584,6 @@ function liButtons() {
 
         window.setTimeout(enableExit, 50);
         window.setTimeout(showRules, 100);
-        window.setTimeout(disableButtons, 150);
         window.setTimeout(fadeInRules, 200);
         window.setTimeout(hideRpsRulesLi, 300);
 
