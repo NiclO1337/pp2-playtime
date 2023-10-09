@@ -580,19 +580,16 @@ function liButtons() {
 
       if (li === lis[0]) {
 
+        window.setTimeout(enableExit, 50);
         window.setTimeout(showRules, 100);
         window.setTimeout(disableButtons, 150);
         window.setTimeout(fadeInRules, 200);
         window.setTimeout(hideRpsRulesLi, 300);
-        addEventListener('click', function () {
-          document.getElementById('rules').style.opacity = '0';
-          document.getElementById('rules').style.display = 'none';
-          li.style.display = 'block';
-          enableButtons();
-        });
+
 
       } else if (li === lis[1]) {
 
+        window.setTimeout(enableExit, 50);
         window.setTimeout(showAboutMe, 100);
         window.setTimeout(fadeInAboutMe, 200);
         window.setTimeout(hideAboutMeLi, 300);
@@ -603,8 +600,16 @@ function liButtons() {
         });
 
       } else {
-        console.log('restart');
         location.reload();
+      }
+
+      function enableExit() {
+        addEventListener('click', function () {
+          document.getElementById('rules').style.opacity = '0';
+          document.getElementById('rules').style.display = 'none';
+          li.style.display = 'block';
+          enableButtons();
+        });
       }
     });
   }
