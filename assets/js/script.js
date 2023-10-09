@@ -9,20 +9,20 @@ document.addEventListener('DOMContentLoaded', function () {
   for (let button of buttons) {
 
     button.addEventListener('mouseover', function () {
-      button.style.boxShadow = '0 0 0.3rem var(--color-primary)';
+      this.style.boxShadow = '0 0 0.3rem var(--color-primary)';
     });
     button.addEventListener('mouseout', function () {
-      button.style.boxShadow = 'none';
+      this.style.boxShadow = 'none';
     });
   }
 
   let lis = document.getElementsByClassName('footer-flex-container')[0].children;
   for (let li of lis) {
     li.addEventListener('mouseover', function () {
-      li.style.textShadow = '0 0 1px var(--color-primary)';
+      this.style.textShadow = '0 0 1px var(--color-primary)';
     });
     li.addEventListener('mouseout', function () {
-      li.style.textShadow = 'none';
+      this.style.textShadow = 'none';
     });
   }
 
