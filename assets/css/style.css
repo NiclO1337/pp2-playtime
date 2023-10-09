@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Roboto:wght@300;400;500;700&display=swap");
 
 /* --------------------------
 ------- Global styles -------
@@ -92,6 +92,13 @@ li {
 
 .smaller-text {
   font-size: 80%;
+}
+
+#player-score,
+#arnold-score,
+#player-result,
+#arnold-result {
+  font-size: 1.5rem;
 }
 
 /* --------------------------
@@ -480,6 +487,13 @@ li {
   .flex-container {
     margin-bottom: 2rem;
     font-size: 80%;
+  }
+
+  #player-score,
+  #arnold-score,
+  #player-result,
+  #arnold-result {
+    font-size: 2rem;
   }
 
   .game-btn {
