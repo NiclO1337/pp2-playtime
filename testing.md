@@ -146,13 +146,17 @@ Several media queries were created to make each feature responsive on different 
 ### Solved bugs
 
 - Noticed after using the filer: brightness() that I got a compounding effect on footer text which made it even darker. Solved by adding filer: brightness(100%) specifically to the li selector.
-- 
-- 
 
-
+A large number of bugs was accidentally created during development and had to be fixed.
+Fixes included:
+- looking in chrome developer tools to check for warning messages
+- looking through code line by line
+- using console.log(); to see what was acctually going on
+- a lot of trial and error
 
 
 
 ### Unfixed bugs
 
-- 
+- A mysterious message sometimes appears in console when browser has been idle for a while
+Reason: unknown. Solution: unknown.
