@@ -585,36 +585,35 @@ function liButtons() {
 
       if (li === lis[0]) {
 
-        window.setTimeout(enableExit, 50);
+        window.setTimeout(enableRulesExit, 50);
         window.setTimeout(showRules, 100);
         window.setTimeout(fadeInRules, 200);
-        window.setTimeout(hideRpsRulesLi, 300);
-
 
       } else if (li === lis[1]) {
 
-        window.setTimeout(enableExit, 50);
+        window.setTimeout(enableAboutMeExit, 50);
         window.setTimeout(showAboutMe, 100);
-        window.setTimeout(fadeInAboutMe, 200);
-        window.setTimeout(hideAboutMeLi, 300);
-        addEventListener('click', function () {
-          document.getElementById('about-me').style.opacity = '0';
-          document.getElementById('about-me').style.display = 'none';
-          li.style.display = 'block';
-        });
+        window.setTimeout(fadeInAboutMe, 200);        
 
       } else {
         location.reload();
       }
 
-      function enableExit() {
+      function enableRulesExit() {
         addEventListener('click', function () {
           document.getElementById('rules').style.opacity = '0';
           document.getElementById('rules').style.display = 'none';
           li.style.display = 'block';
         });
       }
-
+      
+      function enableAboutMeExit() {
+        addEventListener('click', function () {
+          document.getElementById('about-me').style.opacity = '0';
+          document.getElementById('about-me').style.display = 'none';
+          li.style.display = 'block';
+        });
+      }
       function showRules() {
         document.getElementById('rules').style.display = 'block';
       }
@@ -623,21 +622,12 @@ function liButtons() {
         document.getElementById('rules').style.opacity = '1';
       }
       
-      function hideRpsRulesLi() {
-        document.getElementsByClassName('footer-flex-container')
-        [0].children[0].style.display = 'none';
-      }
       function showAboutMe() {
         document.getElementById('about-me').style.display = 'block';
       }
       
       function fadeInAboutMe() {
         document.getElementById('about-me').style.opacity = '1';
-      }
-      
-      function hideAboutMeLi() {
-        document.getElementsByClassName('footer-flex-container')
-        [0].children[1].style.display = 'none';
       }
     });
   }
