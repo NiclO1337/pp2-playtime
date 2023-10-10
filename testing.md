@@ -109,19 +109,19 @@ Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung I
 
 | Feature tested \  On browser | Google Chrome | Microsoft Edge | Firefox | Samsung Internet  |
 | --- | --- | --- | --- | --- |
-| Theme buttons | Pass | Pass | Pass | |
-| Form validation | Pass | Pass | Pass |  |
-| Form validation2 | Pass | Pass | Pass |  |
-| Form submission | Pass | Pass | Pass |  |
-| Play game button | Pass | Pass | Pass |  |
-| Game button: Rock | Pass | Pass | Pass |  |
-| Game button: Paper | Pass | Pass | Pass |  |
-| Game button: Scissor | Pass | Pass | Pass |  |
-| Play again button | Pass | Pass | Pass |  |
-| Button: RPS Rules | Pass | Pass | Pass |  |
-| Button: About me | Pass | Pass | Pass |  |
-| Button: Restart Home | Pass | Pass | Pass |  |
-| Hover buttons | Pass | Pass | Pass |  |
+| Theme buttons | Pass | Pass | Pass | Pass |
+| Form validation | Pass | Pass | Pass | Pass |
+| Form validation2 | Pass | Pass | Pass | Pass |
+| Form submission | Pass | Pass | Pass | Pass |
+| Play game button | Pass | Pass | Pass | Pass |
+| Game button: Rock | Pass | Pass | Pass | Pass |
+| Game button: Paper | Pass | Pass | Pass | Pass |
+| Game button: Scissor | Pass | Pass | Pass | Pass |
+| Play again button | Pass | Pass | Pass | Pass |
+| Button: RPS Rules | Pass | Pass | Pass | Pass |
+| Button: About me | Pass | Pass | Pass | Pass |
+| Button: Restart Home | Pass | Pass | Pass | Pass |
+| Hover buttons | Pass | Pass | Pass | Pass |
 
 
 ### Devices
@@ -129,10 +129,10 @@ Manually tested on mobile device (Xiaomi 12), tablet (Samsung Galaxy tab S4) lap
 
 | Devices | Expected outcome / responsive | Achived |
 | --- | --- | --- | 
-| Mobile (Xiaomi 12) | Looks as intended on this small screen size |  |
-| Tablet (Galaxy tab S4) | Looks as intended on this screen size |  |
-| Laptop (1366x768px) | Looks as intended on medium size screen |  |
-| Desktop (1920x1080px) | Looks as intended on big size screen |  |
+| Mobile (Xiaomi 12) | Looks as intended on this small screen size | Pass |
+| Tablet (Galaxy tab S4) | Looks as intended on this screen size | Pass |
+| Laptop (1366x768px) | Looks as intended on medium size screen | Pass |
+| Desktop (1920x1080px) | Looks as intended on big size screen | Pass |
 
 The desktop computer also tested with Chrome developer tools from 280 px wide screen up to 1920 px.
 Several media queries were created to make each feature responsive on different screen sizes. All testing was made on up-to-date browsers. 
