@@ -36,7 +36,7 @@
 
         <!-- Introduction screen -->
         <section id="intro-screen" class="intro-screen-grid">
-          <div id="img-arnold"></div>
+          <div id="img-arnold" title="Image of Arnold"></div>
 
           <div class="align-left" id="intro-text">
             <h4>Hello, I'm Arnold!</h4>
@@ -94,33 +94,33 @@
             <button class="btn play-game-btn">Play game</button>
           </div>
 
-          <div class="img-instruction"></div>
+          <div class="img-instruction" title="Image of instruction"></div>
         </section>
 
         <!-- Game screen -->
         <section id="game-screen">
           <h2 class="margin-under">Make your choice</h2>
           <div>
-            <button class="btn game-btn">
+            <button class="btn game-btn" title="Rock">
               <i class="fa-solid fa-hand-back-fist"></i>
             </button>
-            <button class="btn game-btn">
+            <button class="btn game-btn" title="Paper">
               <i class="fa-solid fa-hand"></i>
             </button>
-            <button class="btn game-btn">
+            <button class="btn game-btn" title="Scissor">
               <i class="fa-solid fa-hand-scissors"></i>
             </button>
           </div>
           <div class="flex-container">
             <div>
-              <div class="rps-bg rps-player"></div>
+              <div class="rps-bg rps-player" title="Image to show players choice"></div>
               <h2>
                 <span id="player-name">Player</span><br />
                 <span id="player-score">0</span>
               </h2>
             </div>
             <div>
-              <div class="rps-bg rps-arnold"></div>
+              <div class="rps-bg rps-arnold" title="Image to show Arnolds choice"></div>
               <h2>Arnold<br /><span id="arnold-score">0</span></h2>
             </div>
           </div>
@@ -131,14 +131,14 @@
         <section id="result-screen">
           <div class="flex-container">
             <div>
-              <div class="result-bg player-bg"></div>
+              <div class="result-bg player-bg title="Image representing the player"></div>
               <h2 id="player-win">
                 <span id="player-name-result">Player</span><br />
                 <span id="player-result"></span>
               </h2>
             </div>
             <div>
-              <div class="result-bg arnold-bg"></div>
+              <div class="result-bg arnold-bg" title="Image of Arnold"></div>
               <h2 id="arnold-win">
                 Arnold<br /><span id="arnold-result"></span>
               </h2>
