@@ -101,6 +101,7 @@ Initial test result > result after optimization
 | Button: About me | Display a popup window with information about Arnold | Click 'About me' button | A window with information about Arnold is displayed | Pass |
 | Button: Restart Home | Go back to introduction screen | Click 'Restart Home' button | Reloads the page to introduction screen | Pass |
 | **The footer** |
+| Smooth transitions | When navigating throughout the page, transitions are smooth instead of instant | Click 'Play game' | Smooth transition is displayed | Pass |
 | Hover buttons | Show hover effect on mouse-over | Mouse over buttons | Hover effect is displayed | Pass |
 
 
@@ -121,6 +122,7 @@ Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung I
 | Button: RPS Rules | Pass | Pass | Pass | Pass |
 | Button: About me | Pass | Pass | Pass | Pass |
 | Button: Restart Home | Pass | Pass | Pass | Pass |
+| Smooth transitions | Pass | Pass | Pass | Pass |
 | Hover buttons | Pass | Pass | Pass | Pass |
 
 Note: Bad visibility on Samsung Internet if using dark mode,

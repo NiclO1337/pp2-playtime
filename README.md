@@ -138,8 +138,12 @@ The result screen shows images of the players (comedic image to represent the us
 
 The footer is present on all pages. The user can get a reminder about the rules of the game, learn a little more about Arnold and also can choose to reset game back to home screen.
 
-
 <details><summary>Screenshot of the footer</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696950243/feature-footer_wyenoy.jpg" alt="Picture of the footer" width="500"/></p> </details>
+
+### Smooth transitions
+
+Page features smooth and slow transitions throughout the page. This is to to create a calm and relaxed experience. 
+Only feature which displays instantly is when the game hands are revealed, they are revealed on a random timer to build suspense and excitement.
 
 
 ## Future features
