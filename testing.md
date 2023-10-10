@@ -158,5 +158,7 @@ Fixes included:
 
 ### Unfixed bugs
 
-- A mysterious message sometimes appears in console when browser has been idle for a while
-Reason: unknown. Solution: unknown.
+- A mysterious message about "Uncaught listener" sometimes appears in console when browser has been idle for a while.<br>
+Reason: suspect it is connected to the li buttons adding a new general event listener that enables the popup windows to be closed by clicking anywhere.<br>
+Possible solution: Change so the event listener from li buttons is added on a timer instead of immediatly.
+Possible solution: According to Stack Overflow this could be caused by Chrome extensions.
