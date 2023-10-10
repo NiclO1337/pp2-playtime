@@ -579,21 +579,31 @@ function resetGame() {
  */
 function liButtons() {
   const lis = document.getElementsByClassName('footer-flex-container')[0].children;
+  const rules = document.getElementById('rules');
+  const aboutMe = document.getElementById('about-me');
 
   for (const li of lis) {
     li.addEventListener('click', function () {
 
       if (li === lis[0]) {
 
-        window.setTimeout(enableRulesExit, 50);
-        window.setTimeout(showRules, 100);
-        window.setTimeout(fadeInRules, 200);
+        if (rules.style.display === 'block') {
+          rules.style.display = 'none';
+        } else {
+          window.setTimeout(enableRulesExit, 50);
+          window.setTimeout(showRules, 100);
+          window.setTimeout(fadeInRules, 200);
+        }
 
       } else if (li === lis[1]) {
 
+        if (aboutMe.style.display === 'block') {
+          aboutMe.style.display = 'none';
+        } else {
         window.setTimeout(enableAboutMeExit, 50);
         window.setTimeout(showAboutMe, 100);
-        window.setTimeout(fadeInAboutMe, 200);        
+        window.setTimeout(fadeInAboutMe, 200);
+      }
 
       } else {
         location.reload();
@@ -606,7 +616,7 @@ function liButtons() {
           li.style.display = 'block';
         });
       }
-      
+
       function enableAboutMeExit() {
         addEventListener('click', function () {
           document.getElementById('about-me').style.opacity = '0';
@@ -617,15 +627,15 @@ function liButtons() {
       function showRules() {
         document.getElementById('rules').style.display = 'block';
       }
-      
+
       function fadeInRules() {
         document.getElementById('rules').style.opacity = '1';
       }
-      
+
       function showAboutMe() {
         document.getElementById('about-me').style.display = 'block';
       }
-      
+
       function fadeInAboutMe() {
         document.getElementById('about-me').style.opacity = '1';
       }
