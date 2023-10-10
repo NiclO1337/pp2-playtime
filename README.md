@@ -120,7 +120,9 @@ The introduction screen is where user meets Arnold and gets information about th
 
 ### The game screen
 
+The game screen is where the main game is played. It has a simple layout with 3 game buttons, place for image to be displayed, each players name and current score. Default image is replaced when user makes their choice. 
 
+<details><summary>Screenshot of the game screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696932843/feature-game-screen_s0jfny.png" alt="Picture of the game screen" width="500"/></p> </details>
 
 ### The result screen
 
