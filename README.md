@@ -204,16 +204,26 @@ Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtim
 
 ## Credits
 
-### Content
-
-
 ### Media
 
 #### Favicon
 
+Picture by Clker-Free-Vector-Images: [link to image](https://pixabay.com/vectors/thinker-thinking-person-idea-28741/)
+
 
 #### Main page
 
+RPS instruction image by OpenClipart-Vectors:[link to image](https://pixabay.com/vectors/fingers-fist-hands-paper-rock-149295/)
+
+Question mark image by openclipart.org: [link to image](https://www.freeimages.com/vector/question-mark-4848926)
+
+Rock image by Clker-Free-Vector-Images: [link to image](https://pixabay.com/vectors/rock-paper-scissors-rock-hand-296854/)
+
+Paper image by Clker-Free-Vector-Images: [link to image](https://pixabay.com/vectors/rock-paper-scissors-paper-hand-296855/)
+
+Scissor image by Clker-Free-Vector-Images: [link to image](https://pixabay.com/vectors/rock-paper-scissors-scissors-hand-296853/)
+
+Player "troll" image by BilliTheCat: [link to image](https://pixabay.com/vectors/graphic-troll-trolling-forum-3374801/)
 
 
 
@@ -228,7 +238,3 @@ Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtim
 [Why CSS grid-area is the best property for laying out content](https://www.youtube.com/watch?v=duH4DLq5yoo)
 
 - After much research, this seemed to be the easiest [random number generator.](https://stackoverflow.com/questions/1484506/random-color-generator)
-
-- 
-
-- 
