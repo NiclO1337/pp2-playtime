@@ -84,15 +84,23 @@ Initial test result > result after optimization
 
 | Feature tested | Expected outcome | Testing Performed | Result | Pass / fail | 
 | --- | --- | --- | --- | --- |
+| **Introduction screen** |
 | Theme buttons | Change color theme based on button | Click the button | Theme changes | Pass |
 | Form validation | Will not allow player without name | Click 'Play game' without entering name | Warning message is displayed | Pass |
 | Form validation2 | Will not allow name longer than 12 characters | Click 'Play game' after entering name longer than 12 characters | Warning message is displayed | Pass |
 | Form submission | Entered name displayed while playing | Input name and click 'Play game' | Input is accepted and game starts with name displayed | Pass |
 | Play game button | Take user to game screen | Click 'Play game' button | Changes to game screen | Pass |
+| **Game screen** |
 | Game button: Rock | Play game choosing 'Rock' | Click 'Rock' button | Starts game with Rock chosen | Pass |
 | Game button: Paper | Play game choosing 'Paper' | Click 'Paper' button | Starts game with Paper chosen | Pass |
 | Game button: Scissor | Play game choosing 'Scissor' | Click 'Scissor' button | Starts game with Scissor chosen | Pass |
+| **Result screen** |
 | Play again button | Start a new game with same player name and theme | Click 'Play again' button | Starts game over with same theme and name and score 0-0 | Pass |
+| **The footer** |
+| Button: RPS Rules | Display a popup window with the rules | Click 'RPS Rules' button | A window with RPS rules is displayed | Pass |
+| Button: About me | Display a popup window with information about Arnold | Click 'About me' button | A window with information about Arnold is displayed | Pass |
+| Button: Restart Home | Go back to introduction screen | Click 'Restart Home' button | Reloads the page to introduction screen | Pass |
+| **The footer** |
 | Hover buttons | Show hover effect on mouse-over | Mouse over buttons | Hover effect is displayed | Pass |
 
 
@@ -101,16 +109,19 @@ Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung I
 
 | Feature tested \  On browser | Google Chrome | Microsoft Edge | Firefox | Samsung Internet  |
 | --- | --- | --- | --- | --- |
-| Theme buttons |  |  |  | |
-| Form validation |   |  |  |  |
-| Form validation2 |  |  |  |  |
-| Form submission |  |  |  |  |
-| Play game button |  |  |  |  |
-| Game button: Rock |  |  |  |  |
-| Game button: Paper |  |  |  |  |
-| Game button: Scissor |  |  |  |  |
-| Play again button |  |  |  |  |
-| Hover buttons |  |  |  |  |
+| Theme buttons | Pass | Pass |  | |
+| Form validation | Pass | Pass |  |  |
+| Form validation2 | Pass | Pass |  |  |
+| Form submission | Pass | Pass |  |  |
+| Play game button | Pass | Pass |  |  |
+| Game button: Rock | Pass | Pass |  |  |
+| Game button: Paper | Pass | Pass |  |  |
+| Game button: Scissor | Pass | Pass |  |  |
+| Play again button | Pass | Pass |  |  |
+| Button: RPS Rules |  | Pass |  |  |
+| Button: About me |  | Pass |  |  |
+| Game button: Scissor |  | Pass |  |  |
+| Hover buttons | Pass | Pass |  |  |
 
 
 ### Devices
