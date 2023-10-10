@@ -130,7 +130,7 @@ The game screen is where the main game is played. It has a simple layout with 3 
 
 ### The result screen
 
-The result screen shows images of the players (comedic image to represent User) and the final score. Winner is stated and a final message from Arnold is displayed. His message is braggy if he wins and sassy if he looses. Player can now choose to play again.
+The result screen shows images of the players (comedic image to represent the user) and the final score. Winner is stated and a final message from Arnold is displayed. His message is braggy if he wins and sassy if he looses. Player can now choose to play again.
 
 <details><summary>Screenshot of the result screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696935235/feature-result-screen_jhzajs.jpg" alt="Picture of the result screen" width="500"/></p> </details>
 
