@@ -1,9 +1,9 @@
 # Playtime
 
-![Amiresponsive image]( TODO: Add link )
+![Amiresponsive image](https://res.cloudinary.com/dmntcacug/image/upload/v1696879393/pp2-amiresponsive-transparent_il7xxs.png)
 
 
-Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
+Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtime/)
 
 <hr>
 
@@ -40,8 +40,8 @@ Validated through https://jigsaw.w3.org/css-validator/validator and passed
 <br>![Passed without errors](https://res.cloudinary.com/dmntcacug/image/upload/v1693422108/css-validator-pass_xthpbi.jpg)
 
 - JavaScript
-Used ![JSHint](https://jshint.com/) to test for errors and potential problems.<br>
-Code has no warnings or errors (Uses ES6 features which needs to be enabled in configuration).
+checked with [JSHint](https://jshint.com/) to test for errors and potential problems.<br>
+Code has no warnings or errors (Uses ES6 features which needs to be enabled in the configuration).
 
 ### Lighthouse testing
 
