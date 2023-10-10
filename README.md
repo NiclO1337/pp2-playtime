@@ -75,7 +75,7 @@ In this website, the user can select their own colour theme. Everyone likes diff
 ### Typography
 
 Chosen fonts for this website are Pixelify Sans for the main heading and Roboto for all other text. <br>
-It is important that users initial reaction to the header is "this is silly" before they are introduced to the computer based opponent, Arnold. Combining the serious title of "Battle Arena" with the playful font achives this well. Other text are written as if spoken by Arnold. The font Roboto perfectly encapsulates Arnolds essence and sets the right tone.
+Goal is to set a playful and silly tone immidiatly, combining the serious title of "Battle Arena" with the playful font achives this well. Other text are written as if spoken by the computerbased player, Arnold. The font Roboto perfectly encapsulates Arnolds essence and sets the right tone.
 
 
 ### Images
@@ -102,13 +102,15 @@ All pages are designed to be responsive to different screen sizes to accommodate
 
 ### The header
 
-This header is displayed consistently throughout navigating the games pages. It was designed with the intent of making the users first initial reaction to be "This is a bit silly". An aggressively named title together with a playful font and icons achives this. It is important that the user has this mindset before meeting Arnold.
+This header is displayed consistently throughout navigating the games pages. It was designed with the intent of making the users first initial reaction to be "This is a bit silly". An aggressively named title together with a playful font and icons achives this.
 
 <details><summary>Screenshot of the header</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696931095/feature-header_g9nunr.jpg" alt="Picture of the header" width="300"/></p> </details>
 
 ### Meet Arnold!
 
 One of the main features of the webpage is the amusing computer based player, Arnold. He has a fun and sassy personality. He is over-confident in his abilities to win in this game and is a self proclaimed expert in everything. He is not a gracious winner and a very sore looser.
+
+Either user is amused by Arnold and will have a better user experience because of him. Or user it not amused by Arnold and will then get greater satisfaction from beating him in the game.
 
 <details><summary>Screenshot of meeting Arnold</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696930327/feature-arnold_jh1mdw.jpg" alt="Picture of Arnold" width="300"/></p> </details>
 
@@ -128,7 +130,9 @@ The game screen is where the main game is played. It has a simple layout with 3 
 
 ### The result screen
 
+The result screen shows images of the players (comedic image to represent User) and the final score. Winner is stated and a final message from Arnold is displayed. His message is braggy if he wins and sassy if he looses. Player can now choose to play again.
 
+<details><summary>Screenshot of the result screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696935235/feature-result-screen_jhzajs.jpg" alt="Picture of the result screen" width="500"/></p> </details>
 
 ### The footer
 
