@@ -138,7 +138,8 @@ The result screen shows images of the players (comedic image to represent the us
 
 The footer is present on all pages. The user can get a reminder about the rules of the game, learn a little more about Arnold and also can choose to reset game back to home screen.
 
-<details><summary>Screenshot of the footer</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696936553/feature-footer_zqxdx7.jpg" alt="Picture of the footer" width="300"/></p> </details>
+!!!TODO: add new image 
+<details><summary>Screenshot of the footer</summary> <p align="left"><img src="" alt="Picture of the footer" width="300"/></p> </details>
 
 
 ## Future features

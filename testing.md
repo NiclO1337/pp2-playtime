@@ -109,19 +109,19 @@ Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung I
 
 | Feature tested \  On browser | Google Chrome | Microsoft Edge | Firefox | Samsung Internet  |
 | --- | --- | --- | --- | --- |
-| Theme buttons | Pass | Pass |  | |
-| Form validation | Pass | Pass |  |  |
-| Form validation2 | Pass | Pass |  |  |
-| Form submission | Pass | Pass |  |  |
-| Play game button | Pass | Pass |  |  |
-| Game button: Rock | Pass | Pass |  |  |
-| Game button: Paper | Pass | Pass |  |  |
-| Game button: Scissor | Pass | Pass |  |  |
-| Play again button | Pass | Pass |  |  |
-| Button: RPS Rules |  | Pass |  |  |
-| Button: About me |  | Pass |  |  |
-| Game button: Scissor |  | Pass |  |  |
-| Hover buttons | Pass | Pass |  |  |
+| Theme buttons | Pass | Pass | Pass | |
+| Form validation | Pass | Pass | Pass |  |
+| Form validation2 | Pass | Pass | Pass |  |
+| Form submission | Pass | Pass | Pass |  |
+| Play game button | Pass | Pass | Pass |  |
+| Game button: Rock | Pass | Pass | Pass |  |
+| Game button: Paper | Pass | Pass | Pass |  |
+| Game button: Scissor | Pass | Pass | Pass |  |
+| Play again button | Pass | Pass | Pass |  |
+| Button: RPS Rules | Pass | Pass | Pass |  |
+| Button: About me | Pass | Pass | Pass |  |
+| Button: Restart Home | Pass | Pass | Pass |  |
+| Hover buttons | Pass | Pass | Pass |  |
 
 
 ### Devices
