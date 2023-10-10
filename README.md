@@ -102,17 +102,20 @@ All pages are designed to be responsive to different screen sizes to accommodate
 
 This header is displayed consistently throughout navigating the games pages. It was designed with the intent of making the users first initial reaction to be "This is a bit silly". An aggressively named title together with a playful font and icons achives this. It is important that the user has this mindset before meeting Arnold.
 
-<details><summary>Screenshot of the feature</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696931095/feature-header_g9nunr.jpg" alt="Picture of the header" width="300"/></p> </details>
+<details><summary>Screenshot of the header</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696931095/feature-header_g9nunr.jpg" alt="Picture of the header" width="300"/></p> </details>
 
 ### Meet Arnold!
 
 One of the main features of the webpage is the amusing computer based player, Arnold. He has a fun and sassy personality. He is over-confident in his abilities to win in this game and is a self proclaimed expert in everything. He is not a gracious winner and a very sore looser.
 
-<details><summary>Screenshot of the feature</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696930327/feature-arnold_jh1mdw.jpg" alt="Picture of Arnold" width="300"/></p> </details>
+<details><summary>Screenshot of meeting Arnold</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696930327/feature-arnold_jh1mdw.jpg" alt="Picture of Arnold" width="300"/></p> </details>
 
 
 ### The introduction screen
 
+The introduction screen is where user meets Arnold and gets information about the game and how to play it. User can change the color theme and is also required to enter a name, this makes it a more personalized experience.
+
+<details><summary>Screenshot of the introduction screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696932188/feature-introduction_bnfghq.jpg" alt="Picture of the introduction screen" width="500"/></p> </details>
 
 
 ### The game screen
