@@ -176,28 +176,29 @@ Testing made in separate file [testing.md](testing.md)
 The project repository was created from the Code Institute template and then cloned to my computer using VS code. Changes were continuously pushed back up to Github for source control.<br>
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
-- From the source section drop-down menu, select the Main Branch
-- Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+- Click on Pages in the menu on the right side in the Code and Automation section
+- Under Branch, select the Main in the dropdown menu and click save
+- Once the main branch has been selected and saved, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 ### Local development
 
 #### Forking the project for local development
 
 - Log in (or sign up) to Github.
-- Go to the repository for this project, [ TODO: ADD NAME ]( TODO: ADD LINK )
+- Go to the repository for this project, [RPS Battle Arena](https://github.com/NiclO1337/pp2-playtime)
 - Click the Fork button in the top right corner.
 
 #### Cloning the project for local development
 
 - Log in (or sign up) to Github.
-- Go to the repository for this project, [ TODO: ADD NAME ]( TODO: ADD LINK )
+- Go to the repository for this project, [RPS Battle Arena](https://github.com/NiclO1337/pp2-playtime)
 - Click on the code button, select whether you would like to clone with HTTPS, SSH, or GitHub CLI, and copy the link shown.
 Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 Type 'git clone' into the terminal and then paste the link you copied in step 3. 
 - Press enter.
 
 
-Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
+Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtime/)
 
 
 
