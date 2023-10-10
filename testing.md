@@ -31,15 +31,17 @@ Link to live website: [ TODO: ADD NAME ]( TODO: ADD LINK )
 
 ### Validator Testing
 
-TODO:
 - HTML
 Validated through https://validator.w3.org/#validate_by_input and passed
 <br>![Passed without errors](https://res.cloudinary.com/dmntcacug/image/upload/v1693510294/html-validator-pass_lwfaja.jpg)
 
-TODO:
 - CSS
 Validated through https://jigsaw.w3.org/css-validator/validator and passed
 <br>![Passed without errors](https://res.cloudinary.com/dmntcacug/image/upload/v1693422108/css-validator-pass_xthpbi.jpg)
+
+- JavaScript
+Used ![JSHint](https://jshint.com/) to test for errors and potential problems.<br>
+Code has no warnings or errors (Uses ES6 features which needs to be enabled in configuration).
 
 ### Lighthouse testing
 
@@ -70,11 +72,11 @@ Initial test result > result after optimization
 
 | User goal | How are they achived | 
 | --- | --- | 
-|  |  | 
-|  |  |
-|  |  |
-|  |  | 
-
+| Enjoy a fun game | Design a rock paper scissor game and a computer based opponent with an amusing personality | 
+| Learn how to play the game | Instructions on how to play is added to introduction screen and also in the footer if user needs reminder while playing |
+| Know what the current score is of the game | Current score is displayed next to the players name |
+| Know who won the current round | When they winner of each round is determined, a message displays who the winner is | 
+| Intuitive and clear navigation of the page | Design a very simple design that is easy to understand and follow | 
 
 ### Features
 
