@@ -82,16 +82,15 @@ Initial test result > result after optimization
 
 | Feature tested | Expected outcome | Testing Performed | Result | Pass / fail | 
 | --- | --- | --- | --- | --- |
-| **Header / navigation bar** | 
-|  |  |  |  |  |
-| **Other features** |
+| Theme buttons |  |  |  |  |
 | Form submission |   |  |  |  |
-| Form reset |  |  |  |  |  |
+| Form validation |  |  |  |  |  |
+| Play game button |  |  |  |  |  |
 | Hover buttons | Show hover effect on mouse-over | Mouse over buttons | Hover effect is displayed |  |
 
 
 ### Browser
-Website has been tested on Google Chrome, Microsoft Edge, Safari, and Samsung Internet Browser.
+Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung Internet Browser.
 
 | Feature tested \  On browser | Google Chrome | Microsoft Edge | Firefox | Samsung Internet  |
 | --- | --- | --- | --- | --- |
