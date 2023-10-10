@@ -93,17 +93,15 @@ Initial wireframes sketch designs. The final design has many improvements from t
 Semantic HTML is used to aid people with dissabilities such as visual impairment and title text is used for all images so it can be read by screen readers. Semantic HTML also helps with search engine optimization so the right users can find this site and find it useful.<br>
 All pages are designed to be responsive to different screen sizes to accommodate users with different preferred devices.
 
-<details><summary>Screenshot examples of responsive behavior from mobile to tablet to computer</summary> <p align="left"><img src="TODO: add link to image " alt="examples of responsive behavior" width="700"/></p> </details>
-
 
 
 ## Features
 
-### Feature 1
+### Meet Arnold!
 
-TODO: Add text about feature
+One of the main features of the webpage is the amusing computer based player, Arnold. He has a fun and sassy personality. He is over-confident in his abilities to win in this game and is a self proclaimed expert in everything. He is not a gracious winner and a very sore looser.
 
-<details><summary>Screenshot of the feature</summary> <p align="left"><img src="TODO: ADD link to image of feature" alt="TODO: ADD name of feature" width="700"/></p> </details>
+<details><summary>Screenshot of the feature</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696930327/feature-arnold_jh1mdw.jpg" alt="Picture of Arnold" width="300"/></p> </details>
 
 
 ### Feature 2
