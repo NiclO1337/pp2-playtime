@@ -59,6 +59,8 @@ It is important take breaks and have fun, this is a perfect entertaining pastime
 - Learn how to play the game
 - Know what the current score is of the game
 - Know who won the current round
+- Know who has won the game
+- Play again when game is over
 - Intuitive and clear navigation of the page
 
 

@@ -76,6 +76,8 @@ Initial test result > result after optimization
 | Learn how to play the game | Instructions on how to play is added to introduction screen and also in the footer if user needs a reminder while playing |
 | Know what the current score is of the game | Current score is displayed next to the players name |
 | Know who won the current round | When the winner of each round is determined, a message displays who the winner is| 
+| Know who has won the game | Design a result page to be displayed when a player wins the game | 
+| Play again when game is over | Add a "Play again" button so game can be repeated endlessly | 
 | Intuitive and clear navigation of the page | Design a very simple design that is easy to understand and follow | 
 
 ### Features
