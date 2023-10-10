@@ -73,9 +73,9 @@ Initial test result > result after optimization
 | User goal | How are they achived | 
 | --- | --- | 
 | Enjoy a fun game | Design a rock paper scissor game and a computer based opponent with an amusing personality | 
-| Learn how to play the game | Instructions on how to play is added to introduction screen and also in the footer if user needs reminder while playing |
+| Learn how to play the game | Instructions on how to play is added to introduction screen and also in the footer if user needs a reminder while playing |
 | Know what the current score is of the game | Current score is displayed next to the players name |
-| Know who won the current round | When they winner of each round is determined, a message displays who the winner is | 
+| Know who won the current round | When the winner of each round is determined, a message displays who the winner is| 
 | Intuitive and clear navigation of the page | Design a very simple design that is easy to understand and follow | 
 
 ### Features
