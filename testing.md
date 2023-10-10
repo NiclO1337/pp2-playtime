@@ -86,6 +86,9 @@ Initial test result > result after optimization
 | Form submission |   |  |  |  |
 | Form validation |  |  |  |  |  |
 | Play game button |  |  |  |  |  |
+| Game button: Rock |  |  |  |  |  |
+| Game button: Paper |  |  |  |  |  |
+| Game button: Scissor |  |  |  |  |  |
 | Hover buttons | Show hover effect on mouse-over | Mouse over buttons | Hover effect is displayed |  |
 
 
