@@ -565,8 +565,8 @@ function hideResultScreen() {
 function resetGame() {
   document.getElementById('winner').style.opacity = '0';
   document.getElementById('winner').nextElementSibling.style.opacity = '0';
-  document.getElementById('arnold-score').innerText = '2';
-  document.getElementById('player-score').innerText = '2';
+  document.getElementById('arnold-score').innerText = '0';
+  document.getElementById('player-score').innerText = '0';
 }
 
 /* --------------------------
