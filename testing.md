@@ -84,14 +84,16 @@ Initial test result > result after optimization
 
 | Feature tested | Expected outcome | Testing Performed | Result | Pass / fail | 
 | --- | --- | --- | --- | --- |
-| Theme buttons |  |  |  |  |
-| Form submission |   |  |  |  |
-| Form validation |  |  |  |  |  |
-| Play game button |  |  |  |  |  |
-| Game button: Rock |  |  |  |  |  |
-| Game button: Paper |  |  |  |  |  |
-| Game button: Scissor |  |  |  |  |  |
-| Hover buttons | Show hover effect on mouse-over | Mouse over buttons | Hover effect is displayed |  |
+| Theme buttons | Change color theme based on button | Click the button | Theme changes | Pass |
+| Form validation | Will not allow player without name | Click 'Play game' without entering name | Warning message is displayed | Pass |
+| Form validation2 | Will not allow name longer than 12 characters | Click 'Play game' after entering name longer than 12 characters | Warning message is displayed | Pass |
+| Form submission | Entered name displayed while playing | Input name and click 'Play game' | Input is accepted and game starts with name displayed | Pass |
+| Play game button | Take user to game screen | Click 'Play game' button | Changes to game screen | Pass |
+| Game button: Rock | Play game choosing 'Rock' | Click 'Rock' button | Starts game with Rock chosen | Pass |
+| Game button: Paper | Play game choosing 'Paper' | Click 'Paper' button | Starts game with Paper chosen | Pass |
+| Game button: Scissor | Play game choosing 'Scissor' | Click 'Scissor' button | Starts game with Scissor chosen | Pass |
+| Play again button | Start a new game with same player name and theme | Click 'Play again' button | Starts game over with same theme and name and score 0-0 | Pass |
+| Hover buttons | Show hover effect on mouse-over | Mouse over buttons | Hover effect is displayed | Pass |
 
 
 ### Browser
@@ -99,12 +101,17 @@ Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung I
 
 | Feature tested \  On browser | Google Chrome | Microsoft Edge | Firefox | Samsung Internet  |
 | --- | --- | --- | --- | --- |
-| Click navigation links |  |  |  | |
-| Click social media icons |   |  |  |  |
-| Internal links on main page |  |  |  |  |
-| **Other features** |
+| Theme buttons |  |  |  | |
+| Form validation |   |  |  |  |
+| Form validation2 |  |  |  |  |
 | Form submission |  |  |  |  |
-| Play recipe video |  |  |  |  |
+| Play game button |  |  |  |  |
+| Game button: Rock |  |  |  |  |
+| Game button: Paper |  |  |  |  |
+| Game button: Scissor |  |  |  |  |
+| Play again button |  |  |  |  |
+| Hover buttons |  |  |  |  |
+
 
 ### Devices
 Manually tested on mobile device (Xiaomi 12), tablet (Samsung Galaxy tab S4) laptop, and desktop computer.
