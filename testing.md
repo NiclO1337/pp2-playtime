@@ -123,6 +123,8 @@ Website has been tested on Google Chrome, Microsoft Edge, Firefox, and Samsung I
 | Button: Restart Home | Pass | Pass | Pass | Pass |
 | Hover buttons | Pass | Pass | Pass | Pass |
 
+Note: Bad visibility on Samsung Internet if using dark mode,
+everything works but it looks bad. Looks perfekt on light mode.
 
 ### Devices
 Manually tested on mobile device (Xiaomi 12), tablet (Samsung Galaxy tab S4) laptop, and desktop computer.
