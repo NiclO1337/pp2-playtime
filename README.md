@@ -100,9 +100,9 @@ All pages are designed to be responsive to different screen sizes to accommodate
 
 ### The header
 
-TODO: Add text about feature
+This header is displayed consistently throughout navigating the games pages. It was designed with the intent of making the users first initial reaction to be "This is a bit silly". An aggressively named title together with a playful font and icons achives this. It is important that the user has this mindset before meeting Arnold.
 
-<details><summary>Screenshot of the feature</summary> <p align="left"><img src="TODO: ADD link to image of feature" alt="TODO: ADD name of feature" width="700"/></p> </details>
+<details><summary>Screenshot of the feature</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696931095/feature-header_g9nunr.jpg" alt="Picture of the header" width="300"/></p> </details>
 
 ### Meet Arnold!
 
