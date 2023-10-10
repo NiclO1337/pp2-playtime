@@ -36,7 +36,7 @@
 
         <!-- Introduction screen -->
         <section id="intro-screen" class="intro-screen-grid">
-          <div id="img-arnold" title="Image of Arnold"></div>
+          <div id="img-arnold"></div>
 
           <div class="align-left" id="intro-text">
             <h4>Hello, I'm Arnold!</h4>
@@ -67,10 +67,10 @@
               better about loosing over and over..)
             </p>
             <div class="flex-theme-btns">
-              <button class="btn theme-btn btn-blue"></button>
-              <button class="btn theme-btn btn-red"></button>
-              <button class="btn theme-btn btn-green"></button>
-              <button class="btn theme-btn btn-random"></button>
+              <button class="btn theme-btn btn-blue" aria-label="blue"></button>
+              <button class="btn theme-btn btn-red" aria-label="red"></button>
+              <button class="btn theme-btn btn-green" aria-label="green"></button>
+              <button class="btn theme-btn btn-random" aria-label="random colour"></button>
               <input
                 class="btn theme-btn color-input"
                 type="color"
@@ -94,33 +94,33 @@
             <button class="btn play-game-btn">Play game</button>
           </div>
 
-          <div class="img-instruction" title="Image of instruction"></div>
+          <div class="img-instruction"></div>
         </section>
 
         <!-- Game screen -->
         <section id="game-screen">
           <h2 class="margin-under">Make your choice</h2>
           <div>
-            <button class="btn game-btn" title="Rock">
+            <button class="btn game-btn" aria-label="Rock">
               <i class="fa-solid fa-hand-back-fist"></i>
             </button>
-            <button class="btn game-btn" title="Paper">
+            <button class="btn game-btn" aria-label="Paper">
               <i class="fa-solid fa-hand"></i>
             </button>
-            <button class="btn game-btn" title="Scissor">
+            <button class="btn game-btn" aria-label="Scissor">
               <i class="fa-solid fa-hand-scissors"></i>
             </button>
           </div>
           <div class="flex-container">
             <div>
-              <div class="rps-bg rps-player" title="Image to show players choice"></div>
+              <div class="rps-bg rps-player"></div>
               <h2>
                 <span id="player-name">Player</span><br />
                 <span id="player-score">0</span>
               </h2>
             </div>
             <div>
-              <div class="rps-bg rps-arnold" title="Image to show Arnolds choice"></div>
+              <div class="rps-bg rps-arnold"></div>
               <h2>Arnold<br /><span id="arnold-score">0</span></h2>
             </div>
           </div>
