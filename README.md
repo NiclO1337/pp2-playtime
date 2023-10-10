@@ -112,9 +112,9 @@ TODO: Add text about feature
 
 
 ## Future features
-- 
-- 
-- 
+- Add game sounds and music
+- Build more games
+- Add login feature so players can save scores
 
 
 ## Technologies used
