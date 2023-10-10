@@ -92,7 +92,7 @@ Initial wireframes sketch designs. The final design has many improvements from t
 
 ### Accessibility
 
-Semantic HTML is used to aid people with dissabilities such as visual impairment and title text is used for all images so it can be read by screen readers. Semantic HTML also helps with search engine optimization so the right users can find this site and find it useful.<br>
+Semantic HTML is used to aid people with dissabilities such as visual impairment and aria-label is used for all unnamed buttons so they can be read by screen readers. Semantic HTML also helps with search engine optimization so the right users can find this site and find it useful.<br>
 All pages are designed to be responsive to different screen sizes to accommodate users with different preferred devices.
 
 
