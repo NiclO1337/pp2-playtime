@@ -95,6 +95,10 @@ li {
   font-size: 80%;
 }
 
+.small-heading {
+  font-size: 100%;
+}
+
 #player-score,
 #arnold-score,
 #player-result,
