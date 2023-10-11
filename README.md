@@ -44,23 +44,23 @@ Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtim
 
 RPS Battle Arena is a gaming website to help people relax and enjoy themselves.
 
-It is important take breaks and have fun, this is a perfect entertaining pastime.
+It is important to take breaks and have fun, this is a perfect entertaining pastime.
 
 
 ### User stories
 
 #### Website goals
-- Help people have nice relaxing time enjoying a game
+- Help people have a nice relaxing time enjoying a game
 - Let people know how to play the game and use the features
 - Get to know the fun character, Arnold
 
 #### User goals
 - Enjoy a fun game
 - Learn how to play the game
-- Know what the current score is of the game
+- Know what the current score of the game is
 - Know who won the current round
 - Know who has won the game
-- Play again when game is over
+- Play again when the game is over
 - Intuitive and clear navigation of the page
 
 
@@ -68,14 +68,14 @@ It is important take breaks and have fun, this is a perfect entertaining pastime
 ## Design
 
 ### Colours
-In this website, the user can select their own colour theme. Everyone likes different colours and colours are persieved different on different screens. Having the choice to change the colour ensures that user can get maximum enjoyment out of this gaming experience.
+On this website, the user can select the colour theme. Everyone likes different colours and colours are perceived differently on different screens. Having the choice to change the colour ensures that the user can get maximum enjoyment out of this gaming experience.
 
 
 
 ### Typography
 
-Chosen fonts for this website are Pixelify Sans for the main heading and Roboto for all other text. <br>
-Goal is to set a playful and silly tone immidiatly, combining the serious title of "Battle Arena" with the playful font achives this well. Other text are written as if spoken by the computerbased player, Arnold. The font Roboto perfectly encapsulates Arnolds essence and sets the right tone.
+The chosen fonts for this website are Pixelify Sans for the main heading and Roboto for all other text. <br>
+The goal is to set a playful and silly tone immediately, combining the serious title of "Battle Arena" with the playful font to achieve this well. Other texts are written as if spoken by the computer-based player, Arnold. The font Roboto perfectly encapsulates Arnold's essence and sets the right tone.
 
 
 ### Images
@@ -85,14 +85,14 @@ Images used in this website are simple and playful to not disturb the colour the
 
 ### Wireframes
 
-Initial wireframes sketch designs. The final design has many improvements from the initial ideas.
+Initial wireframe sketch designs. The final design has many improvements from the initial ideas.
 <details><summary>Screenshot of wireframes</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696881213/pp2-wireframes_k0l8mp.jpg" alt="initial wireframe design sketches" width="700"/></p> </details>
 
 
 
 ### Accessibility
 
-Semantic HTML is used to aid people with dissabilities such as visual impairment and aria-label is used for all unnamed buttons so they can be read by screen readers. Semantic HTML also helps with search engine optimization so the right users can find this site and find it useful.<br>
+Semantic HTML is used to aid people with disabilities such as visual impairment and aria-label is used for all unnamed buttons so they can be read by screen readers. Semantic HTML also helps with search engine optimization so the right users can find this site and find it useful.<br>
 All pages are designed to be responsive to different screen sizes to accommodate users with different preferred devices.
 
 
@@ -102,54 +102,55 @@ All pages are designed to be responsive to different screen sizes to accommodate
 
 ### The header
 
-This header is displayed consistently throughout navigating the games pages. It was designed with the intent of making the users first initial reaction to be "This is a bit silly". An aggressively named title together with a playful font and icons achives this.
+This header is displayed consistently throughout navigating the game pages. It was designed with the intent of making the user's first initial reaction be "This is a bit silly". An aggressively named title together with a playful font and icons achieves this.
 
 <details><summary>Screenshot of the header</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696931095/feature-header_g9nunr.jpg" alt="Picture of the header" width="300"/></p> </details>
 
 ### Meet Arnold!
 
-One of the main features of the webpage is the amusing computer based player, Arnold. He has a fun and sassy personality. He is over-confident in his abilities to win in this game and is a self proclaimed expert in everything. He is not a gracious winner and a very sore looser.
+One of the main features of the webpage is the amusing computer-based player, Arnold. He has a fun and sassy personality. He is over-confident in his abilities to win in this game and is a self-proclaimed expert in everything. He is not a gracious winner and a very sore loser.
 
-Either user is amused by Arnold and will have a better user experience because of him. Or user it not amused by Arnold and will then get greater satisfaction from beating him in the game.
+Either the user is amused by Arnold and will have a better user experience because of him. Or the user is not amused by Arnold and will then get greater satisfaction from beating him in the game.
 
 <details><summary>Screenshot of meeting Arnold</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696930327/feature-arnold_jh1mdw.jpg" alt="Picture of Arnold" width="300"/></p> </details>
 
 
 ### The introduction screen
 
-The introduction screen is where user meets Arnold and gets information about the game and how to play it. User can change the color theme and is also required to enter a name, this makes it a more personalized experience.
+The introduction screen is where the user meets Arnold and gets information about the game and how to play it. User can change the color theme and is also required to enter a name, this makes it a more personalized experience.
 
 <details><summary>Screenshot of the introduction screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696932188/feature-introduction_bnfghq.jpg" alt="Picture of the introduction screen" width="500"/></p> </details>
 
 
 ### The game screen
 
-The game screen is where the main game is played. It has a simple layout with 3 game buttons, place for image to be displayed, each players name and current score. Default image is replaced when user makes their choice. 
+The game screen is where the main game is played. It has a simple layout with 3 game buttons, a place for images to be displayed, each player's name, and current score. 
+The default image is replaced when the user makes their choice. 
 
 <details><summary>Screenshot of the game screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696932843/feature-game-screen_s0jfny.png" alt="Picture of the game screen" width="500"/></p> </details>
 
 ### The result screen
 
-The result screen shows images of the players (comedic image to represent the user) and the final score. Winner is stated and a final message from Arnold is displayed. His message is braggy if he wins and sassy if he looses. Player can now choose to play again.
+The result screen shows images of the players (comedic image to represent the user) and the final score. The winner is stated and a final message from Arnold is displayed. His message is braggy if he wins and sassy if he loses. Players can now choose to play again.
 
 <details><summary>Screenshot of the result screen</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696935235/feature-result-screen_jhzajs.jpg" alt="Picture of the result screen" width="500"/></p> </details>
 
 ### The footer
 
-The footer is present on all pages. The user can get a reminder about the rules of the game, learn a little more about Arnold and also can choose to reset game back to home screen.
+The footer is present on all pages. The user can get a reminder about the rules of the game, learn a little more about Arnold, and also choose to reset the game back to the home screen.
 
 <details><summary>Screenshot of the footer</summary> <p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1696950243/feature-footer_wyenoy.jpg" alt="Picture of the footer" width="500"/></p> </details>
 
 ### Smooth transitions
 
-Page features smooth and slow transitions throughout the page. This is to to create a calm and relaxed experience. 
-Only feature which displays instantly is when the game hands are revealed, they are revealed on a random timer to build suspense and excitement.
+Page features smooth and slow transitions throughout the page. This is to create a calm and relaxed experience. 
+The only feature which displays instantly is when the game hands are revealed, they are revealed on a random timer to build suspense and excitement.
 
 
 ## Future features
 - Add game sounds and music
 - Build more games
-- Add login feature so players can save scores
+- Add a login feature so players can save scores
 
 
 ## Technologies used
@@ -218,7 +219,7 @@ Picture by Clker-Free-Vector-Images: [link to image](https://pixabay.com/vectors
 
 #### Main page
 
-RPS instruction image by OpenClipart-Vectors:[link to image](https://pixabay.com/vectors/fingers-fist-hands-paper-rock-149295/)
+RPS instruction image by OpenClipart-Vectors: [link to image](https://pixabay.com/vectors/fingers-fist-hands-paper-rock-149295/)
 
 Question mark image by openclipart.org: [link to image](https://www.freeimages.com/vector/question-mark-4848926)
 
@@ -234,7 +235,7 @@ Player "troll" image by BilliTheCat: [link to image](https://pixabay.com/vectors
 
 ### Code
 
-- Inspiration from my own previous portfolio project: Strawberry lowers.
+- Inspiration from my previous portfolio project: [Strawberry lowers.](https://niclo1337.github.io/pp1-strawberry-lovers/)
 
 - Some of the code from the Love Maths walkthrough project was used and adapted.
 
