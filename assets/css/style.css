@@ -30,7 +30,7 @@ label {
 li {
   list-style: none;
   filter: brightness(100%);
-  padding: 1.5rem 0;
+  padding: 1.5rem 0.2rem;
   width: 4rem;
 }
 
@@ -451,48 +451,16 @@ li {
 ------ Media quesries -------
 -------------------------- */
 
-/* Media query for 400px */
+/* Media query for 350px, medium phones */
 
-@media screen and (min-width: 400px) {
-  #game-background {
-    margin: 2rem auto 1rem;
-    min-height: 36rem;
-  }
-
-  .footer-flex-container {
-    gap: 5%;
-  }
-
-  h1 {
-    font-size: 2.3rem;
-  }
-
-  .header-fa {
-    font-size: 2rem;
-  }
-
-  footer {
-    font-size: 100%;
-  }
-
-  li {
-    padding: 1.2rem 0;
-    width: 5rem;
-  }
-
+@media screen and (min-width: 350px) {
   #descrition-text {
-    width: 33ch;
+    width: 30ch;
   }
 
-  .intro-screen-grid {
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-areas:
-      ". arnold arnold hello hello . ."
-      ". text text text text text ."
-      ". instruction instruction instruction instruction instruction ."
-      ". theme theme theme theme theme ."
-      ". . name name name . .";
-  }
+  #game-background {
+    min-height: 33rem;
+  } 
 
   .rps-bg {
     width: 8rem;
@@ -501,7 +469,7 @@ li {
   }
 
   .flex-container {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 80%;
   }
 
@@ -518,6 +486,48 @@ li {
     font-size: 2rem;
   }
 
+  footer {
+    font-size: 100%;
+  }
+
+  li {
+    padding: 1.2rem 0.5rem;
+    width: 5rem;
+  }
+
+}
+
+/* Media query for 400px, large phones */
+
+@media screen and (min-width: 400px) {
+  #game-background {
+    margin: 2rem auto 1rem;
+    min-height: 36rem;
+  } 
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .header-fa {
+    font-size: 2rem;
+  }
+
+  #descrition-text {
+    width: 33ch;
+  }
+
+  .intro-screen-grid {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+      ". arnold arnold hello hello . ."
+      ". text text text text text ."
+      ". instruction instruction instruction instruction instruction ."
+      ". theme theme theme theme theme ."
+      ". . name name name . .";
+  }
+
+
   .result-bg {
     width: 8rem;
     height: 13rem;
@@ -528,7 +538,7 @@ li {
   }
 }
 
-/* Media query for 768px */
+/* Media query for 768px, tablets and above */
 
 @media screen and (min-width: 768px) {
   #game-background {
@@ -549,7 +559,8 @@ li {
     max-width: 76%;
   }
 
-  .flex-container {
+  .flex-container {    
+    margin-bottom: 2rem;
     font-size: 100%;
   }
 
@@ -566,9 +577,13 @@ li {
   #winner ~ p {
     max-width: 45ch;
   }
+
+  .footer-flex-container {
+    gap: 5%;
+  }
 }
 
-/* Media query for 1200px */
+/* Media query for 1200px, laptops and bigger */
 
 @media screen and (min-width: 1200px) {
   #descrition-text {
