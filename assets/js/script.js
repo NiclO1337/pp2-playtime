@@ -206,14 +206,14 @@ function gameButtons() {
       window.setTimeout(arnoldChoice, 500);
       window.setTimeout(playerChoice, 500);
       window.setTimeout(checkWinner, 700);
-      window.setTimeout(revealImages, Math.random() * 1000 + 500);
-      window.setTimeout(showResultMessage, 1800);
+      window.setTimeout(revealImages, Math.random() * 1200 + 500);
+      window.setTimeout(showResultMessage, 2100);
       window.setTimeout(hideChoises, 3000);
       window.setTimeout(hideResultMessage, 3100);
       window.setTimeout(resetChoises, 3100);
       window.setTimeout(addStartingClass, 3200);
-      window.setTimeout(revealImages, 3300);
-      window.setTimeout(enableButtons, 3900);
+      window.setTimeout(revealImages, 3400);
+      window.setTimeout(enableButtons, 3700);
 
       function disableButtons() {
         let buttons = document.getElementsByClassName('game-btn');
@@ -305,7 +305,7 @@ function gameButtons() {
         message.style.color = 'red';
         message.innerText = `One point to ${player}.`;
 
-        window.setTimeout(incrementPlayer, 1500);
+        window.setTimeout(incrementPlayer, 1700);
         function incrementPlayer() {
           let playerCurrent = document.getElementById('player-score').innerText;
           playerNew = parseInt(playerCurrent) + 1;
@@ -328,7 +328,7 @@ function gameButtons() {
         message.style.color = 'green';
         message.innerText = 'Arnold wins!';
 
-        window.setTimeout(incrementArnold, 1500);
+        window.setTimeout(incrementArnold, 1700);
         function incrementArnold() {
           let arnoldCurrent = document.getElementById('arnold-score').innerText;
           arnoldNew = parseInt(arnoldCurrent) + 1;
