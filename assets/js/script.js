@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
       this.style.textShadow = 'none';
     });
   }
-
+  // Run functions to add eventlisteners to specific buttons
   themeButtons();
   playGameButton();
   gameButtons();
@@ -82,7 +82,7 @@ function themeButtons() {
         });
       }
 
-
+      // Mousover effect
       button.style.borderStyle = 'inset';
       window.setTimeout(afterClick, 100);
       function afterClick() {
@@ -108,6 +108,8 @@ function playGameButton() {
     let nickname = document.getElementById('nickname').value;
     let errorDiv = document.getElementById('error-div');
 
+    // Validates that user has entered a name and that
+    // it is not more than 12 characters in length
     if (nickname === '') {
       errorDiv.innerText = `Please enter a nickname. 
     I would like to know who I am
@@ -131,6 +133,7 @@ function playGameButton() {
     document.getElementById('player-name').innerText = nickname;
     document.getElementById('player-name-result').innerText = nickname;
 
+    // Mousover effect
     button.style.borderStyle = 'inset';
     window.setTimeout(afterClick, 100);
     function afterClick() {
@@ -191,7 +194,11 @@ function fadeInGameScreen() {
 -------------------------- */
 
 /**
- * 
+ * Game buttons for player to make their choice of Rock, Paper, or Scissor.
+ * Starts a chain of timed events to hide starting icons, check computers choice,
+ * compare to players choice and determine the winner. Then display winner and
+ * increment the winners score by 1. Also check if a player has reached 3 points
+ * and if so, end the game and display the result screen.
  */
 function gameButtons() {
   let buttons = document.getElementsByClassName('game-btn');
@@ -228,6 +235,7 @@ function gameButtons() {
         document.getElementsByClassName('rps-bg')[1].classList.remove('rps-arnold');
       }
 
+      // Show Arnolds choice on game screen
       function arnoldChoice() {
 
         let randomNumber = Math.floor(Math.random() * 3);
@@ -242,6 +250,7 @@ function gameButtons() {
         }
       }
 
+      // Show player's choice on game screen
       function playerChoice() {
         if (button === document.getElementsByClassName('game-btn')[0]) {
           document.getElementsByClassName('rps-bg')[0].classList.add('rock');
@@ -296,6 +305,7 @@ function gameButtons() {
         message.innerText = 'It\'s a tie';
       }
 
+      // If player wins, show message and increment the score
       function playerWin() {
         let message = document.getElementById('win-loose-msg');
         let player = document.getElementById('nickname').value;
@@ -307,8 +317,10 @@ function gameButtons() {
 
         window.setTimeout(incrementPlayer, 1700);
         function incrementPlayer() {
-          let playerCurrent = document.getElementById('player-score').innerText;
+          let playerCurrent = document.getElementById('player-score').innerText;          
           playerNew = parseInt(playerCurrent) + 1;
+
+          // If 3 points is reached, end the game and display winner on result screen
           if (playerNew === 3) {
             window.setTimeout(gameOverPlayer, 500);
             document.getElementById('player-score').innerText = playerNew;
@@ -320,6 +332,7 @@ function gameButtons() {
         }
       }
 
+      // If player wins, show message and increment the score
       function arnoldWin() {
         let message = document.getElementById('win-loose-msg');
         let arnoldNew = '';
@@ -332,6 +345,8 @@ function gameButtons() {
         function incrementArnold() {
           let arnoldCurrent = document.getElementById('arnold-score').innerText;
           arnoldNew = parseInt(arnoldCurrent) + 1;
+
+          // If 3 points is reached, end the game and display winner on result screen
           if (arnoldNew === 3) {
             window.setTimeout(gameOverArnold, 500);
             document.getElementById('arnold-score').innerText = arnoldNew;
@@ -416,6 +431,7 @@ function gameButtons() {
         gameScreen.style.setProperty('display', 'none');
       }
 
+      // Display winner name and score as green and loser as red
       function colourWinner() {
         let playerScore = document.getElementById('player-score').innerText;
         let playerResult = document.getElementById('player-result');
@@ -437,6 +453,7 @@ function gameButtons() {
         }
       }
 
+      // Display random braggy message if Arnold wins
       function selectBraggyMessage() {
         let braggyMessage = document.getElementById('winner').nextElementSibling;
         let braggyMessages = [
@@ -468,6 +485,7 @@ function gameButtons() {
         braggyMessage.innerHTML = braggyMessages[i];
       }
 
+      // Display random sassy message if player wins
       function selectSassyMessage() {
         let sassyMessage = document.getElementById('winner').nextElementSibling;
         let player = document.getElementById('nickname').value;
@@ -600,10 +618,10 @@ function liButtons() {
         if (aboutMe.style.display === 'block') {
           aboutMe.style.display = 'none';
         } else {
-        window.setTimeout(enableAboutMeExit, 50);
-        window.setTimeout(showAboutMe, 100);
-        window.setTimeout(fadeInAboutMe, 200);
-      }
+          window.setTimeout(enableAboutMeExit, 50);
+          window.setTimeout(showAboutMe, 100);
+          window.setTimeout(fadeInAboutMe, 200);
+        }
 
       } else {
         location.reload();
