@@ -48,22 +48,24 @@ Code has no warnings or errors (Uses ES6 features which needs to be enabled in t
 Used lighthouse to test performance, accessibility, best practices, and search engine optimization of the website. 
 
 
-#### Main page
-Initial test result > result after optimization
-<p align="left"><img src="TODO: Add image of lighthouse testing" alt="Initial test result main page" width="300"/></p>
+Initial test result
+<p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1697044084/initial-lighthouse-score_xpxjsr.jpg" alt="Initial test result main page" width="250"/></p>
+
+Result after optimization
+<p align="left"><img src="https://res.cloudinary.com/dmntcacug/image/upload/v1697044084/after-lighthouse-score_n1ohj6.jpg" alt="Initial test result main page" width="250"/></p>
 
 
 
 #### Improvements
+- Added missing meta tags for SEO. 
 
+- Added aria-labels for buttons and changed H4 headings into H2 and H3 headings instead for accessibility.
 
-
+- Added defer to script tag for performance.
 
 #### Left to improve
-- 
-
-
-
+- Eliminate render-blocking resources
+- Serve static assets with an efficient cache policy
 
 
 ## Manual testing
@@ -162,5 +164,5 @@ Fixes included:
 
 - A mysterious message about "Uncaught listener" sometimes appears in console when browser has been idle for a while.<br>
 Reason: suspect it is connected to the li buttons adding a new general event listener that enables the popup windows to be closed by clicking anywhere.<br>
-Possible solution: Change so the event listener from li buttons is added on a timer instead of immediatly.
+Non-working solution: Change so the event listener from li buttons is added on a timer instead of immediatly.
 Possible solution: According to Stack Overflow this could be caused by Chrome extensions.
