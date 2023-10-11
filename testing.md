@@ -156,6 +156,8 @@ Fixes included:
 - looking in chrome developer tools to check for warning messages
 - looking through code line by line
 - using console.log(); to see what was acctually going on
+- review commit history
+- search google for possible solutions
 - a lot of trial and error
 
 
