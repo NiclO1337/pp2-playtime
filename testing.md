@@ -11,7 +11,7 @@ Link to live website: [RPS Battle Arena](https://niclo1337.github.io/pp2-playtim
 
 
 * [Testing](#testing)
-    * [Automatic testing](#)
+    * [Automatic testing](#automatic-testing)
         * [Validator testing](#validator-testing)
         * [Lighthouse testing](#lighthouse-testing)
     * [Manual testing](#manual-testing)
