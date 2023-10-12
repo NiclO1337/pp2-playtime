@@ -145,10 +145,6 @@ li {
   height: 10rem;
 }
 
-.hidden-element {
-  display: none;
-}
-
 .align-left {
   text-align: left;
 }
@@ -526,7 +522,6 @@ li {
       ". theme theme theme theme theme ."
       ". . name name name . .";
   }
-
 
   .result-bg {
     width: 8rem;
